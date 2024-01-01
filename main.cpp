@@ -1,3 +1,6 @@
+#define _USE_MATH_DEFINES
+#include <cmath>
+
 #include <iostream>
 
 #define GLFW_INCLUDE_NONE
@@ -16,7 +19,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Physics Engine", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 800, "Physics Engine", NULL, NULL);
     if (window == NULL) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -31,21 +34,47 @@ int main() {
         return -1;
     }
 
-    glEnable(GL_DEPTH_TEST);
-
     //
     GLuint program = compile_shaders();
-    GLuint vertex_array_object;
-    glCreateVertexArrays(1, &vertex_array_object);
-    glBindVertexArray(vertex_array_object);
+
+    GLuint vao;
+    GLuint vbo;
+
+    glGenVertexArrays(1, &vao);
+    glBindVertexArray(vao);
+
+    glGenBuffers(1, &vbo);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindVertexArray(0);
 
     while (!glfwWindowShouldClose(window)) {
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(program);
+
+        const int particlesNum = 2;
+        float* particles = new float[particlesNum * 3];
+        particles[0] = -1.0f;
+        particles[1] = 1.0f;
+        particles[2] = 0.0f;
+
+        particles[3] = 1.0f;
+        particles[4] = -1.0f;
+        particles[5] = 0.0f;
+        // NOTE: Don't create it every time.
+        glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 3, particles, GL_DYNAMIC_DRAW);
+
+        glBindVertexArray(vao);
         glPointSize(8.0f);
-        glDrawArrays(GL_POINTS, 0, 1);
+        glDrawArrays(GL_POINTS, 0, particlesNum);
+        glBindVertexArray(0);
+
+        delete[] particles;
 
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -53,7 +82,8 @@ int main() {
 
     //
     glDeleteProgram(program);
-    glDeleteVertexArrays(1, &vertex_array_object);
+    glDeleteVertexArrays(1, &vao);
+    glDeleteBuffers(1, &vbo);
 
     glfwTerminate();
 
@@ -71,10 +101,11 @@ GLuint compile_shaders() {
 
     static const GLchar* vertex_shader_source[] = {
         "#version 450 core\n"
+        "layout(location = 0) in vec3 pos;"
         "\n"
         "void main(void)\n"
         "{\n"
-        "gl_Position = vec4(0.0, 0.0, 0.0, 1.0);\n"
+        "gl_Position = vec4(pos, 1.0);\n"
         "}\n"
     };
 
