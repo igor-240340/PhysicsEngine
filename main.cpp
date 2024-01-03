@@ -1,13 +1,11 @@
-#define _USE_MATH_DEFINES
 #include <cmath>
-
 #include <iostream>
 
-#define GLFW_INCLUDE_NONE
-#include <GLFW/glfw3.h>
 #include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
-#include "linmath.h"
+#include "PhysicsEngine/ParticleWorld.h"
+#include "PhysicsEngine/Particle.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -15,8 +13,8 @@ GLuint compile_shaders();
 int main() {
     glfwInit();
 
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     GLFWwindow* window = glfwCreateWindow(800, 800, "Physics Engine", NULL, NULL);
@@ -33,6 +31,13 @@ int main() {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
+
+    // OpenGL version.
+    const GLubyte* renderer = glGetString(GL_RENDERER);
+    const GLubyte* version = glGetString(GL_VERSION);
+    std::cout << "GL_RENDERER: " << renderer << std::endl;
+    std::cout << "GL_VERSION: " << version << std::endl;
+    std::cout << std::endl;
 
     //
     GLuint program = compile_shaders();
@@ -51,22 +56,51 @@ int main() {
 
     glBindVertexArray(0);
 
+    // Sim.
+    ParticleWorld world;
+    Particle p(Vec2::Zero, Vec2::Zero, 1.0f);
+    world.AddParticle(p);
+
+    glfwSetTime(0);
+    double dtAccum = 0;
     while (!glfwWindowShouldClose(window)) {
+        std::cout << "RENDER LOOP BEGIN" << std::endl;
+
+        // Симуляция физики.
+        double dt = glfwGetTime();
+        glfwSetTime(0);
+
+        dtAccum += dt;
+
+        std::cout << "dt: " << dt << "s" << std::endl;
+        std::cout << "dtAccum: " << dtAccum << "s" << std::endl;
+
+        std::cout << std::endl;
+        while (dtAccum > 0.02) {
+            std::cout << "fixed update: 0.02" << std::endl;
+
+            world.Step(0.02f);
+            dtAccum -= 0.02;
+        }
+
+        // Рендеринг.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(program);
 
-        const int particlesNum = 2;
-        float* particles = new float[particlesNum * 3];
-        particles[0] = -1.0f;
-        particles[1] = 1.0f;
-        particles[2] = 0.0f;
+        const int particlesNum = world.Particles().size();
+        float* particles = new float[particlesNum * 2];
 
-        particles[3] = 1.0f;
-        particles[4] = -1.0f;
-        particles[5] = 0.0f;
-        // NOTE: Don't create it every time.
+        int index = 0;
+        const int indexStep = 2;
+        for (const Particle& p : world.Particles()) {
+            particles[index] = p.pos.x;
+            particles[index + 1] = p.pos.y;
+            index += indexStep;
+        }
+
+        // NOTE: Don't create it every time. Update with sub.
         glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 3, particles, GL_DYNAMIC_DRAW);
 
         glBindVertexArray(vao);
@@ -78,6 +112,8 @@ int main() {
 
         glfwSwapBuffers(window);
         glfwPollEvents();
+
+        std::cout << "RENDER LOOP END" << std::endl << std::endl;
     }
 
     //
