@@ -58,17 +58,17 @@ int main() {
 
     // Устанавливаем матрицу ортографической проекции.
     float ortho[] = {
-        2.0f / (400.0f - (-400.0f)),    0.0f,                           0.0f, 0.0f,
-        0.0f,                           2.0f / (300.0f - (-300.0f)),    0.0f, 0.0f,
-        0.0f,                           0.0f,                           1.0f, 0.0f,
-        0.0f,                           0.0f,                           0.0f, 1.0f,
+        2.0f / (10.0f - (-10.0f)),      0.0f,                       0.0f, 0.0f,
+        0.0f,                           2.0f / (7.5f - (-7.5f)),    0.0f, 0.0f,
+        0.0f,                           0.0f,                       1.0f, 0.0f,
+        0.0f,                           0.0f,                       0.0f, 1.0f,
     };
     glUseProgram(program);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
 
     // Sim.
     ParticleWorld world;
-    Particle p1(Vec2(0.0f, 0.0f), Vec2::Zero, 1.0f);
+    Particle p1(Vec2(0.0f, 0.0f), -Vec2::Down * 10.0f, 1.0f);
     world.AddParticle(p1);
 
     glfwSetTime(0);
