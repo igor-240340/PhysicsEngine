@@ -17,7 +17,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(800, 800, "Physics Engine", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Physics Engine", NULL, NULL);
     if (window == NULL) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -51,15 +51,25 @@ int main() {
     glGenBuffers(1, &vbo);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
     glBindVertexArray(0);
 
+    // Устанавливаем матрицу ортографической проекции.
+    float ortho[] = {
+        2.0f / (400.0f - (-400.0f)),    0.0f,                           0.0f, 0.0f,
+        0.0f,                           2.0f / (300.0f - (-300.0f)),    0.0f, 0.0f,
+        0.0f,                           0.0f,                           1.0f, 0.0f,
+        0.0f,                           0.0f,                           0.0f, 1.0f,
+    };
+    glUseProgram(program);
+    glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
+
     // Sim.
     ParticleWorld world;
-    Particle p(Vec2::Zero, Vec2::Zero, 1.0f);
-    world.AddParticle(p);
+    Particle p1(Vec2(0.0f, 0.0f), Vec2::Zero, 1.0f);
+    world.AddParticle(p1);
 
     glfwSetTime(0);
     double dtAccum = 0;
@@ -100,8 +110,9 @@ int main() {
             index += indexStep;
         }
 
-        // NOTE: Don't create it every time. Update with sub.
-        glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 3, particles, GL_DYNAMIC_DRAW);
+        // NOTE: Не создавать каждый кадр.
+        //glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 2, particles, GL_DYNAMIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 2, particles, GL_STATIC_DRAW);
 
         glBindVertexArray(vao);
         glPointSize(8.0f);
@@ -137,11 +148,13 @@ GLuint compile_shaders() {
 
     static const GLchar* vertex_shader_source[] = {
         "#version 450 core\n"
-        "layout(location = 0) in vec3 pos;"
+        "layout(location = 0) in vec2 pos;\n"
+        "\n"
+        "uniform mat4 projection;\n"
         "\n"
         "void main(void)\n"
         "{\n"
-        "gl_Position = vec4(pos, 1.0);\n"
+        "gl_Position = projection * vec4(pos, 0.0, 1.0);\n"
         "}\n"
     };
 
