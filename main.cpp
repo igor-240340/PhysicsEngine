@@ -25,6 +25,8 @@ int main() {
     }
     glfwMakeContextCurrent(window);
 
+    glfwSwapInterval(1);
+
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
