@@ -65,7 +65,7 @@ int main() {
         2.0f / (10.0f - (-10.0f)),      0.0f,                       0.0f, 0.0f,
         0.0f,                           2.0f / (7.5f - (-7.5f)),    0.0f, 0.0f,
         0.0f,                           0.0f,                       1.0f, 0.0f,
-        0.0f,                           0.0f,                       0.0f, 1.0f,
+        0.0f,                           0.0f,                       0.0f, 1.0f
     };
     glUseProgram(program);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
