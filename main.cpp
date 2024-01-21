@@ -6,6 +6,8 @@
 
 #include "PhysicsEngine/ParticleWorld.h"
 #include "PhysicsEngine/Particle.h"
+#include "PhysicsEngine/ParticleForceRegistry.h"
+#include "PhysicsEngine/ParticleGravityForce.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -68,10 +70,12 @@ int main() {
     glUseProgram(program);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
 
-    // Sim.
+    // Настройка физического мира.
     ParticleWorld world;
+    ParticleGravityForce gravityForce;
     Particle p1(Vec2(0.0f, 0.0f), -Vec2::Down * 10.0f, 1.0f);
-    world.AddParticle(p1);
+    world.AddParticle(&p1);
+    world.forceRegistry.Add(&p1, &gravityForce);
 
     glfwSetTime(0);
     double dtAccum = 0;
@@ -106,9 +110,9 @@ int main() {
 
         int index = 0;
         const int indexStep = 2;
-        for (const Particle& p : world.Particles()) {
-            particles[index] = p.pos.x;
-            particles[index + 1] = p.pos.y;
+        for (const Particle* p : world.Particles()) {
+            particles[index] = p->pos.x;
+            particles[index + 1] = p->pos.y;
             index += indexStep;
         }
 

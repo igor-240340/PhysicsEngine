@@ -6,8 +6,8 @@ class Particle
 {
 public:
     Vec2 pos;
-    Vec2 netForce;
     Vec2 velocity;
+    Vec2 netForce;
 
     float mass;
     float invMass;
