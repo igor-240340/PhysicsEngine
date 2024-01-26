@@ -140,6 +140,7 @@
     <ClCompile Include="ParticleForce.cpp" />
     <ClCompile Include="ParticleForceRegistry.cpp" />
     <ClCompile Include="ParticleGravityForce.cpp" />
+    <ClCompile Include="ParticleLinearDragForce.cpp" />
     <ClCompile Include="ParticleWorld.cpp" />
     <ClCompile Include="Vec2.cpp" />
   </ItemGroup>
@@ -148,6 +149,7 @@
     <ClInclude Include="ParticleForce.h" />
     <ClInclude Include="ParticleForceRegistry.h" />
     <ClInclude Include="ParticleGravityForce.h" />
+    <ClInclude Include="ParticleLinearDragForce.h" />
     <ClInclude Include="ParticleWorld.h" />
     <ClInclude Include="Vec2.h" />
   </ItemGroup>

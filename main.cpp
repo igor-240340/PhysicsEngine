@@ -8,6 +8,7 @@
 #include "PhysicsEngine/Particle.h"
 #include "PhysicsEngine/ParticleForceRegistry.h"
 #include "PhysicsEngine/ParticleGravityForce.h"
+#include "PhysicsEngine/ParticleLinearDragForce.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -72,10 +73,15 @@ int main() {
 
     // Настройка физического мира.
     ParticleWorld world;
+
     ParticleGravityForce gravityForce;
-    Particle p1(Vec2(0.0f, 0.0f), -Vec2::Down * 10.0f, 1.0f);
+    ParticleLinearDragForce dragForce(5.0f);
+
+    Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
+
     world.AddParticle(&p1);
     world.forceRegistry.Add(&p1, &gravityForce);
+    world.forceRegistry.Add(&p1, &dragForce);
 
     glfwSetTime(0);
     double dtAccum = 0;
