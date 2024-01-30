@@ -78,16 +78,21 @@ int main() {
     ParticleGravityForce gravityForce;
     ParticleLinearDragForce dragForce(2.0f);
 
-    Particle p1(Vec2::Zero, Vec2::Zero, 1.0f);
-    //Particle p2(Vec2::Zero, Vec2::Zero, 1.0f);
-    Particle p2(Vec2::Zero, Vec2(10.0f, 0.0f), 1.0f);
+    // Begin: SpringDemo.
+    //Particle pA(Vec2::Zero, Vec2(10.0f, 0.0f), 1.0f);
+    Particle pA(Vec2::Zero, Vec2::Zero, 10.0f);
+    Particle pB(Vec2::Down, Vec2::Zero, 1.0f);
 
-    ParticleSpringForce springForce(0.0f, 10.0f, &p1);
-    world.AddParticle(&p1);
-    world.AddParticle(&p2);
-    world.forceRegistry.Add(&p2, &springForce);
-    world.forceRegistry.Add(&p2, &dragForce);
-    world.forceRegistry.Add(&p2, &gravityForce);
+    ParticleSpringForce springForceOnA(0.0f, 10.0f, &pB);
+    ParticleSpringForce springForceOnB(0.0f, 10.0f, &pA);
+    world.AddParticle(&pA);
+    world.AddParticle(&pB);
+    //world.forceRegistry.Add(&pA, &gravityForce);
+    world.forceRegistry.Add(&pA, &springForceOnA);
+    world.forceRegistry.Add(&pB, &springForceOnB);
+    world.forceRegistry.Add(&pA, &dragForce);
+    world.forceRegistry.Add(&pB, &dragForce);
+    // End: SpringDemo.
 
     /*Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
 
@@ -117,8 +122,8 @@ int main() {
             dtAccum -= 0.02;
         }
 
-        std::cout << "p2.vel: " << p2.velocity.y << std::endl;
-        std::cout << "p2.pos: " << p2.pos.y << std::endl;
+        std::cout << "p2.vel: " << pB.velocity.y << std::endl;
+        std::cout << "p2.pos: " << pB.pos.y << std::endl;
 
         // Рендеринг.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);

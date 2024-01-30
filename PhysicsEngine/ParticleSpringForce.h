@@ -10,7 +10,7 @@ private:
     Particle* particleB;
 
 public:
-    ParticleSpringForce(float restLength, float coeff, Particle* other);
+    ParticleSpringForce(float restLength, float coeff, Particle* particleB);
 
-    void ApplyTo(Particle* particle) final;
+    void ApplyTo(Particle* particleA) final;
 };
