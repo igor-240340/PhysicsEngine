@@ -1,19 +1,17 @@
 #include "ParticleSpringForce.h"
 
-ParticleSpringForce::ParticleSpringForce(float restLehgth, float coeff, Particle* other) {
+ParticleSpringForce::ParticleSpringForce(float restLehgth, float coeff, Particle* particleB) {
     this->restLength = restLehgth;
     this->coeff = coeff;
-    this->other = other;
+    this->particleB = particleB;
 }
 
-void ParticleSpringForce::ApplyTo(Particle* particle) {
-    // Ориентация пружины в пространстве и её текущая длина
-    // определяют направление и величину силы.
-    Vec2 springVector = particle->pos - other->pos;
-    Vec2 springDir = springVector.Normalized();
-    float springLength = springVector.Length();
-    float springCompression = springLength - restLength;
+void ParticleSpringForce::ApplyTo(Particle* particleA) {
+    Vec2 springVector = particleB->pos - particleA->pos;
 
-    Vec2 force = -(springCompression * coeff) * springDir;
-    particle->ApplyForce(force);
+    // Если пружина растянута, то компрессия (растяжение) положительна и сила направлена от A к B.
+    float springCompression = springVector.Length() - restLength;
+    Vec2 springDirFromAToB = springVector.Normalized();
+    Vec2 force = springDirFromAToB * (springCompression * coeff);
+    particleA->ApplyForce(force);
 }
