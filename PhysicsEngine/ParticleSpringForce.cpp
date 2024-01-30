@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "ParticleSpringForce.h"
 
 ParticleSpringForce::ParticleSpringForce(float restLehgth, float coeff, Particle* other) {
@@ -20,6 +18,4 @@ void ParticleSpringForce::ApplyTo(Particle* particle) {
 
     force = -(springCompression * coeff) * springDir;
     particle->ApplyForce(force);
-
-    std::cout << "spring force: " << force.y << std::endl;
 }

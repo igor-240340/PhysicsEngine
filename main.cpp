@@ -79,7 +79,8 @@ int main() {
     ParticleLinearDragForce dragForce(2.0f);
 
     Particle p1(Vec2::Zero, Vec2::Zero, 1.0f);
-    Particle p2(Vec2::Zero, Vec2::Zero, 1.0f);
+    //Particle p2(Vec2::Zero, Vec2::Zero, 1.0f);
+    Particle p2(Vec2::Zero, Vec2(10.0f, 0.0f), 1.0f);
 
     ParticleSpringForce springForce(0.0f, 10.0f, &p1);
     world.AddParticle(&p1);
