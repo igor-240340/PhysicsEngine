@@ -19,8 +19,12 @@ float Vec2::Length() const {
     return std::sqrt(x * x + y * y);
 }
 
-Vec2 Vec2::GetNormal() const {
-    return *this / Length();
+Vec2 Vec2::Normalized() const {
+    // Исключаем появление NaN в компонентах вектора.
+    if (x * x + y * y > 0)
+        return *this / Length();
+    else
+        return Vec2::Zero;
 }
 
 float Vec2::Dot(const Vec2& a, const Vec2& b) {
@@ -53,4 +57,8 @@ Vec2 Vec2::operator/(float scalar) const {
 
 Vec2 Vec2::operator-() const {
     return Vec2(-x, -y);
+}
+
+Vec2 operator*(const float scalar, const Vec2& a) {
+    return a * scalar;
 }

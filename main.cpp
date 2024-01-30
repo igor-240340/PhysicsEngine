@@ -9,6 +9,7 @@
 #include "PhysicsEngine/ParticleForceRegistry.h"
 #include "PhysicsEngine/ParticleGravityForce.h"
 #include "PhysicsEngine/ParticleLinearDragForce.h"
+#include "PhysicsEngine/ParticleSpringForce.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -75,13 +76,23 @@ int main() {
     ParticleWorld world;
 
     ParticleGravityForce gravityForce;
-    ParticleLinearDragForce dragForce(5.0f);
+    ParticleLinearDragForce dragForce(2.0f);
 
-    Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
+    Particle p1(Vec2::Zero, Vec2::Zero, 1.0f);
+    Particle p2(Vec2::Zero, Vec2::Zero, 1.0f);
+
+    ParticleSpringForce springForce(0.0f, 10.0f, &p1);
+    world.AddParticle(&p1);
+    world.AddParticle(&p2);
+    world.forceRegistry.Add(&p2, &springForce);
+    world.forceRegistry.Add(&p2, &dragForce);
+    world.forceRegistry.Add(&p2, &gravityForce);
+
+    /*Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
 
     world.AddParticle(&p1);
     world.forceRegistry.Add(&p1, &gravityForce);
-    world.forceRegistry.Add(&p1, &dragForce);
+    world.forceRegistry.Add(&p1, &dragForce);*/
 
     glfwSetTime(0);
     double dtAccum = 0;
@@ -104,6 +115,9 @@ int main() {
             world.Step(0.02f);
             dtAccum -= 0.02;
         }
+
+        std::cout << "p2.vel: " << p2.velocity.y << std::endl;
+        std::cout << "p2.pos: " << p2.pos.y << std::endl;
 
         // Рендеринг.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);

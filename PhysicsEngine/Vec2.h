@@ -18,12 +18,14 @@ public:
     Vec2(float x, float y);
 
     float Length() const;
-    Vec2 GetNormal() const; // Возвращает нормализованную копию вектора.
-
+    Vec2 Normalized() const; // Возвращает нормализованную копию вектора.
+    
     Vec2 operator+(const Vec2& b);
     Vec2 operator+=(const Vec2& b);
     Vec2 operator-(const Vec2& b);
     Vec2 operator*(float scalar) const;
     Vec2 operator/(float scalar) const;
     Vec2 operator-() const; // Возвращает инвертированную копию вектора.
+
+    friend Vec2 operator*(const float scalar, const Vec2& a);
 };
