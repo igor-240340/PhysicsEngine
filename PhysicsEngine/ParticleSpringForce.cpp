@@ -7,8 +7,6 @@ ParticleSpringForce::ParticleSpringForce(float restLehgth, float coeff, Particle
 }
 
 void ParticleSpringForce::ApplyTo(Particle* particle) {
-    Vec2 force;
-
     // ќриентаци€ пружины в пространстве и еЄ текуща€ длина
     // определ€ют направление и величину силы.
     Vec2 springVector = particle->pos - other->pos;
@@ -16,6 +14,6 @@ void ParticleSpringForce::ApplyTo(Particle* particle) {
     float springLength = springVector.Length();
     float springCompression = springLength - restLength;
 
-    force = -(springCompression * coeff) * springDir;
+    Vec2 force = -(springCompression * coeff) * springDir;
     particle->ApplyForce(force);
 }
