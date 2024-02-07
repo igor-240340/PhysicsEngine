@@ -8,6 +8,9 @@ public:
 
 public:
     static const Vec2 Zero;
+    static const Vec2 Left;
+    static const Vec2 Right;
+    static const Vec2 Up;
     static const Vec2 Down;
 
 public:

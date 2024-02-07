@@ -138,6 +138,7 @@
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="ParticleAnchoredSpringForce.cpp" />
+    <ClCompile Include="ParticleBungeeForce.cpp" />
     <ClCompile Include="ParticleForce.cpp" />
     <ClCompile Include="ParticleForceRegistry.cpp" />
     <ClCompile Include="ParticleGravityForce.cpp" />
@@ -149,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="Particle.h" />
     <ClInclude Include="ParticleAnchoredSpringForce.h" />
+    <ClInclude Include="ParticleBungeeForce.h" />
     <ClInclude Include="ParticleForce.h" />
     <ClInclude Include="ParticleForceRegistry.h" />
     <ClInclude Include="ParticleGravityForce.h" />

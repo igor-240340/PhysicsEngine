@@ -11,6 +11,7 @@
 #include "PhysicsEngine/ParticleLinearDragForce.h"
 #include "PhysicsEngine/ParticleSpringForce.h"
 #include "PhysicsEngine/ParticleAnchoredSpringForce.h"
+#include "PhysicsEngine/ParticleBungeeForce.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -97,6 +98,7 @@ int main() {
     // End: SpringDemo.
     */
 
+    /*
     // Begin: AnchoredSpringDemo.
     Particle p(Vec2(0.0f, -3.0f), Vec2::Zero, 1.0f);
     world.AddParticle(&p);
@@ -112,12 +114,29 @@ int main() {
     Particle anchorParticle(anchor, Vec2::Zero, 1.0f);
     world.AddParticle(&anchorParticle);
     // End: AnchoredSpringDemo.
+    */
 
-    /*Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
+    // Begin: ParticleBungeeForceDemo.
+    Particle pA(Vec2::Zero, Vec2::Zero, 1000.0f);
+    Particle pB(Vec2::Zero, Vec2::Down * 100.0f, 1.0f);
+
+    ParticleBungeeForce bungeeForceOnA(1.0f, 10.0f, &pB);
+    ParticleBungeeForce bungeeForceOnB(1.0f, 10.0f, &pA);
+    world.AddParticle(&pA);
+    world.AddParticle(&pB);
+    world.forceRegistry.Add(&pA, &bungeeForceOnA);
+    world.forceRegistry.Add(&pB, &bungeeForceOnB);
+    world.forceRegistry.Add(&pA, &dragForce);
+    world.forceRegistry.Add(&pB, &dragForce);
+    // End: ParticleBungeeForceDemo.
+
+    /*
+    Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
 
     world.AddParticle(&p1);
     world.forceRegistry.Add(&p1, &gravityForce);
-    world.forceRegistry.Add(&p1, &dragForce);*/
+    world.forceRegistry.Add(&p1, &dragForce);
+    */
 
     glfwSetTime(0);
     double dtAccum = 0;
