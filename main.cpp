@@ -10,6 +10,7 @@
 #include "PhysicsEngine/ParticleGravityForce.h"
 #include "PhysicsEngine/ParticleLinearDragForce.h"
 #include "PhysicsEngine/ParticleSpringForce.h"
+#include "PhysicsEngine/ParticleAnchoredSpringForce.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -78,6 +79,7 @@ int main() {
     ParticleGravityForce gravityForce;
     ParticleLinearDragForce dragForce(2.0f);
 
+    /*
     // Begin: SpringDemo.
     //Particle pA(Vec2::Zero, Vec2(10.0f, 0.0f), 1.0f);
     Particle pA(Vec2::Zero, Vec2::Zero, 10.0f);
@@ -93,6 +95,23 @@ int main() {
     world.forceRegistry.Add(&pA, &dragForce);
     world.forceRegistry.Add(&pB, &dragForce);
     // End: SpringDemo.
+    */
+
+    // Begin: AnchoredSpringDemo.
+    Particle p(Vec2(0.0f, -3.0f), Vec2::Zero, 1.0f);
+    world.AddParticle(&p);
+
+    Vec2 anchor = Vec2::Zero;
+    ParticleAnchoredSpringForce springForce(0.0f, 10.0f, anchor);
+
+    world.forceRegistry.Add(&p, &springForce);
+    world.forceRegistry.Add(&p, &dragForce);
+    world.forceRegistry.Add(&p, &gravityForce);
+
+    // Создаем статичную частицу для визуализации точки крепления.
+    Particle anchorParticle(anchor, Vec2::Zero, 1.0f);
+    world.AddParticle(&anchorParticle);
+    // End: AnchoredSpringDemo.
 
     /*Particle p1(Vec2::Zero, -Vec2::Down * 20.0f, 1.0f);
 
@@ -121,9 +140,6 @@ int main() {
             world.Step(0.02f);
             dtAccum -= 0.02;
         }
-
-        std::cout << "p2.vel: " << pB.velocity.y << std::endl;
-        std::cout << "p2.pos: " << pB.pos.y << std::endl;
 
         // Рендеринг.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);

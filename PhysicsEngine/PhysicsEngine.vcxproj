@@ -137,6 +137,7 @@
     <ClCompile Include="..\glad\src\glad.c" />
     <ClCompile Include="..\main.cpp" />
     <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticleAnchoredSpringForce.cpp" />
     <ClCompile Include="ParticleForce.cpp" />
     <ClCompile Include="ParticleForceRegistry.cpp" />
     <ClCompile Include="ParticleGravityForce.cpp" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleAnchoredSpringForce.h" />
     <ClInclude Include="ParticleForce.h" />
     <ClInclude Include="ParticleForceRegistry.h" />
     <ClInclude Include="ParticleGravityForce.h" />
