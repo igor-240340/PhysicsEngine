@@ -22,6 +22,10 @@ float Vec2::Length() const {
     return std::sqrt(x * x + y * y);
 }
 
+float Vec2::LengthSquared() const {
+    return x * x + y * y;
+}
+
 Vec2 Vec2::Normalized() const {
     // Исключаем появление NaN в компонентах вектора.
     if (x * x + y * y > 0)

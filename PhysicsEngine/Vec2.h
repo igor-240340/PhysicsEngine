@@ -21,6 +21,7 @@ public:
     Vec2(float x, float y);
 
     float Length() const;
+    float LengthSquared() const;
     Vec2 Normalized() const; // ¬озвращает нормализованную копию вектора.
     
     Vec2 operator+(const Vec2& b);

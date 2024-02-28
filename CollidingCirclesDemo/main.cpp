@@ -1,3 +1,4 @@
+#include <cassert>
 #include <iostream>
 
 #define _USE_MATH_DEFINES
@@ -20,6 +21,11 @@
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
+
+void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal);
+void HandleCollision(ParticleWorld* world);
+void ResolvePenetration(Particle* particleA, Particle* particleB, Vec2 hitNormal, float penetration);
+void HandleCollisionWithBorders(Circle* particle);
 
 int main() {
     glfwInit();
@@ -80,14 +86,14 @@ int main() {
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
 
     // Настройка физического мира.
+    std::srand(std::time(nullptr));
     ParticleWorld world;
 
     ParticleGravityForce gravityForce;
     ParticleLinearDragForce dragForce(0.5f);
 
-    Circle circleA(Vec2::Left * 2.0f, Vec2::Right * 1.0f, 1, 1);
-    Circle circleB(Vec2::Right * 2.0f, Vec2::Left * 1.0f, 1, 1);
-
+    Circle circleA(Vec2(-5.5f, 3.5f), Vec2(20.0f, -12.0f), 0.785398f, 0.785398f);
+    Circle circleB(Vec2(0.5f, 0.5f), Vec2(-2.0f, 1.0f), 3.0f, 3.0f);
     world.AddParticle(&circleA);
     world.AddParticle(&circleB);
 
@@ -112,10 +118,8 @@ int main() {
             world.Step(0.02f);
             dtAccum -= 0.02;
         }
-        
-        // Begin: Обработка коллизий.
-        
-        // End: Обработка коллизий
+
+        HandleCollision(&world);
 
         // Begin: Рендеринг.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
@@ -125,14 +129,14 @@ int main() {
 
         const int sectors = 16;
         const int circlesNum = world.Particles().size();
-        
+
         const int indexStep = 2;
         const float angleStepRad = 6.28f / sectors;
         for (const Particle* p : world.Particles()) {
             float* points = new float[sectors * 2];
 
             const float radius = ((Circle*)p)->radius;
-            
+
             // Вычисляем вектор для каждого сектора.
             float curAngleRad = 0.0f;
             int index = 0;
@@ -240,4 +244,146 @@ GLuint compile_shaders() {
     glDeleteShader(fragment_shader);
 
     return program;
+}
+
+void HandleCollision(ParticleWorld* world) {
+    for (Particle* particleA : world->Particles()) {
+        Circle* circleA = dynamic_cast<Circle*>(particleA);
+
+        for (Particle* particleB : world->Particles()) {
+            Circle* circleB = dynamic_cast<Circle*>(particleB);
+
+            // Не проверяем коллизию с самим собой.
+            if (circleA == circleB)
+                continue;
+
+            const float actualDist = (circleA->pos - circleB->pos).Length();
+            const float touchDist = circleA->radius + circleB->radius;  // Расстояние, при котором круги соприкасаются.
+            if (actualDist <= touchDist) {
+                // Нормаль удара - смотрит из B в A.
+                Vec2 hitNormal = (circleA->pos - circleB->pos).Normalized();
+
+                float penetration = touchDist - actualDist;
+
+                ResolveVelocity(circleA, circleB, hitNormal);
+                ResolvePenetration(circleA, circleB, hitNormal, penetration);
+            }
+        }
+
+        HandleCollisionWithBorders(circleA);
+    }
+}
+
+void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal) {
+    const float e = 1.0f;   // Коэффициент восстановления - определяет эластичность удара.
+
+    // Относительная скорость A в предположении, что B неподвижно.
+    Vec2 velocityARelB = particleA->velocity - particleB->velocity;
+
+    // Нормальная составляющая относительной скорости A в СК удара, где
+    // СК удара - это СК с осями нормаль/касательная,
+    // причем ось нормали направлена обратно нормали удара,
+    // что даёт всегда положительную проекцию относительной скорости A на нормаль (при условии, что массы сближаются).
+    Vec2 normalAxis = -hitNormal;
+    float velocityARelBNormal = Vec2::Dot(velocityARelB, normalAxis);
+
+    // Если массы в состоянии соприкосновения, но при этом покоятся или отдаляются друг от друга, то удара нет.
+    // Такая ситуация возможна, например, сразу после обработки предыдущего удара.
+    if (velocityARelBNormal <= 0.0f)
+        return;
+
+    // Ударные импульсы возникают вдоль нормали удара, имеют равные модули и противоположные направления.
+    // 
+    // Почему импульс выражен через обратные массы, а не прямые?
+    // Если обратная масса и скорость второй точки равны нулю, то
+    // данная формула без изменений будет эквивалентна формуле
+    // для вычисления ударного импульса при столкновении точки с неподвижным объектом с бесконечно большой массой.
+    // Поэтому, если мы хотим смоделировать удар о неподвижную стену, достаточно представить стену точкой с нулевой обратной массой.
+    float invMassA = particleA->invMass;
+    float invMassB = particleB->invMass;
+    float impulseAbs = velocityARelBNormal * (1 + e) / (invMassA + invMassB);
+    Vec2 impulseA = hitNormal * impulseAbs;
+    Vec2 impulseB = -hitNormal * impulseAbs;
+
+    particleA->velocity += impulseA * particleA->invMass;
+    particleB->velocity += impulseB * particleB->invMass;
+}
+
+void ResolvePenetration(Particle* particleA, Particle* particleB, Vec2 hitNormal, float penetration) {
+    float invMassA = particleA->invMass;
+    float invMassB = particleB->invMass;
+
+    // Мы делим полную величину проникновения между двумя точками по такому принципу:
+    // во сколько раз первая масса больше второй, во столько раз смещение первой массы будет меньше смещения второй.
+    // Другими словами, отношение смещений точек будет равно обратному отношению их масс.
+    //
+    // В чем преимущество выражения смещения через обратные массы?
+    // Если обратная масса второй точки будет равна нулю,
+    // то первая точка будет сдвинута на полную величину проникновения, а вторая точка не изменит положения.
+    //
+    // Следовательно, если вторая точка представляет, например, неподвижную стену,
+    // то в устранении проникновения она участвовать не будет.
+    float displacementA = penetration * invMassA / (invMassA + invMassB);
+    float displacementB = penetration - displacementA;
+
+    particleA->pos += hitNormal * displacementA;
+    particleB->pos += -hitNormal * displacementB;
+}
+
+void HandleCollisionWithBorders(Circle* circle) {
+    float penetration;
+    Vec2 hitNormal;
+    bool coll = false;
+
+    // Левая.
+    if (circle->pos.x - circle->radius <= -10.0f) {
+        std::cout << "Hit left" << std::endl;
+
+        hitNormal = Vec2::Right;
+        float actualDist = fabs(-10.0f - circle->pos.x);
+        float touchDist = circle->radius;
+        penetration = touchDist - actualDist;
+        coll = true;
+    }
+
+    // Правая.
+    if (circle->pos.x + circle->radius >= 10.0f) {
+        std::cout << "Hit right" << std::endl;
+
+        hitNormal = Vec2::Left;
+        float actualDist = fabs(10.0f - circle->pos.x);
+        float touchDist = circle->radius;
+        penetration = touchDist - actualDist;
+        coll = true;
+    }
+
+    // Верхняя.
+    if (circle->pos.y + circle->radius >= 7.5f) {
+        std::cout << "Hit up" << std::endl;
+
+        hitNormal = Vec2::Down;
+        float actualDist = fabs(7.5f - circle->pos.y);
+        float touchDist = circle->radius;
+        penetration = touchDist - actualDist;
+        coll = true;
+    }
+
+    // Нижняя.
+    if (circle->pos.y - circle->radius <= -7.5f) {
+        std::cout << "Hit bottom" << std::endl;
+
+        hitNormal = Vec2::Up;
+        float actualDist = fabs(-7.5f - circle->pos.y);
+        float touchDist = circle->radius;
+        penetration = touchDist - actualDist;
+        coll = true;
+    }
+
+    if (coll) {
+        Particle infiniteMassParticle(Vec2::Zero, Vec2::Zero, 1.0f);
+        infiniteMassParticle.invMass = 0.0f;
+
+        ResolveVelocity(circle, &infiniteMassParticle, hitNormal);
+        ResolvePenetration(circle, &infiniteMassParticle, hitNormal, penetration);
+    }
 }

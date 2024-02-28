@@ -15,5 +15,5 @@ public:
 public:
     Particle(Vec2 pos, Vec2 velocity, float mass);
 
-    void ApplyForce(Vec2 force);
+    virtual void ApplyForce(Vec2 force);
 };
