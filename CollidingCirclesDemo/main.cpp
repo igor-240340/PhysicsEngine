@@ -376,10 +376,12 @@ void HandleCollisionWithBorders(Circle* circle) {
     }
 
     if (coll) {
-        Particle infiniteMassParticle(Vec2::Zero, Vec2::Zero, 1.0f);
-        infiniteMassParticle.invMass = 0.0f;
+        // Объект с нулевой обратной массой (т.е. с бесконечно большой массой)
+        // для представления неподвижных границ экрана.
+        Particle immovableObject(Vec2::Zero, Vec2::Zero, 1.0f);
+        immovableObject.invMass = 0.0f;
 
-        ResolveVelocity(circle, &infiniteMassParticle, hitNormal);
-        ResolvePenetration(circle, &infiniteMassParticle, hitNormal, penetration);
+        ResolveVelocity(circle, &immovableObject, hitNormal);
+        ResolvePenetration(circle, &immovableObject, hitNormal, penetration);
     }
 }
