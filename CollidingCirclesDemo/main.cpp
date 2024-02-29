@@ -12,10 +12,6 @@
 #include "PhysicsEngine/ParticleForceRegistry.h"
 #include "PhysicsEngine/ParticleGravityForce.h"
 #include "PhysicsEngine/ParticleLinearDragForce.h"
-#include "PhysicsEngine/ParticleSpringForce.h"
-#include "PhysicsEngine/ParticleAnchoredSpringForce.h"
-#include "PhysicsEngine/ParticleBungeeForce.h"
-#include "PhysicsEngine/ParticleBuoyantForce.h"
 
 #include "Circle.h"
 
@@ -277,13 +273,13 @@ void HandleCollision(ParticleWorld* world) {
 void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal) {
     const float e = 1.0f;   // Коэффициент восстановления - определяет эластичность удара.
 
-    // Относительная скорость A в предположении, что B неподвижно.
+    // Скорость A в предположении, что B неподвижно - относительная скорость.
     Vec2 velocityARelB = particleA->velocity - particleB->velocity;
 
     // Нормальная составляющая относительной скорости A в СК удара, где
     // СК удара - это СК с осями нормаль/касательная,
     // причем ось нормали направлена обратно нормали удара,
-    // что даёт всегда положительную проекцию относительной скорости A на нормаль (при условии, что массы сближаются).
+    // что даёт положительную проекцию относительной скорости A на нормаль при сближении масс.
     Vec2 normalAxis = -hitNormal;
     float velocityARelBNormal = Vec2::Dot(velocityARelB, normalAxis);
 
