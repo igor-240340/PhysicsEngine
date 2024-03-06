@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "ParticleForce.h"
 
@@ -8,7 +8,7 @@ private:
     static const float GravityAccelY;
 
     float liquidSurfaceY;
-    float particleSize;     // При расчете выталкивающей силы частица рассматривается как куб с ненулевой стороной.
+    float particleSize;     // РџСЂРё СЂР°СЃС‡РµС‚Рµ РІС‹С‚Р°Р»РєРёРІР°СЋС‰РµР№ СЃРёР»С‹ С‡Р°СЃС‚РёС†Р° СЂР°СЃСЃРјР°С‚СЂРёРІР°РµС‚СЃСЏ РєР°Рє РєСѓР± СЃ РЅРµРЅСѓР»РµРІРѕР№ СЃС‚РѕСЂРѕРЅРѕР№.
     float particleHalfSize;
     float particleVolume;
     float liquidDensity;

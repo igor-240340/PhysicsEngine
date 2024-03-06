@@ -1,4 +1,4 @@
-#include <cmath>
+п»ї#include <cmath>
 #include <iostream>
 
 #include <glad/glad.h>
@@ -62,7 +62,7 @@ int main() {
 
     glBindVertexArray(0);
 
-    // Устанавливаем матрицу ортографической проекции.
+    // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РјР°С‚СЂРёС†Сѓ РѕСЂС‚РѕРіСЂР°С„РёС‡РµСЃРєРѕР№ РїСЂРѕРµРєС†РёРё.
     float ortho[] = {
         2.0f / (10.0f - (-10.0f)),      0.0f,                       0.0f, 0.0f,
         0.0f,                           2.0f / (7.5f - (-7.5f)),    0.0f, 0.0f,
@@ -72,7 +72,7 @@ int main() {
     glUseProgram(program);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
 
-    // Настройка физического мира.
+    // РќР°СЃС‚СЂРѕР№РєР° С„РёР·РёС‡РµСЃРєРѕРіРѕ РјРёСЂР°.
     ParticleWorld world;
 
     ParticleGravityForce gravityForce;
@@ -88,7 +88,7 @@ int main() {
     world.forceRegistry.Add(&p, &dragForce);
     world.forceRegistry.Add(&p, &gravityForce);
 
-    // Создаем статичную частицу для визуализации точки крепления.
+    // РЎРѕР·РґР°РµРј СЃС‚Р°С‚РёС‡РЅСѓСЋ С‡Р°СЃС‚РёС†Сѓ РґР»СЏ РІРёР·СѓР°Р»РёР·Р°С†РёРё С‚РѕС‡РєРё РєСЂРµРїР»РµРЅРёСЏ.
     Particle anchorParticle(anchor, Vec2::Zero, 1.0f);
     world.AddParticle(&anchorParticle);
 
@@ -97,7 +97,7 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         std::cout << "RENDER LOOP BEGIN" << std::endl;
 
-        // Симуляция физики.
+        // РЎРёРјСѓР»СЏС†РёСЏ С„РёР·РёРєРё.
         double dt = glfwGetTime();
         glfwSetTime(0);
 
@@ -114,7 +114,7 @@ int main() {
             dtAccum -= 0.02;
         }
 
-        // Рендеринг.
+        // Р РµРЅРґРµСЂРёРЅРі.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -131,7 +131,7 @@ int main() {
             index += indexStep;
         }
 
-        // NOTE: Не создавать каждый кадр.
+        // NOTE: РќРµ СЃРѕР·РґР°РІР°С‚СЊ РєР°Р¶РґС‹Р№ РєР°РґСЂ.
         glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 2, particles, GL_DYNAMIC_DRAW);
 
         glBindVertexArray(vao);

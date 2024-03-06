@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 class Vec2
 {
@@ -22,14 +22,14 @@ public:
 
     float Length() const;
     float LengthSquared() const;
-    Vec2 Normalized() const; // Возвращает нормализованную копию вектора.
+    Vec2 Normalized() const; // Р’РѕР·РІСЂР°С‰Р°РµС‚ РЅРѕСЂРјР°Р»РёР·РѕРІР°РЅРЅСѓСЋ РєРѕРїРёСЋ РІРµРєС‚РѕСЂР°.
     
     Vec2 operator+(const Vec2& b);
     Vec2 operator+=(const Vec2& b);
     Vec2 operator-(const Vec2& b);
     Vec2 operator*(float scalar) const;
     Vec2 operator/(float scalar) const;
-    Vec2 operator-() const; // Возвращает инвертированную копию вектора.
+    Vec2 operator-() const; // Р’РѕР·РІСЂР°С‰Р°РµС‚ РёРЅРІРµСЂС‚РёСЂРѕРІР°РЅРЅСѓСЋ РєРѕРїРёСЋ РІРµРєС‚РѕСЂР°.
 
     friend Vec2 operator*(const float scalar, const Vec2& a);
 };

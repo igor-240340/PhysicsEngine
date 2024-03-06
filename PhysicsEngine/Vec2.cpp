@@ -1,4 +1,4 @@
-#include <cmath>
+ï»¿#include <cmath>
 
 #include "Vec2.h"
 
@@ -27,7 +27,7 @@ float Vec2::LengthSquared() const {
 }
 
 Vec2 Vec2::Normalized() const {
-    // Èñêëþ÷àåì ïîÿâëåíèå NaN â êîìïîíåíòàõ âåêòîðà.
+    // Ð˜ÑÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð¿Ð¾ÑÐ²Ð»ÐµÐ½Ð¸Ðµ NaN Ð² ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°Ñ… Ð²ÐµÐºÑ‚Ð¾Ñ€Ð°.
     if (x * x + y * y > 0)
         return *this / Length();
     else

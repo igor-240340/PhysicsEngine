@@ -1,4 +1,4 @@
-#include "ParticleAnchoredSpringForce.h"
+п»ї#include "ParticleAnchoredSpringForce.h"
 
 ParticleAnchoredSpringForce::ParticleAnchoredSpringForce(float restLength, float coeff, Vec2 anchor){
     this->restLength = restLength;
@@ -7,10 +7,10 @@ ParticleAnchoredSpringForce::ParticleAnchoredSpringForce(float restLength, float
 }
 
 void ParticleAnchoredSpringForce::ApplyTo(Particle* particle) {
-    // Вектор из частицы в точку крепления пружины.
+    // Р’РµРєС‚РѕСЂ РёР· С‡Р°СЃС‚РёС†С‹ РІ С‚РѕС‡РєСѓ РєСЂРµРїР»РµРЅРёСЏ РїСЂСѓР¶РёРЅС‹.
     Vec2 springVector = anchor - particle->pos;
 
-    // Если пружина растянута, то компрессия (растяжение) положительна и сила направлена к точке крепления пружины.
+    // Р•СЃР»Рё РїСЂСѓР¶РёРЅР° СЂР°СЃС‚СЏРЅСѓС‚Р°, С‚Рѕ РєРѕРјРїСЂРµСЃСЃРёСЏ (СЂР°СЃС‚СЏР¶РµРЅРёРµ) РїРѕР»РѕР¶РёС‚РµР»СЊРЅР° Рё СЃРёР»Р° РЅР°РїСЂР°РІР»РµРЅР° Рє С‚РѕС‡РєРµ РєСЂРµРїР»РµРЅРёСЏ РїСЂСѓР¶РёРЅС‹.
     float springCompression = springVector.Length() - restLength;
     Vec2 springDirToAnchor = springVector.Normalized();
     Vec2 force = springDirToAnchor * (springCompression * coeff);

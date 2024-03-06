@@ -1,4 +1,4 @@
-#include "Particle.h"
+﻿#include "Particle.h"
 
 Particle::Particle(Vec2 pos, Vec2 velocity, float mass) {
     this->pos = pos;

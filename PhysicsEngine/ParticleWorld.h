@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <list>
 
@@ -8,7 +8,7 @@
 class ParticleWorld
 {
 private:
-    float size; // Размеры мира.
+    float size; // Р Р°Р·РјРµСЂС‹ РјРёСЂР°.
     std::list<Particle*> particles;
 
 public:

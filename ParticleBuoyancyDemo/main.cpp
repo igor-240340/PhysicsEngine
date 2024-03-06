@@ -1,4 +1,4 @@
-#include <cmath>
+п»ї#include <cmath>
 #include <iostream>
 
 #include <glad/glad.h>
@@ -65,7 +65,7 @@ int main() {
 
     glBindVertexArray(0);
 
-    // Устанавливаем матрицу ортографической проекции.
+    // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РјР°С‚СЂРёС†Сѓ РѕСЂС‚РѕРіСЂР°С„РёС‡РµСЃРєРѕР№ РїСЂРѕРµРєС†РёРё.
     float ortho[] = {
         2.0f / (10.0f - (-10.0f)),      0.0f,                       0.0f, 0.0f,
         0.0f,                           2.0f / (7.5f - (-7.5f)),    0.0f, 0.0f,
@@ -75,7 +75,7 @@ int main() {
     glUseProgram(program);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
 
-    // Настройка физического мира.
+    // РќР°СЃС‚СЂРѕР№РєР° С„РёР·РёС‡РµСЃРєРѕРіРѕ РјРёСЂР°.
     ParticleWorld world;
 
     ParticleGravityForce gravityForce;
@@ -85,8 +85,8 @@ int main() {
     float waterDensity = 1000.0f;
     float hydroDragCoeff = 1000.0f;
     float particleSize = 1.0f;
-    //Particle pA(Vec2(-9.0f, -7.5f), Vec2::Zero, 300.0f); // Кубический метр дерева.
-    Particle pA(Vec2(-9.0f, 7.5f), Vec2::Zero, 500.0f); // Кубический метр дерева.
+    //Particle pA(Vec2(-9.0f, -7.5f), Vec2::Zero, 300.0f); // РљСѓР±РёС‡РµСЃРєРёР№ РјРµС‚СЂ РґРµСЂРµРІР°.
+    Particle pA(Vec2(-9.0f, 7.5f), Vec2::Zero, 500.0f); // РљСѓР±РёС‡РµСЃРєРёР№ РјРµС‚СЂ РґРµСЂРµРІР°.
 
     ParticleBuoyantForce buoyantForceOnA(liquidSurfaceY, particleSize, waterDensity, hydroDragCoeff);
     world.AddParticle(&pA);
@@ -94,7 +94,7 @@ int main() {
     world.forceRegistry.Add(&pA, &gravityForce);
     world.forceRegistry.Add(&pA, &dragForce);
 
-    // Для отрисовки вспомогательных объектов.
+    // Р”Р»СЏ РѕС‚СЂРёСЃРѕРІРєРё РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹С… РѕР±СЉРµРєС‚РѕРІ.
     Vec2 liquidLeftPoint(-10.0f, liquidSurfaceY);
     Vec2 liquidRightPoint(10.0f, liquidSurfaceY);
 
@@ -103,7 +103,7 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         std::cout << "RENDER LOOP BEGIN" << std::endl;
 
-        // Симуляция физики.
+        // РЎРёРјСѓР»СЏС†РёСЏ С„РёР·РёРєРё.
         double dt = glfwGetTime();
         glfwSetTime(0);
 
@@ -120,14 +120,14 @@ int main() {
             dtAccum -= 0.02;
         }
 
-        // Рендеринг.
+        // Р РµРЅРґРµСЂРёРЅРі.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(program);
 
         /*
-        // Begin: Отрисовка частиц точками.
+        // Begin: РћС‚СЂРёСЃРѕРІРєР° С‡Р°СЃС‚РёС† С‚РѕС‡РєР°РјРё.
         const int particlesNum = world.Particles().size();
         float* particles = new float[particlesNum * 2];
 
@@ -139,7 +139,7 @@ int main() {
             index += indexStep;
         }
 
-        // NOTE: Не создавать каждый кадр.
+        // NOTE: РќРµ СЃРѕР·РґР°РІР°С‚СЊ РєР°Р¶РґС‹Р№ РєР°РґСЂ.
         glBufferData(GL_ARRAY_BUFFER, particlesNum * sizeof(float) * 2, particles, GL_DYNAMIC_DRAW);
 
         glBindVertexArray(vao);
@@ -148,10 +148,10 @@ int main() {
         glBindVertexArray(0);
 
         delete[] particles;
-        // End: Отрисовка частиц точками.
+        // End: РћС‚СЂРёСЃРѕРІРєР° С‡Р°СЃС‚РёС† С‚РѕС‡РєР°РјРё.
         */
 
-        // Begin: Отрисовка поверхности жидкости.
+        // Begin: РћС‚СЂРёСЃРѕРІРєР° РїРѕРІРµСЂС…РЅРѕСЃС‚Рё Р¶РёРґРєРѕСЃС‚Рё.
         float liquidPoints[] = {
             liquidLeftPoint.x, liquidLeftPoint.y,
             liquidRightPoint.x, liquidRightPoint.y
@@ -163,9 +163,9 @@ int main() {
         glPointSize(0.0f);
         glDrawArrays(GL_LINES, 0, 2);
         glBindVertexArray(0);
-        // End: Отрисовка поверхности жидкости.
+        // End: РћС‚СЂРёСЃРѕРІРєР° РїРѕРІРµСЂС…РЅРѕСЃС‚Рё Р¶РёРґРєРѕСЃС‚Рё.
 
-        // Begin: Отрисовка частиц квадратами.
+        // Begin: РћС‚СЂРёСЃРѕРІРєР° С‡Р°СЃС‚РёС† РєРІР°РґСЂР°С‚Р°РјРё.
         const int particlesNum = world.Particles().size();
         float* points = new float[particlesNum * 4 * 2];
 
@@ -187,7 +187,7 @@ int main() {
             index += indexStep;
         }
 
-        // NOTE: Не создавать каждый кадр.
+        // NOTE: РќРµ СЃРѕР·РґР°РІР°С‚СЊ РєР°Р¶РґС‹Р№ РєР°РґСЂ.
         glBufferData(GL_ARRAY_BUFFER, particlesNum * 4 * 2 * sizeof(float), points, GL_DYNAMIC_DRAW);
 
         glBindVertexArray(vao);
@@ -195,7 +195,7 @@ int main() {
         glBindVertexArray(0);
 
         delete[] points;
-        // End: Отрисовка частиц квадратами.
+        // End: РћС‚СЂРёСЃРѕРІРєР° С‡Р°СЃС‚РёС† РєРІР°РґСЂР°С‚Р°РјРё.
 
         glfwSwapBuffers(window);
         glfwPollEvents();

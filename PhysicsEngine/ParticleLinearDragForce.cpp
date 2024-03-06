@@ -1,4 +1,4 @@
-#include "ParticleLinearDragForce.h"
+﻿#include "ParticleLinearDragForce.h"
 
 ParticleLinearDragForce::ParticleLinearDragForce(float coeff) {
     this->coeff = coeff;

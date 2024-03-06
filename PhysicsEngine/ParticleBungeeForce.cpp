@@ -1,4 +1,4 @@
-#include "ParticleBungeeForce.h"
+п»ї#include "ParticleBungeeForce.h"
 
 ParticleBungeeForce::ParticleBungeeForce(float restLength, float coeff, Particle* particleB) {
     this->restLength = restLength;
@@ -10,7 +10,7 @@ void ParticleBungeeForce::ApplyTo(Particle* particleA) {
     Vec2 springVector = particleB->pos - particleA->pos;
 
     float springCompression = springVector.Length() - restLength;
-    // Сила генерируется только когда пружина растянута.
+    // РЎРёР»Р° РіРµРЅРµСЂРёСЂСѓРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РєРѕРіРґР° РїСЂСѓР¶РёРЅР° СЂР°СЃС‚СЏРЅСѓС‚Р°.
     if (springCompression <= 0)
         return;
 
