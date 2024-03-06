@@ -1,4 +1,4 @@
-#include <cassert>
+п»ї#include <cassert>
 #include <iostream>
 
 #define _USE_MATH_DEFINES
@@ -7,6 +7,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+#include "imgui.h"
+#include "backends/imgui_impl_glfw.h"
+#include "backends/imgui_impl_opengl3.h"
+
 #include "PhysicsEngine/ParticleWorld.h"
 #include "PhysicsEngine/Particle.h"
 #include "PhysicsEngine/ParticleForceRegistry.h"
@@ -14,6 +18,16 @@
 #include "PhysicsEngine/ParticleLinearDragForce.h"
 
 #include "Circle.h"
+
+struct IntegratorControlState {
+    bool stepModeActive;
+    bool stepButtonPressed;
+    bool resetButtonPressed;
+};
+
+IntegratorControlState integratorControlState = {
+    false, false, false
+};
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -54,6 +68,20 @@ int main() {
     std::cout << "GL_VERSION: " << version << std::endl;
     std::cout << std::endl;
 
+    // Begin: ImGui.
+
+    // Setup Dear ImGui context
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO();
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+
+    // Setup Platform/Renderer backends
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init();
+
+    // End: ImGui.
+
     //
     GLuint program = compile_shaders();
 
@@ -71,7 +99,7 @@ int main() {
 
     glBindVertexArray(0);
 
-    // Устанавливаем матрицу ортографической проекции.
+    // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РјР°С‚СЂРёС†Сѓ РѕСЂС‚РѕРіСЂР°С„РёС‡РµСЃРєРѕР№ РїСЂРѕРµРєС†РёРё.
     float ortho[] = {
         2.0f / (10.0f - (-10.0f)),      0.0f,                       0.0f, 0.0f,
         0.0f,                           2.0f / (7.5f - (-7.5f)),    0.0f, 0.0f,
@@ -81,7 +109,7 @@ int main() {
     glUseProgram(program);
     glUniformMatrix4fv(glGetUniformLocation(program, "projection"), 1, false, ortho);
 
-    // Настройка физического мира.
+    // РќР°СЃС‚СЂРѕР№РєР° С„РёР·РёС‡РµСЃРєРѕРіРѕ РјРёСЂР°.
     std::srand(std::time(nullptr));
     ParticleWorld world;
 
@@ -98,7 +126,7 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         std::cout << "RENDER LOOP BEGIN" << std::endl;
 
-        // Симуляция физики.
+        // РЎРёРјСѓР»СЏС†РёСЏ С„РёР·РёРєРё.
         double dt = glfwGetTime();
         glfwSetTime(0);
 
@@ -108,16 +136,25 @@ int main() {
         std::cout << "dtAccum: " << dtAccum << "s" << std::endl;
 
         std::cout << std::endl;
-        while (dtAccum > 0.02) {
-            std::cout << "fixed update: 0.02" << std::endl;
 
-            world.Step(0.02f);
-            dtAccum -= 0.02;
+        if (integratorControlState.stepModeActive) {
+            if (integratorControlState.stepButtonPressed) {
+                integratorControlState.stepButtonPressed = false;
+                world.Step(0.02f);
+            }
+        }
+        else {
+            while (dtAccum > 0.02) {
+                std::cout << "fixed update: 0.02" << std::endl;
+
+                world.Step(0.02f);
+                dtAccum -= 0.02;
+            }
         }
 
         HandleCollision(&world);
 
-        // Begin: Рендеринг.
+        // Begin: Р РµРЅРґРµСЂРёРЅРі.
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -133,7 +170,7 @@ int main() {
 
             const float radius = ((Circle*)p)->radius;
 
-            // Вычисляем вектор для каждого сектора.
+            // Р’С‹С‡РёСЃР»СЏРµРј РІРµРєС‚РѕСЂ РґР»СЏ РєР°Р¶РґРѕРіРѕ СЃРµРєС‚РѕСЂР°.
             float curAngleRad = 0.0f;
             int index = 0;
             for (int i = 0; i < sectors; i++) {
@@ -147,7 +184,7 @@ int main() {
                 curAngleRad += angleStepRad;
             }
 
-            // NOTE: Не создавать каждый кадр.
+            // NOTE: РќРµ СЃРѕР·РґР°РІР°С‚СЊ РєР°Р¶РґС‹Р№ РєР°РґСЂ.
             glBufferData(GL_ARRAY_BUFFER, sectors * 2 * sizeof(float), points, GL_DYNAMIC_DRAW);
 
             glBindVertexArray(vao);
@@ -157,10 +194,56 @@ int main() {
             delete[] points;
         }
 
-        glfwSwapBuffers(window);
         glfwPollEvents();
 
-        // End: Рендеринг.
+        // End: Р РµРЅРґРµСЂРёРЅРі.
+
+        // Begin: ImGui.
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        // РћРєРЅРѕ РґР»СЏ РїРѕС€Р°РіРѕРІРѕРіРѕ РІС‹РїРѕР»РЅРµРЅРёСЏ РёРЅС‚РµРіСЂР°С‚РѕСЂР°.
+        {
+            ImGui::Begin("Integrator");
+
+            if (ImGui::Button("Play")) {
+                integratorControlState.stepModeActive = false;
+
+                // РЎР±СЂР°СЃС‹РІР°РµРј Р°РєРєСѓРјСѓР»СЏС‚РѕСЂ РґРµР»СЊС‚С‹ РІСЂРµРјРµРЅРё.
+                // 
+                // Р’ РїРѕС€Р°РіРѕРІРѕРј СЂРµР¶РёРјРµ РґРµР»СЊС‚Р° РІСЂРµРјРµРЅРё РјРѕР¶РµС‚ РЅР°РєРѕРїРёС‚СЊ Р±РѕР»СЊС€РѕРµ Р·РЅР°С‡РµРЅРёРµ.
+                // РџСЂРё РІРѕР·РІСЂР°С‚Рµ РІ РѕР±С‹С‡РЅС‹Р№ СЂРµР¶РёРј СЌС‚Р° РґРµР»СЊС‚Р° Р±СѓРґРµС‚ СЂР°Р·РґСЂРѕР±Р»РµРЅР° С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕР№ РґРµР»СЊС‚РѕР№ РёРЅС‚РµРіСЂРёСЂРѕРІР°РЅРёСЏ.
+                // Р­С‚Рѕ РґР°СЃС‚ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С€Р°РіРѕРІ РёРЅС‚РµРіСЂРёСЂРѕРІР°РЅРёСЏ,
+                // РєРѕС‚РѕСЂС‹Рµ РґРѕР»Р¶РЅС‹ Р±СѓРґСѓС‚ РІС‹РїРѕР»РЅРёС‚СЊСЃСЏ РѕС„С„Р»Р°Р№РЅ РґРѕ РѕС‚СЂРёСЃРѕРІРєРё СЃР»РµРґСѓСЋС‰РµРіРѕ РєР°РґСЂР°,
+                // С‡С‚Рѕ РІ СЃРІРѕСЋ РѕС‡РµСЂРµРґСЊ Р·Р°РјРµС‚РЅРѕ РїРѕРґРІРµСЃРёС‚ РєР°СЂС‚РёРЅРєСѓ.
+                dtAccum = 0.0f;
+            }
+            
+            ImGui::SameLine();
+            if (ImGui::Button("Pause")) {
+                integratorControlState.stepModeActive = true;
+            }
+
+            ImGui::SameLine();
+            if (ImGui::Button("Step")) {
+                integratorControlState.stepButtonPressed = true;
+            }
+
+            ImGui::SameLine();
+            if (ImGui::Button("Reset")) {
+                integratorControlState.stepModeActive = false;
+                dtAccum = 0.0f;
+            }
+
+            ImGui::End();
+        }
+
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        // End: ImGui.
+
+        glfwSwapBuffers(window);
 
         std::cout << "RENDER LOOP END" << std::endl << std::endl;
     }
@@ -171,6 +254,12 @@ int main() {
     glDeleteBuffers(1, &vbo);
 
     glfwTerminate();
+
+    // Begin: ImGui.
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
+    // End: ImGui.
 
     return 0;
 }
@@ -249,14 +338,14 @@ void HandleCollision(ParticleWorld* world) {
         for (Particle* particleB : world->Particles()) {
             Circle* circleB = dynamic_cast<Circle*>(particleB);
 
-            // Не проверяем коллизию с самим собой.
+            // РќРµ РїСЂРѕРІРµСЂСЏРµРј РєРѕР»Р»РёР·РёСЋ СЃ СЃР°РјРёРј СЃРѕР±РѕР№.
             if (circleA == circleB)
                 continue;
 
             const float actualDist = (circleA->pos - circleB->pos).Length();
-            const float touchDist = circleA->radius + circleB->radius;  // Расстояние, при котором круги соприкасаются.
+            const float touchDist = circleA->radius + circleB->radius;  // Р Р°СЃСЃС‚РѕСЏРЅРёРµ, РїСЂРё РєРѕС‚РѕСЂРѕРј РєСЂСѓРіРё СЃРѕРїСЂРёРєР°СЃР°СЋС‚СЃСЏ.
             if (actualDist <= touchDist) {
-                // Нормаль удара - смотрит из B в A.
+                // РќРѕСЂРјР°Р»СЊ СѓРґР°СЂР° - СЃРјРѕС‚СЂРёС‚ РёР· B РІ A.
                 Vec2 hitNormal = (circleA->pos - circleB->pos).Normalized();
 
                 float penetration = touchDist - actualDist;
@@ -271,30 +360,30 @@ void HandleCollision(ParticleWorld* world) {
 }
 
 void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal) {
-    const float e = 1.0f;   // Коэффициент восстановления - определяет эластичность удара.
+    const float e = 1.0f;   // РљРѕСЌС„С„РёС†РёРµРЅС‚ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ - РѕРїСЂРµРґРµР»СЏРµС‚ СЌР»Р°СЃС‚РёС‡РЅРѕСЃС‚СЊ СѓРґР°СЂР°.
 
-    // Скорость A в предположении, что B неподвижно - относительная скорость.
+    // РЎРєРѕСЂРѕСЃС‚СЊ A РІ РїСЂРµРґРїРѕР»РѕР¶РµРЅРёРё, С‡С‚Рѕ B РЅРµРїРѕРґРІРёР¶РЅРѕ - РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ.
     Vec2 velocityARelB = particleA->velocity - particleB->velocity;
 
-    // Нормальная составляющая относительной скорости A в СК удара, где
-    // СК удара - это СК с осями нормаль/касательная,
-    // причем ось нормали направлена обратно нормали удара,
-    // что даёт положительную проекцию относительной скорости A на нормаль при сближении масс.
+    // РќРѕСЂРјР°Р»СЊРЅР°СЏ СЃРѕСЃС‚Р°РІР»СЏСЋС‰Р°СЏ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕР№ СЃРєРѕСЂРѕСЃС‚Рё A РІ РЎРљ СѓРґР°СЂР°, РіРґРµ
+    // РЎРљ СѓРґР°СЂР° - СЌС‚Рѕ РЎРљ СЃ РѕСЃСЏРјРё РЅРѕСЂРјР°Р»СЊ/РєР°СЃР°С‚РµР»СЊРЅР°СЏ,
+    // РїСЂРёС‡РµРј РѕСЃСЊ РЅРѕСЂРјР°Р»Рё РЅР°РїСЂР°РІР»РµРЅР° РѕР±СЂР°С‚РЅРѕ РЅРѕСЂРјР°Р»Рё СѓРґР°СЂР°,
+    // С‡С‚Рѕ РґР°С‘С‚ РїРѕР»РѕР¶РёС‚РµР»СЊРЅСѓСЋ РїСЂРѕРµРєС†РёСЋ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕР№ СЃРєРѕСЂРѕСЃС‚Рё A РЅР° РЅРѕСЂРјР°Р»СЊ РїСЂРё СЃР±Р»РёР¶РµРЅРёРё РјР°СЃСЃ.
     Vec2 normalAxis = -hitNormal;
     float velocityARelBNormal = Vec2::Dot(velocityARelB, normalAxis);
 
-    // Если массы в состоянии соприкосновения, но при этом покоятся или отдаляются друг от друга, то удара нет.
-    // Такая ситуация возможна, например, сразу после обработки предыдущего удара.
+    // Р•СЃР»Рё РјР°СЃСЃС‹ РІ СЃРѕСЃС‚РѕСЏРЅРёРё СЃРѕРїСЂРёРєРѕСЃРЅРѕРІРµРЅРёСЏ, РЅРѕ РїСЂРё СЌС‚РѕРј РїРѕРєРѕСЏС‚СЃСЏ РёР»Рё РѕС‚РґР°Р»СЏСЋС‚СЃСЏ РґСЂСѓРі РѕС‚ РґСЂСѓРіР°, С‚Рѕ СѓРґР°СЂР° РЅРµС‚.
+    // РўР°РєР°СЏ СЃРёС‚СѓР°С†РёСЏ РІРѕР·РјРѕР¶РЅР°, РЅР°РїСЂРёРјРµСЂ, СЃСЂР°Р·Сѓ РїРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё РїСЂРµРґС‹РґСѓС‰РµРіРѕ СѓРґР°СЂР°.
     if (velocityARelBNormal <= 0.0f)
         return;
 
-    // Ударные импульсы возникают вдоль нормали удара, имеют равные модули и противоположные направления.
+    // РЈРґР°СЂРЅС‹Рµ РёРјРїСѓР»СЊСЃС‹ РІРѕР·РЅРёРєР°СЋС‚ РІРґРѕР»СЊ РЅРѕСЂРјР°Р»Рё СѓРґР°СЂР°, РёРјРµСЋС‚ СЂР°РІРЅС‹Рµ РјРѕРґСѓР»Рё Рё РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅС‹Рµ РЅР°РїСЂР°РІР»РµРЅРёСЏ.
     // 
-    // Почему импульс выражен через обратные массы, а не прямые?
-    // Если обратная масса и скорость второй точки равны нулю, то
-    // данная формула без изменений будет эквивалентна формуле
-    // для вычисления ударного импульса при столкновении точки с неподвижным объектом с бесконечно большой массой.
-    // Поэтому, если мы хотим смоделировать удар о неподвижную стену, достаточно представить стену точкой с нулевой обратной массой.
+    // РџРѕС‡РµРјСѓ РёРјРїСѓР»СЊСЃ РІС‹СЂР°Р¶РµРЅ С‡РµСЂРµР· РѕР±СЂР°С‚РЅС‹Рµ РјР°СЃСЃС‹, Р° РЅРµ РїСЂСЏРјС‹Рµ?
+    // Р•СЃР»Рё РѕР±СЂР°С‚РЅР°СЏ РјР°СЃСЃР° Рё СЃРєРѕСЂРѕСЃС‚СЊ РІС‚РѕСЂРѕР№ С‚РѕС‡РєРё СЂР°РІРЅС‹ РЅСѓР»СЋ, С‚Рѕ
+    // РґР°РЅРЅР°СЏ С„РѕСЂРјСѓР»Р° Р±РµР· РёР·РјРµРЅРµРЅРёР№ Р±СѓРґРµС‚ СЌРєРІРёРІР°Р»РµРЅС‚РЅР° С„РѕСЂРјСѓР»Рµ
+    // РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ СѓРґР°СЂРЅРѕРіРѕ РёРјРїСѓР»СЊСЃР° РїСЂРё СЃС‚РѕР»РєРЅРѕРІРµРЅРёРё С‚РѕС‡РєРё СЃ РЅРµРїРѕРґРІРёР¶РЅС‹Рј РѕР±СЉРµРєС‚РѕРј СЃ Р±РµСЃРєРѕРЅРµС‡РЅРѕ Р±РѕР»СЊС€РѕР№ РјР°СЃСЃРѕР№.
+    // РџРѕСЌС‚РѕРјСѓ, РµСЃР»Рё РјС‹ С…РѕС‚РёРј СЃРјРѕРґРµР»РёСЂРѕРІР°С‚СЊ СѓРґР°СЂ Рѕ РЅРµРїРѕРґРІРёР¶РЅСѓСЋ СЃС‚РµРЅСѓ, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ СЃС‚РµРЅСѓ С‚РѕС‡РєРѕР№ СЃ РЅСѓР»РµРІРѕР№ РѕР±СЂР°С‚РЅРѕР№ РјР°СЃСЃРѕР№.
     float invMassA = particleA->invMass;
     float invMassB = particleB->invMass;
     float impulseAbs = velocityARelBNormal * (1 + e) / (invMassA + invMassB);
@@ -309,16 +398,16 @@ void ResolvePenetration(Particle* particleA, Particle* particleB, Vec2 hitNormal
     float invMassA = particleA->invMass;
     float invMassB = particleB->invMass;
 
-    // Мы делим полную величину проникновения между двумя точками по такому принципу:
-    // во сколько раз первая масса больше второй, во столько раз смещение первой массы будет меньше смещения второй.
-    // Другими словами, отношение смещений точек будет равно обратному отношению их масс.
+    // РњС‹ РґРµР»РёРј РїРѕР»РЅСѓСЋ РІРµР»РёС‡РёРЅСѓ РїСЂРѕРЅРёРєРЅРѕРІРµРЅРёСЏ РјРµР¶РґСѓ РґРІСѓРјСЏ С‚РѕС‡РєР°РјРё РїРѕ С‚Р°РєРѕРјСѓ РїСЂРёРЅС†РёРїСѓ:
+    // РІРѕ СЃРєРѕР»СЊРєРѕ СЂР°Р· РїРµСЂРІР°СЏ РјР°СЃСЃР° Р±РѕР»СЊС€Рµ РІС‚РѕСЂРѕР№, РІРѕ СЃС‚РѕР»СЊРєРѕ СЂР°Р· СЃРјРµС‰РµРЅРёРµ РїРµСЂРІРѕР№ РјР°СЃСЃС‹ Р±СѓРґРµС‚ РјРµРЅСЊС€Рµ СЃРјРµС‰РµРЅРёСЏ РІС‚РѕСЂРѕР№.
+    // Р”СЂСѓРіРёРјРё СЃР»РѕРІР°РјРё, РѕС‚РЅРѕС€РµРЅРёРµ СЃРјРµС‰РµРЅРёР№ С‚РѕС‡РµРє Р±СѓРґРµС‚ СЂР°РІРЅРѕ РѕР±СЂР°С‚РЅРѕРјСѓ РѕС‚РЅРѕС€РµРЅРёСЋ РёС… РјР°СЃСЃ.
     //
-    // В чем преимущество выражения смещения через обратные массы?
-    // Если обратная масса второй точки будет равна нулю,
-    // то первая точка будет сдвинута на полную величину проникновения, а вторая точка не изменит положения.
+    // Р’ С‡РµРј РїСЂРµРёРјСѓС‰РµСЃС‚РІРѕ РІС‹СЂР°Р¶РµРЅРёСЏ СЃРјРµС‰РµРЅРёСЏ С‡РµСЂРµР· РѕР±СЂР°С‚РЅС‹Рµ РјР°СЃСЃС‹?
+    // Р•СЃР»Рё РѕР±СЂР°С‚РЅР°СЏ РјР°СЃСЃР° РІС‚РѕСЂРѕР№ С‚РѕС‡РєРё Р±СѓРґРµС‚ СЂР°РІРЅР° РЅСѓР»СЋ,
+    // С‚Рѕ РїРµСЂРІР°СЏ С‚РѕС‡РєР° Р±СѓРґРµС‚ СЃРґРІРёРЅСѓС‚Р° РЅР° РїРѕР»РЅСѓСЋ РІРµР»РёС‡РёРЅСѓ РїСЂРѕРЅРёРєРЅРѕРІРµРЅРёСЏ, Р° РІС‚РѕСЂР°СЏ С‚РѕС‡РєР° РЅРµ РёР·РјРµРЅРёС‚ РїРѕР»РѕР¶РµРЅРёСЏ.
     //
-    // Следовательно, если вторая точка представляет, например, неподвижную стену,
-    // то в устранении проникновения она участвовать не будет.
+    // РЎР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, РµСЃР»Рё РІС‚РѕСЂР°СЏ С‚РѕС‡РєР° РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚, РЅР°РїСЂРёРјРµСЂ, РЅРµРїРѕРґРІРёР¶РЅСѓСЋ СЃС‚РµРЅСѓ,
+    // С‚Рѕ РІ СѓСЃС‚СЂР°РЅРµРЅРёРё РїСЂРѕРЅРёРєРЅРѕРІРµРЅРёСЏ РѕРЅР° СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РЅРµ Р±СѓРґРµС‚.
     float displacementA = penetration * invMassA / (invMassA + invMassB);
     float displacementB = penetration - displacementA;
 
@@ -331,7 +420,7 @@ void HandleCollisionWithBorders(Circle* circle) {
     Vec2 hitNormal;
     bool coll = false;
 
-    // Левая.
+    // Р›РµРІР°СЏ.
     if (circle->pos.x - circle->radius <= -10.0f) {
         std::cout << "Hit left" << std::endl;
 
@@ -342,7 +431,7 @@ void HandleCollisionWithBorders(Circle* circle) {
         coll = true;
     }
 
-    // Правая.
+    // РџСЂР°РІР°СЏ.
     if (circle->pos.x + circle->radius >= 10.0f) {
         std::cout << "Hit right" << std::endl;
 
@@ -353,7 +442,7 @@ void HandleCollisionWithBorders(Circle* circle) {
         coll = true;
     }
 
-    // Верхняя.
+    // Р’РµСЂС…РЅСЏСЏ.
     if (circle->pos.y + circle->radius >= 7.5f) {
         std::cout << "Hit up" << std::endl;
 
@@ -364,7 +453,7 @@ void HandleCollisionWithBorders(Circle* circle) {
         coll = true;
     }
 
-    // Нижняя.
+    // РќРёР¶РЅСЏСЏ.
     if (circle->pos.y - circle->radius <= -7.5f) {
         std::cout << "Hit bottom" << std::endl;
 
@@ -376,8 +465,8 @@ void HandleCollisionWithBorders(Circle* circle) {
     }
 
     if (coll) {
-        // Объект с нулевой обратной массой (т.е. с бесконечно большой массой)
-        // для представления неподвижных границ экрана.
+        // РћР±СЉРµРєС‚ СЃ РЅСѓР»РµРІРѕР№ РѕР±СЂР°С‚РЅРѕР№ РјР°СЃСЃРѕР№ (С‚.Рµ. СЃ Р±РµСЃРєРѕРЅРµС‡РЅРѕ Р±РѕР»СЊС€РѕР№ РјР°СЃСЃРѕР№)
+        // РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РЅРµРїРѕРґРІРёР¶РЅС‹С… РіСЂР°РЅРёС† СЌРєСЂР°РЅР°.
         Particle immovableObject(Vec2::Zero, Vec2::Zero, 1.0f);
         immovableObject.invMass = 0.0f;
 
