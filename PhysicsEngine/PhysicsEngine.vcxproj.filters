@@ -48,6 +48,9 @@
     <ClCompile Include="ParticleBuoyantForce.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ParticleAnchoredBungeeForce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ParticleWorld.h">
@@ -81,6 +84,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ParticleBuoyantForce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleAnchoredBungeeForce.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

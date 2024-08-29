@@ -9,7 +9,7 @@
 #include "PhysicsEngine/ParticleForceRegistry.h"
 #include "PhysicsEngine/ParticleGravityForce.h"
 #include "PhysicsEngine/ParticleLinearDragForce.h"
-#include "PhysicsEngine/ParticleAnchoredSpringForce.h"
+#include "PhysicsEngine/ParticleAnchoredBungeeForce.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -76,17 +76,17 @@ int main() {
     ParticleWorld world;
 
     ParticleGravityForce gravityForce;
-    ParticleLinearDragForce dragForce(2.0f);
+    ParticleLinearDragForce dragForce(0.5f);
 
-    Particle p(Vec2(0.0f, -0.5f), Vec2::Zero, 1.0f);
+    Particle p(Vec2(0.0f, -3.0f), Vec2::Zero, 1.0f);
     world.AddParticle(&p);
 
     Vec2 anchor = Vec2::Zero;
-    ParticleAnchoredSpringForce springForce(1.0f, 10.0f, anchor);
+    ParticleAnchoredBungeeForce springForce(2.0f, 100.0f, anchor);
 
     world.forceRegistry.Add(&p, &springForce);
     world.forceRegistry.Add(&p, &dragForce);
-    //world.forceRegistry.Add(&p, &gravityForce);
+    world.forceRegistry.Add(&p, &gravityForce);
 
     // Создаем статичную частицу для визуализации точки крепления.
     Particle anchorParticle(anchor, Vec2::Zero, 1.0f);
