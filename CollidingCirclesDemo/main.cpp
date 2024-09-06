@@ -118,8 +118,14 @@ int main() {
 
     Circle circleA(Vec2(-5.5f, 3.5f), Vec2(20.0f, -12.0f), 0.785398f, 0.785398f);
     Circle circleB(Vec2(0.5f, 0.5f), Vec2(-2.0f, 1.0f), 3.0f, 3.0f);
-    world.AddParticle(&circleA);
-    world.AddParticle(&circleB);
+    world.add_particle(&circleA);
+    world.add_particle(&circleB);
+
+    world.force_registry.add(&circleA, &gravityForce);
+    world.force_registry.add(&circleB, &gravityForce);
+
+    world.force_registry.add(&circleA, &dragForce);
+    world.force_registry.add(&circleB, &dragForce);
 
     glfwSetTime(0);
     double dtAccum = 0;

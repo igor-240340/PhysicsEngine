@@ -83,12 +83,12 @@ int main() {
 
     ParticleBungeeForce bungeeForceOnA(1.0f, 10.0f, &pB);
     ParticleBungeeForce bungeeForceOnB(1.0f, 10.0f, &pA);
-    world.AddParticle(&pA);
-    world.AddParticle(&pB);
-    world.forceRegistry.Add(&pA, &bungeeForceOnA);
-    world.forceRegistry.Add(&pB, &bungeeForceOnB);
-    world.forceRegistry.Add(&pA, &dragForce);
-    world.forceRegistry.Add(&pB, &dragForce);
+    world.add_particle(&pA);
+    world.add_particle(&pB);
+    world.force_registry.add(&pA, &bungeeForceOnA);
+    world.force_registry.add(&pB, &bungeeForceOnB);
+    world.force_registry.add(&pA, &dragForce);
+    world.force_registry.add(&pB, &dragForce);
 
     glfwSetTime(0);
     double dtAccum = 0;

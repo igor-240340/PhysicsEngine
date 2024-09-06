@@ -22,6 +22,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParticleAnchoredBungeeDemo"
 		{8FC23A69-2DB0-4D91-8056-A94FFF7E9923} = {8FC23A69-2DB0-4D91-8056-A94FFF7E9923}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParticleCableDemo", "ParticleCableDemo\ParticleCableDemo.vcxproj", "{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -94,6 +96,14 @@ Global
 		{81A5A26E-B718-4FE8-88FB-C659AA6BBF8B}.Release|x64.Build.0 = Release|x64
 		{81A5A26E-B718-4FE8-88FB-C659AA6BBF8B}.Release|x86.ActiveCfg = Release|Win32
 		{81A5A26E-B718-4FE8-88FB-C659AA6BBF8B}.Release|x86.Build.0 = Release|Win32
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Debug|x64.ActiveCfg = Debug|x64
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Debug|x64.Build.0 = Debug|x64
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Debug|x86.ActiveCfg = Debug|Win32
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Debug|x86.Build.0 = Debug|Win32
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Release|x64.ActiveCfg = Release|x64
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Release|x64.Build.0 = Release|x64
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Release|x86.ActiveCfg = Release|Win32
+		{8C3D77C7-8737-47CE-9C0C-0AD8826CF603}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

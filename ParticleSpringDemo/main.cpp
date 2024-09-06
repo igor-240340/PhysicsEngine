@@ -84,11 +84,11 @@ int main() {
 
     ParticleSpringForce springForceOnA(0.0f, 10.0f, &pB);
     ParticleSpringForce springForceOnB(0.0f, 10.0f, &pA);
-    world.AddParticle(&pA);
-    world.AddParticle(&pB);
+    world.add_particle(&pA);
+    world.add_particle(&pB);
     //world.forceRegistry.Add(&pA, &gravityForce);
-    world.forceRegistry.Add(&pA, &springForceOnA);
-    world.forceRegistry.Add(&pB, &springForceOnB);
+    world.force_registry.add(&pA, &springForceOnA);
+    world.force_registry.add(&pB, &springForceOnB);
     //world.forceRegistry.Add(&pA, &dragForce);
     //world.forceRegistry.Add(&pB, &dragForce);
 

@@ -79,18 +79,18 @@ int main() {
     ParticleLinearDragForce dragForce(2.0f);
 
     Particle p(Vec2(0.0f, -0.5f), Vec2::Zero, 1.0f);
-    world.AddParticle(&p);
+    world.add_particle(&p);
 
     Vec2 anchor = Vec2::Zero;
     ParticleAnchoredSpringForce springForce(1.0f, 10.0f, anchor);
 
-    world.forceRegistry.Add(&p, &springForce);
-    world.forceRegistry.Add(&p, &dragForce);
+    world.force_registry.add(&p, &springForce);
+    world.force_registry.add(&p, &dragForce);
     //world.forceRegistry.Add(&p, &gravityForce);
 
     // Создаем статичную частицу для визуализации точки крепления.
     Particle anchorParticle(anchor, Vec2::Zero, 1.0f);
-    world.AddParticle(&anchorParticle);
+    world.add_particle(&anchorParticle);
 
     glfwSetTime(0);
     double dtAccum = 0;

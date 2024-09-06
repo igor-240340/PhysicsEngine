@@ -1,4 +1,4 @@
-﻿#include <cmath>
+#include <cmath>
 #include <iostream>
 
 #include <glad/glad.h>
@@ -9,7 +9,7 @@
 #include "PhysicsEngine/ParticleForceRegistry.h"
 #include "PhysicsEngine/ParticleGravityForce.h"
 #include "PhysicsEngine/ParticleLinearDragForce.h"
-#include "PhysicsEngine/ParticleAnchoredBungeeForce.h"
+#include "PhysicsEngine/ParticleCable.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -75,22 +75,24 @@ int main() {
     // Настройка физического мира.
     ParticleWorld world;
 
-    ParticleGravityForce gravityForce;
-    ParticleLinearDragForce dragForce(1.5f);
+    ParticleGravityForce gravity_force;
+    ParticleLinearDragForce drag_force(0.5f);
 
-    Particle p(Vec2(0.0f, -3.0f), Vec2::Zero, 1.0f);
-    world.add_particle(&p);
-    
-    Vec2 anchor = Vec2::Zero;
-    ParticleAnchoredBungeeForce springForce(2.0f, 100.0f, anchor);
+    Particle particle_a(Vec2(0.0f, 0.0f), Vec2::Left * 10.0f, 2.0f);
+    Particle particle_b(Vec2(2.0f, 0.0f), Vec2::Right * 5.0f, 5.0f);
+    world.add_particle(&particle_a);
+    world.add_particle(&particle_b);
 
-    world.force_registry.add(&p, &springForce);
-    world.force_registry.add(&p, &dragForce);
-    world.force_registry.add(&p, &gravityForce);
+    ParticleCable cable_a_b;
+    cable_a_b.max_length = 3.0f;
+    cable_a_b.particle_a = &particle_a;
+    cable_a_b.particle_b = &particle_b;
+    cable_a_b.restitution = 0.3f;
 
-    // Создаем статичную массу для визуализации точки крепления.
-    Particle anchorParticle(anchor, Vec2::Zero, 1.0f);
-    world.add_particle(&anchorParticle);
+    world.add_contact_generator(&cable_a_b);
+
+    //world.forceRegistry.Add(&p, &dragForce);
+    //world.forceRegistry.Add(&p, &gravityForce);
 
     glfwSetTime(0);
     double dtAccum = 0;

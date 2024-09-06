@@ -89,10 +89,10 @@ int main() {
     Particle pA(Vec2(-9.0f, 7.5f), Vec2::Zero, 500.0f); // Кубический метр дерева.
 
     ParticleBuoyantForce buoyantForceOnA(liquidSurfaceY, particleSize, waterDensity, hydroDragCoeff);
-    world.AddParticle(&pA);
-    world.forceRegistry.Add(&pA, &buoyantForceOnA);
-    world.forceRegistry.Add(&pA, &gravityForce);
-    world.forceRegistry.Add(&pA, &dragForce);
+    world.add_particle(&pA);
+    world.force_registry.add(&pA, &buoyantForceOnA);
+    world.force_registry.add(&pA, &gravityForce);
+    world.force_registry.add(&pA, &dragForce);
 
     // Для отрисовки вспомогательных объектов.
     Vec2 liquidLeftPoint(-10.0f, liquidSurfaceY);

@@ -2,7 +2,7 @@
 
 #include "ParticleForceRegistry.h"
 
-void ParticleForceRegistry::Add(Particle* particle, ParticleForce* force) {
+void ParticleForceRegistry::add(Particle* particle, ParticleForce* force) {
     ParticleForcePair pair;
     pair.particle = particle;
     pair.force = force;

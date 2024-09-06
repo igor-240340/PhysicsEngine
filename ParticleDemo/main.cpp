@@ -80,9 +80,9 @@ int main() {
 
     Particle p1(Vec2::Zero, Vec2(5.0f, 15.0f), 1.0f);
 
-    world.AddParticle(&p1);
-    world.forceRegistry.Add(&p1, &gravityForce);
-    world.forceRegistry.Add(&p1, &dragForce);
+    world.add_particle(&p1);
+    world.force_registry.add(&p1, &gravityForce);
+    world.force_registry.add(&p1, &dragForce);
 
     glfwSetTime(0);
     double dtAccum = 0;
