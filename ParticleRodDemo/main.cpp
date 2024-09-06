@@ -10,6 +10,7 @@
 #include "PhysicsEngine/ParticleGravityForce.h"
 #include "PhysicsEngine/ParticleLinearDragForce.h"
 #include "PhysicsEngine/ParticleCable.h"
+#include "PhysicsEngine/ParticleRod.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
@@ -76,35 +77,53 @@ int main() {
     ParticleWorld world;
 
     ParticleGravityForce gravity_force;
-    ParticleLinearDragForce drag_force(0.5f);
+    ParticleLinearDragForce drag_force(2.0f);
 
     Particle particle_a(Vec2(0.0f, 4.0f), Vec2::Zero, 1.0f);
     particle_a.invMass = 0.0f;
 
     Particle particle_b(Vec2(0.0f, 0.0f), Vec2::Left * 10.0f, 2.0f);
     Particle particle_c(Vec2(2.0f, 0.0f), Vec2::Right * 5.0f, 5.0f);
+    Particle particle_d(Vec2(0.0f, -2.0f), Vec2::Zero, 8.502655f);
+    
     world.add_particle(&particle_a);
     world.add_particle(&particle_b);
     world.add_particle(&particle_c);
+    world.add_particle(&particle_d);
 
     ParticleCable cable_a_b;
     cable_a_b.max_length = 5.0f;
     cable_a_b.particle_a = &particle_a;
     cable_a_b.particle_b = &particle_b;
-    cable_a_b.restitution = 0.5f;
+    cable_a_b.restitution = 1.0f;
 
-    ParticleCable cable_b_c;
-    cable_b_c.max_length = 3.0f;
-    cable_b_c.particle_a = &particle_b;
-    cable_b_c.particle_b = &particle_c;
-    cable_b_c.restitution = 0.3f;
+    ParticleRod rod_b_c;
+    rod_b_c.max_length = 2.0f;
+    rod_b_c.particle_a = &particle_b;
+    rod_b_c.particle_b = &particle_c;
+
+    ParticleRod rod_b_d;
+    rod_b_d.max_length = 2.0f;
+    rod_b_d.particle_a = &particle_b;
+    rod_b_d.particle_b = &particle_d;
+
+    ParticleRod rod_d_c;
+    rod_d_c.max_length = 2.828427f;
+    rod_d_c.particle_a = &particle_d;
+    rod_d_c.particle_b = &particle_c;
 
     world.add_contact_generator(&cable_a_b);
-    world.add_contact_generator(&cable_b_c);
+    world.add_contact_generator(&rod_b_c);
+    world.add_contact_generator(&rod_b_d);
+    world.add_contact_generator(&rod_d_c);
 
-    //world.forceRegistry.Add(&p, &dragForce);
     world.force_registry.add(&particle_b, &gravity_force);
     world.force_registry.add(&particle_c, &gravity_force);
+    world.force_registry.add(&particle_d, &gravity_force);
+
+    world.force_registry.add(&particle_b, &drag_force);
+    world.force_registry.add(&particle_c, &drag_force);
+    world.force_registry.add(&particle_d, &drag_force);
 
     glfwSetTime(0);
     double dtAccum = 0;

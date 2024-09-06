@@ -20,6 +20,9 @@ void ParticleWorld::Step(float dt) {
 
     // Интегрируем ускорение и скорость.
     for (Particle* p : particles) {
+        if (p->invMass == 0.0f)
+            continue;
+
         p->pos += p->velocity * dt;
 
         std::cout << "===\n";
