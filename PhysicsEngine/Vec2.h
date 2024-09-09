@@ -1,35 +1,36 @@
 ﻿#pragma once
 
-class Vec2
+class Vec3
 {
 public:
     float x;
     float y;
+    float z;
 
 public:
-    static const Vec2 Zero;
-    static const Vec2 Left;
-    static const Vec2 Right;
-    static const Vec2 Up;
-    static const Vec2 Down;
+    static const Vec3 zero;
+    static const Vec3 left;
+    static const Vec3 right;
+    static const Vec3 up;
+    static const Vec3 down;
 
 public:
-    static float Dot(const Vec2& a, const Vec2& b);
+    static float dot(const Vec3& a, const Vec3& b);
 
 public:
-    Vec2();
-    Vec2(float x, float y);
+    Vec3();
+    Vec3(float x, float y, float z);
 
-    float Length() const;
-    float LengthSquared() const;
-    Vec2 Normalized() const; // Возвращает нормализованную копию вектора.
+    float length() const;
+    float length_squared() const;
+    Vec3 normalized() const; // Возвращает нормализованную копию вектора.
     
-    Vec2 operator+(const Vec2& b);
-    Vec2 operator+=(const Vec2& b);
-    Vec2 operator-(const Vec2& b);
-    Vec2 operator*(float scalar) const;
-    Vec2 operator/(float scalar) const;
-    Vec2 operator-() const; // Возвращает инвертированную копию вектора.
+    Vec3 operator+(const Vec3& b);
+    Vec3 operator+=(const Vec3& b);
+    Vec3 operator-(const Vec3& b);
+    Vec3 operator*(float scalar) const;
+    Vec3 operator/(float scalar) const;
+    Vec3 operator-() const; // Возвращает инвертированную копию вектора.
 
-    friend Vec2 operator*(const float scalar, const Vec2& a);
+    friend Vec3 operator*(const float scalar, const Vec3& a);
 };

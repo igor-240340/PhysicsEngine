@@ -23,8 +23,8 @@ void ParticleContact::resolve_velocity() {
     float inv_mass_a = particle_a->invMass;
     float inv_mass_b = particle_b->invMass;
     float impulse_abs = normal_velocity * (1 + restitution) / (inv_mass_a + inv_mass_b);
-    Vec2 impulse_a = hit_normal * impulse_abs;
-    Vec2 impulse_b = -hit_normal * impulse_abs;
+    Vec3 impulse_a = hit_normal * impulse_abs;
+    Vec3 impulse_b = -hit_normal * impulse_abs;
 
     particle_a->velocity += impulse_a * particle_a->invMass;
     particle_b->velocity += impulse_b * particle_b->invMass;
@@ -53,13 +53,13 @@ void ParticleContact::resolve_interpenetration() {
 
 float ParticleContact::calculate_normal_velocity() {
     // Скорость A в предположении, что B неподвижно - относительная скорость.
-    Vec2 velocity_a_rel_b = particle_a->velocity - particle_b->velocity;
+    Vec3 velocity_a_rel_b = particle_a->velocity - particle_b->velocity;
 
     // Нормальная составляющая относительной скорости A в СК удара, где
     // СК удара - это СК с осями нормаль/касательная,
     // причем ось нормали направлена обратно нормали удара,
     // что даёт положительную проекцию относительной скорости A на нормаль, когда A движется против нормали удара.
-    Vec2 normal_axis = -hit_normal;
+    Vec3 normal_axis = -hit_normal;
 
-    return Vec2::Dot(velocity_a_rel_b, normal_axis);
+    return Vec3::dot(velocity_a_rel_b, normal_axis);
 }

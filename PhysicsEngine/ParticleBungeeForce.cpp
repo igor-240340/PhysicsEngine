@@ -7,14 +7,14 @@ ParticleBungeeForce::ParticleBungeeForce(float restLength, float coeff, Particle
 }
 
 void ParticleBungeeForce::ApplyTo(Particle* particleA) {
-    Vec2 springVector = particleB->pos - particleA->pos;
+    Vec3 springVector = particleB->pos - particleA->pos;
 
-    float springCompression = springVector.Length() - restLength;
+    float springCompression = springVector.length() - restLength;
     // Сила генерируется только когда пружина растянута.
     if (springCompression <= 0)
         return;
 
-    Vec2 springDirFromAToB = springVector.Normalized();
-    Vec2 force = springDirFromAToB * (springCompression * coeff);
+    Vec3 springDirFromAToB = springVector.normalized();
+    Vec3 force = springDirFromAToB * (springCompression * coeff);
     particleA->ApplyForce(force);
 }

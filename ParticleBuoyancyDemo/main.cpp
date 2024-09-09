@@ -86,7 +86,7 @@ int main() {
     float hydroDragCoeff = 1000.0f;
     float particleSize = 1.0f;
     //Particle pA(Vec2(-9.0f, -7.5f), Vec2::Zero, 300.0f); // Кубический метр дерева.
-    Particle pA(Vec2(-9.0f, 7.5f), Vec2::Zero, 500.0f); // Кубический метр дерева.
+    Particle pA(Vec3(-9.0f, 7.5f, 0.0f), Vec3::zero, 500.0f); // Кубический метр дерева.
 
     ParticleBuoyantForce buoyantForceOnA(liquidSurfaceY, particleSize, waterDensity, hydroDragCoeff);
     world.add_particle(&pA);
@@ -95,8 +95,8 @@ int main() {
     world.force_registry.add(&pA, &dragForce);
 
     // Для отрисовки вспомогательных объектов.
-    Vec2 liquidLeftPoint(-10.0f, liquidSurfaceY);
-    Vec2 liquidRightPoint(10.0f, liquidSurfaceY);
+    Vec3 liquidLeftPoint(-10.0f, liquidSurfaceY, 0.0f);
+    Vec3 liquidRightPoint(10.0f, liquidSurfaceY, 0.0f);
 
     glfwSetTime(0);
     double dtAccum = 0;

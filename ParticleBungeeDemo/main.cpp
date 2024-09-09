@@ -78,8 +78,8 @@ int main() {
     ParticleGravityForce gravityForce;
     ParticleLinearDragForce dragForce(2.0f);
 
-    Particle pA(Vec2::Zero, Vec2::Zero, 100.0f);
-    Particle pB(Vec2::Zero, Vec2::Down * 10.0f, 1.0f);
+    Particle pA(Vec3::zero, Vec3::zero, 100.0f);
+    Particle pB(Vec3::zero, Vec3::down * 10.0f, 1.0f);
 
     ParticleBungeeForce bungeeForceOnA(1.0f, 10.0f, &pB);
     ParticleBungeeForce bungeeForceOnB(1.0f, 10.0f, &pA);

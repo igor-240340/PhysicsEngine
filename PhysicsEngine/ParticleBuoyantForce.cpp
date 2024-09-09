@@ -43,12 +43,12 @@ void ParticleBuoyantForce::ApplyTo(Particle* particle) {
 
     // По определению, выталкивающая сила по модулю равна весу вытесненной жидкости и направлена вверх.
     float displacedLiquidWeightY = (displacedLiquidVolume * liquidDensity) * GravityAccelY;
-    Vec2 buoyantForce(0.0f, -displacedLiquidWeightY);
+    Vec3 buoyantForce(0.0f, -displacedLiquidWeightY, 0.0f);
     particle->ApplyForce(buoyantForce);
     
     std::cout << "buoyantForce.y: " << buoyantForce.y << std::endl;
 
-    Vec2 hydroDragForce = -particle->velocity * hydroDragCoeff;
+    Vec3 hydroDragForce = -particle->velocity * hydroDragCoeff;
     particle->ApplyForce(hydroDragForce);
 
     std::cout << "hydroDragForce.y: " << hydroDragForce.y << std::endl;

@@ -32,9 +32,9 @@ IntegratorControlState integratorControlState = {
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 GLuint compile_shaders();
 
-void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal);
+void ResolveVelocity(Particle* particleA, Particle* particleB, Vec3 hitNormal);
 void HandleCollision(ParticleWorld* world);
-void ResolvePenetration(Particle* particleA, Particle* particleB, Vec2 hitNormal, float penetration);
+void ResolvePenetration(Particle* particleA, Particle* particleB, Vec3 hitNormal, float penetration);
 void HandleCollisionWithBorders(Circle* particle);
 
 int main() {
@@ -116,8 +116,8 @@ int main() {
     ParticleGravityForce gravityForce;
     ParticleLinearDragForce dragForce(0.5f);
 
-    Circle circleA(Vec2(-5.5f, 3.5f), Vec2(20.0f, -12.0f), 0.785398f, 0.785398f);
-    Circle circleB(Vec2(0.5f, 0.5f), Vec2(-2.0f, 1.0f), 3.0f, 3.0f);
+    Circle circleA(Vec3(-5.5f, 3.5f, 0.0f), Vec3(20.0f, -12.0f, 0.0f), 0.785398f, 0.785398f);
+    Circle circleB(Vec3(0.5f, 0.5f, 0.0f), Vec3(-2.0f, 1.0f, 0.0f), 3.0f, 3.0f);
     world.add_particle(&circleA);
     world.add_particle(&circleB);
 
@@ -348,11 +348,11 @@ void HandleCollision(ParticleWorld* world) {
             if (circleA == circleB)
                 continue;
 
-            const float actualDist = (circleA->pos - circleB->pos).Length();
+            const float actualDist = (circleA->pos - circleB->pos).length();
             const float touchDist = circleA->radius + circleB->radius;  // Расстояние, при котором круги соприкасаются.
             if (actualDist <= touchDist) {
                 // Нормаль удара - смотрит из B в A.
-                Vec2 hitNormal = (circleA->pos - circleB->pos).Normalized();
+                Vec3 hitNormal = (circleA->pos - circleB->pos).normalized();
 
                 float penetration = touchDist - actualDist;
 
@@ -365,18 +365,18 @@ void HandleCollision(ParticleWorld* world) {
     }
 }
 
-void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal) {
+void ResolveVelocity(Particle* particleA, Particle* particleB, Vec3 hitNormal) {
     const float e = 1.0f;   // Коэффициент восстановления - определяет эластичность удара.
 
     // Скорость A в предположении, что B неподвижно - относительная скорость.
-    Vec2 velocityARelB = particleA->velocity - particleB->velocity;
+    Vec3 velocityARelB = particleA->velocity - particleB->velocity;
 
     // Нормальная составляющая относительной скорости A в СК удара, где
     // СК удара - это СК с осями нормаль/касательная,
     // причем ось нормали направлена обратно нормали удара,
     // что даёт положительную проекцию относительной скорости A на нормаль при сближении масс.
-    Vec2 normalAxis = -hitNormal;
-    float velocityARelBNormal = Vec2::Dot(velocityARelB, normalAxis);
+    Vec3 normalAxis = -hitNormal;
+    float velocityARelBNormal = Vec3::dot(velocityARelB, normalAxis);
 
     // Если массы в состоянии соприкосновения, но при этом покоятся или отдаляются друг от друга, то удара нет.
     // Такая ситуация возможна, например, сразу после обработки предыдущего удара.
@@ -393,14 +393,14 @@ void ResolveVelocity(Particle* particleA, Particle* particleB, Vec2 hitNormal) {
     float invMassA = particleA->invMass;
     float invMassB = particleB->invMass;
     float impulseAbs = velocityARelBNormal * (1 + e) / (invMassA + invMassB);
-    Vec2 impulseA = hitNormal * impulseAbs;
-    Vec2 impulseB = -hitNormal * impulseAbs;
+    Vec3 impulseA = hitNormal * impulseAbs;
+    Vec3 impulseB = -hitNormal * impulseAbs;
 
     particleA->velocity += impulseA * particleA->invMass;
     particleB->velocity += impulseB * particleB->invMass;
 }
 
-void ResolvePenetration(Particle* particleA, Particle* particleB, Vec2 hitNormal, float penetration) {
+void ResolvePenetration(Particle* particleA, Particle* particleB, Vec3 hitNormal, float penetration) {
     float invMassA = particleA->invMass;
     float invMassB = particleB->invMass;
 
@@ -423,14 +423,14 @@ void ResolvePenetration(Particle* particleA, Particle* particleB, Vec2 hitNormal
 
 void HandleCollisionWithBorders(Circle* circle) {
     float penetration;
-    Vec2 hitNormal;
+    Vec3 hitNormal;
     bool coll = false;
 
     // Левая.
     if (circle->pos.x - circle->radius <= -10.0f) {
         std::cout << "Hit left" << std::endl;
 
-        hitNormal = Vec2::Right;
+        hitNormal = Vec3::right;
         float actualDist = fabs(-10.0f - circle->pos.x);
         float touchDist = circle->radius;
         penetration = touchDist - actualDist;
@@ -441,7 +441,7 @@ void HandleCollisionWithBorders(Circle* circle) {
     if (circle->pos.x + circle->radius >= 10.0f) {
         std::cout << "Hit right" << std::endl;
 
-        hitNormal = Vec2::Left;
+        hitNormal = Vec3::left;
         float actualDist = fabs(10.0f - circle->pos.x);
         float touchDist = circle->radius;
         penetration = touchDist - actualDist;
@@ -452,7 +452,7 @@ void HandleCollisionWithBorders(Circle* circle) {
     if (circle->pos.y + circle->radius >= 7.5f) {
         std::cout << "Hit up" << std::endl;
 
-        hitNormal = Vec2::Down;
+        hitNormal = Vec3::down;
         float actualDist = fabs(7.5f - circle->pos.y);
         float touchDist = circle->radius;
         penetration = touchDist - actualDist;
@@ -463,7 +463,7 @@ void HandleCollisionWithBorders(Circle* circle) {
     if (circle->pos.y - circle->radius <= -7.5f) {
         std::cout << "Hit bottom" << std::endl;
 
-        hitNormal = Vec2::Up;
+        hitNormal = Vec3::up;
         float actualDist = fabs(-7.5f - circle->pos.y);
         float touchDist = circle->radius;
         penetration = touchDist - actualDist;
@@ -473,7 +473,7 @@ void HandleCollisionWithBorders(Circle* circle) {
     if (coll) {
         // Объект с нулевой обратной массой (т.е. с бесконечно большой массой)
         // для представления неподвижных границ экрана.
-        Particle immovableObject(Vec2::Zero, Vec2::Zero, 1.0f);
+        Particle immovableObject(Vec3::zero, Vec3::zero, 1.0f);
         immovableObject.invMass = 0.0f;
 
         ResolveVelocity(circle, &immovableObject, hitNormal);

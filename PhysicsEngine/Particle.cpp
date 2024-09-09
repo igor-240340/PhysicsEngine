@@ -1,6 +1,6 @@
 ﻿#include "Particle.h"
 
-Particle::Particle(Vec2 pos, Vec2 velocity, float mass) {
+Particle::Particle(Vec3 pos, Vec3 velocity, float mass) {
     this->pos = pos;
     this->velocity = velocity;
 
@@ -8,6 +8,6 @@ Particle::Particle(Vec2 pos, Vec2 velocity, float mass) {
     this->invMass = 1.0f / mass;
 }
 
-void Particle::ApplyForce(Vec2 force) {
+void Particle::ApplyForce(Vec3 force) {
     netForce += force;
 }

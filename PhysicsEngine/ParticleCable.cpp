@@ -7,7 +7,7 @@ bool ParticleCable::generate_contact(ParticleContact& contact) const {
         contact.particle_b = particle_b;
         contact.restitution = restitution;
         contact.penetration = current_length - max_length;
-        contact.hit_normal = (particle_b->pos - particle_a->pos).Normalized();
+        contact.hit_normal = (particle_b->pos - particle_a->pos).normalized();
         
         return true;
     }

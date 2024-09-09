@@ -79,12 +79,12 @@ int main() {
     ParticleGravityForce gravity_force;
     ParticleLinearDragForce drag_force(2.0f);
 
-    Particle particle_a(Vec2(0.0f, 4.0f), Vec2::Zero, 1.0f);
+    Particle particle_a(Vec3(0.0f, 4.0f, 0.0f), Vec3::zero, 1.0f);
     particle_a.invMass = 0.0f;
 
-    Particle particle_b(Vec2(0.0f, 0.0f), Vec2::Left * 10.0f, 2.0f);
-    Particle particle_c(Vec2(2.0f, 0.0f), Vec2::Right * 5.0f, 5.0f);
-    Particle particle_d(Vec2(0.0f, -2.0f), Vec2::Zero, 8.502655f);
+    Particle particle_b(Vec3(0.0f, 0.0f, 0.0f), Vec3::left * 10.0f, 2.0f);
+    Particle particle_c(Vec3(2.0f, 0.0f, 0.0f), Vec3::right * 5.0f, 5.0f);
+    Particle particle_d(Vec3(0.0f, -2.0f, 0.0f), Vec3::zero, 8.502655f);
     
     world.add_particle(&particle_a);
     world.add_particle(&particle_b);

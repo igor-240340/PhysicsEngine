@@ -5,15 +5,15 @@
 class Particle
 {
 public:
-    Vec2 pos;
-    Vec2 velocity;
-    Vec2 netForce;
+    Vec3 pos;
+    Vec3 velocity;
+    Vec3 netForce;
 
     float mass;
     float invMass;
 
 public:
-    Particle(Vec2 pos, Vec2 velocity, float mass);
+    Particle(Vec3 pos, Vec3 velocity, float mass);
 
-    virtual void ApplyForce(Vec2 force);
+    virtual void ApplyForce(Vec3 force);
 };

@@ -7,7 +7,7 @@ bool ParticleRod::generate_contact(ParticleContact& contact) const {
         contact.particle_b = particle_b;
         contact.restitution = 0.0f;
         contact.penetration = current_length - max_length;
-        contact.hit_normal = (particle_b->pos - particle_a->pos).Normalized();
+        contact.hit_normal = (particle_b->pos - particle_a->pos).normalized();
         return true;
     }
     else if (current_length < max_length) {
@@ -15,7 +15,7 @@ bool ParticleRod::generate_contact(ParticleContact& contact) const {
         contact.particle_b = particle_b;
         contact.restitution = 0.0f;
         contact.penetration = max_length - current_length;
-        contact.hit_normal = (particle_a->pos - particle_b->pos).Normalized();
+        contact.hit_normal = (particle_a->pos - particle_b->pos).normalized();
         return true;
     }
     else {

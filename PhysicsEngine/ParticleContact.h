@@ -8,9 +8,9 @@ public:
     Particle* particle_a;
     Particle* particle_b;
 
-    Vec2 hit_normal;
-    Vec2 offset_a;
-    Vec2 offset_b;
+    Vec3 hit_normal;
+    Vec3 offset_a;
+    Vec3 offset_b;
 
     float restitution;
     float penetration;

@@ -6,7 +6,7 @@
 class ParticleGravityForce : public ParticleForce
 {
 private:
-    Vec2 accel = Vec2(0.0f, -9.8f);
+    Vec3 accel = Vec3(0.0f, -9.8f, 0.0f);
 
 public:
     void ApplyTo(Particle* particle) final;

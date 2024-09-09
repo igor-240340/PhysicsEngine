@@ -8,5 +8,5 @@ public:
     float radius;
 
 public:
-    Circle(Vec2 pos, Vec2 velocity, float mass, float radius);
+    Circle(Vec3 pos, Vec3 velocity, float mass, float radius);
 };

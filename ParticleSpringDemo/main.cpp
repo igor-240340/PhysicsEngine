@@ -79,8 +79,8 @@ int main() {
     ParticleLinearDragForce dragForce(100.0f);
     
     //Particle pA(Vec2::Zero, Vec2(10.0f, 0.0f), 1.0f);
-    Particle pA(Vec2::Zero, Vec2::Zero, 10.0f);
-    Particle pB(Vec2::Down, Vec2::Zero, 1.0f);
+    Particle pA(Vec3::zero, Vec3::zero, 10.0f);
+    Particle pB(Vec3::down, Vec3::zero, 1.0f);
 
     ParticleSpringForce springForceOnA(0.0f, 10.0f, &pB);
     ParticleSpringForce springForceOnB(0.0f, 10.0f, &pA);

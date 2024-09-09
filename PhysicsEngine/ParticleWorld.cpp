@@ -29,10 +29,10 @@ void ParticleWorld::Step(float dt) {
         std::cout << "p->netForce.y: " << p->netForce.y << std::endl;
         std::cout << "===\n";
 
-        Vec2 accel = p->netForce * p->invMass;
+        Vec3 accel = p->netForce * p->invMass;
         p->velocity += accel * dt;
 
-        p->netForce = Vec2::Zero;
+        p->netForce = Vec3::zero;
     }
 
     // Формируем список масс, находящихся в состоянии удара.

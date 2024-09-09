@@ -7,11 +7,11 @@ ParticleSpringForce::ParticleSpringForce(float restLehgth, float coeff, Particle
 }
 
 void ParticleSpringForce::ApplyTo(Particle* particleA) {
-    Vec2 springVector = particleB->pos - particleA->pos;
+    Vec3 springVector = particleB->pos - particleA->pos;
 
     // Если пружина растянута, то компрессия (растяжение) положительна и сила направлена от A к B.
-    float springCompression = springVector.Length() - restLength;
-    Vec2 springDirFromAToB = springVector.Normalized();
-    Vec2 force = springDirFromAToB * (springCompression * coeff);
+    float springCompression = springVector.length() - restLength;
+    Vec3 springDirFromAToB = springVector.normalized();
+    Vec3 force = springDirFromAToB * (springCompression * coeff);
     particleA->ApplyForce(force);
 }

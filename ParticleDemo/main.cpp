@@ -78,7 +78,7 @@ int main() {
     ParticleGravityForce gravityForce;
     ParticleLinearDragForce dragForce(0.8f);
 
-    Particle p1(Vec2::Zero, Vec2(5.0f, 15.0f), 1.0f);
+    Particle p1(Vec3::zero, Vec3(5.0f, 15.0f, 0.0f), 1.0f);
 
     world.add_particle(&p1);
     world.force_registry.add(&p1, &gravityForce);
