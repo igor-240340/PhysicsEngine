@@ -10,7 +10,7 @@ void ParticleAnchoredBungeeForce::ApplyTo(Particle* particle) {
     Vec2 springVector = anchor - particle->pos;
 
     float springCompression = springVector.Length() - restLength;
-    // Сила генерируется только когда пружина растянута.
+    // РЎРёР»Р° РіРµРЅРµСЂРёСЂСѓРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РєРѕРіРґР° РїСЂСѓР¶РёРЅР° СЂР°СЃСЏРЅСѓС‚Р°.
     if (springCompression <= 0)
         return;
 
