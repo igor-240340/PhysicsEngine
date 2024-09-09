@@ -1,6 +1,6 @@
 ﻿#include <cmath>
 
-#include "Vec2.h"
+#include "Vec3.h"
 
 const Vec3 Vec3::zero = Vec3(0.0f, 0.0f, 0.0f);
 const Vec3 Vec3::left = Vec3(-1.0f, 0.0f, 0.0f);

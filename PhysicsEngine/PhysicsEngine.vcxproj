@@ -160,7 +160,7 @@
     <ClCompile Include="ParticleLink.cpp" />
     <ClCompile Include="ParticleSpringForce.cpp" />
     <ClCompile Include="ParticleWorld.cpp" />
-    <ClCompile Include="Vec2.cpp" />
+    <ClCompile Include="Vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Particle.h" />
@@ -180,7 +180,7 @@
     <ClInclude Include="ParticleLink.h" />
     <ClInclude Include="ParticleSpringForce.h" />
     <ClInclude Include="ParticleWorld.h" />
-    <ClInclude Include="Vec2.h" />
+    <ClInclude Include="Vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
