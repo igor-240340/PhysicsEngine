@@ -20,12 +20,12 @@
 #include "Circle.h"
 
 struct IntegratorControlState {
-    bool stepModeActive;
-    bool stepButtonPressed;
-    bool resetButtonPressed;
+    bool step_mode_active;
+    bool step_button_pressed;
+    bool reset_button_pressed;
 };
 
-IntegratorControlState integratorControlState = {
+IntegratorControlState integrator_control_state = {
     false, false, false
 };
 
@@ -128,7 +128,7 @@ int main() {
     world.force_registry.add(&circleB, &dragForce);
 
     glfwSetTime(0);
-    double dtAccum = 0;
+    double dt_accum = 0.0;
     while (!glfwWindowShouldClose(window)) {
         std::cout << "RENDER LOOP BEGIN" << std::endl;
 
@@ -136,25 +136,25 @@ int main() {
         double dt = glfwGetTime();
         glfwSetTime(0);
 
-        dtAccum += dt;
+        dt_accum += dt;
 
         std::cout << "dt: " << dt << "s" << std::endl;
-        std::cout << "dtAccum: " << dtAccum << "s" << std::endl;
+        std::cout << "dtAccum: " << dt_accum << "s" << std::endl;
 
         std::cout << std::endl;
 
-        if (integratorControlState.stepModeActive) {
-            if (integratorControlState.stepButtonPressed) {
-                integratorControlState.stepButtonPressed = false;
-                world.Step(0.02f);
+        if (integrator_control_state.step_mode_active) {
+            if (integrator_control_state.step_button_pressed) {
+                integrator_control_state.step_button_pressed = false;
+                world.step(0.02f);
             }
         }
         else {
-            while (dtAccum > 0.02) {
+            while (dt_accum > 0.02) {
                 std::cout << "fixed update: 0.02" << std::endl;
 
-                world.Step(0.02f);
-                dtAccum -= 0.02;
+                world.step(0.02f);
+                dt_accum -= 0.02;
             }
         }
 
@@ -167,11 +167,11 @@ int main() {
         glUseProgram(program);
 
         const int sectors = 16;
-        const int circlesNum = world.Particles().size();
+        const int circlesNum = world.get_particles().size();
 
         const int indexStep = 2;
         const float angleStepRad = 6.28f / sectors;
-        for (const Particle* p : world.Particles()) {
+        for (const Particle* p : world.get_particles()) {
             float* points = new float[sectors * 2];
 
             const float radius = ((Circle*)p)->radius;
@@ -214,7 +214,7 @@ int main() {
             ImGui::Begin("Integrator");
 
             if (ImGui::Button("Play")) {
-                integratorControlState.stepModeActive = false;
+                integrator_control_state.step_mode_active = false;
 
                 // Сбрасываем аккумулятор дельты времени.
                 // 
@@ -223,23 +223,23 @@ int main() {
                 // Это даст очень большое количество шагов интегрирования,
                 // которые должны будут выполниться оффлайн до отрисовки следующего кадра,
                 // что в свою очередь заметно подвесит картинку.
-                dtAccum = 0.0f;
+                dt_accum = 0.0f;
             }
             
             ImGui::SameLine();
             if (ImGui::Button("Pause")) {
-                integratorControlState.stepModeActive = true;
+                integrator_control_state.step_mode_active = true;
             }
 
             ImGui::SameLine();
             if (ImGui::Button("Step")) {
-                integratorControlState.stepButtonPressed = true;
+                integrator_control_state.step_button_pressed = true;
             }
 
             ImGui::SameLine();
             if (ImGui::Button("Reset")) {
-                integratorControlState.stepModeActive = false;
-                dtAccum = 0.0f;
+                integrator_control_state.step_mode_active = false;
+                dt_accum = 0.0f;
             }
 
             ImGui::End();
@@ -338,10 +338,10 @@ GLuint compile_shaders() {
 }
 
 void HandleCollision(ParticleWorld* world) {
-    for (Particle* particleA : world->Particles()) {
+    for (Particle* particleA : world->get_particles()) {
         Circle* circleA = dynamic_cast<Circle*>(particleA);
 
-        for (Particle* particleB : world->Particles()) {
+        for (Particle* particleB : world->get_particles()) {
             Circle* circleB = dynamic_cast<Circle*>(particleB);
 
             // Не проверяем коллизию с самим собой.
@@ -390,19 +390,19 @@ void ResolveVelocity(Particle* particleA, Particle* particleB, Vec3 hitNormal) {
     // данная формула без изменений будет эквивалентна формуле
     // для вычисления ударного импульса при столкновении точки с неподвижным объектом с бесконечно большой массой.
     // Поэтому, если мы хотим смоделировать удар о неподвижную стену, достаточно представить стену точкой с нулевой обратной массой.
-    float invMassA = particleA->invMass;
-    float invMassB = particleB->invMass;
+    float invMassA = particleA->inv_mass;
+    float invMassB = particleB->inv_mass;
     float impulseAbs = velocityARelBNormal * (1 + e) / (invMassA + invMassB);
     Vec3 impulseA = hitNormal * impulseAbs;
     Vec3 impulseB = -hitNormal * impulseAbs;
 
-    particleA->velocity += impulseA * particleA->invMass;
-    particleB->velocity += impulseB * particleB->invMass;
+    particleA->velocity += impulseA * particleA->inv_mass;
+    particleB->velocity += impulseB * particleB->inv_mass;
 }
 
 void ResolvePenetration(Particle* particleA, Particle* particleB, Vec3 hitNormal, float penetration) {
-    float invMassA = particleA->invMass;
-    float invMassB = particleB->invMass;
+    float invMassA = particleA->inv_mass;
+    float invMassB = particleB->inv_mass;
 
     // Мы делим полную величину проникновения между двумя точками по такому принципу:
     // во сколько раз первая масса больше второй, во столько раз смещение первой массы будет меньше смещения второй.
@@ -474,7 +474,7 @@ void HandleCollisionWithBorders(Circle* circle) {
         // Объект с нулевой обратной массой (т.е. с бесконечно большой массой)
         // для представления неподвижных границ экрана.
         Particle immovableObject(Vec3::zero, Vec3::zero, 1.0f);
-        immovableObject.invMass = 0.0f;
+        immovableObject.inv_mass = 0.0f;
 
         ResolveVelocity(circle, &immovableObject, hitNormal);
         ResolvePenetration(circle, &immovableObject, hitNormal, penetration);

@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include <list>
+#include <vector>
 
 #include "Particle.h"
 #include "ParticleForceRegistry.h"
@@ -10,7 +11,7 @@
 class ParticleWorld
 {
 private:
-    std::list<Particle*> particles;
+    std::vector<Particle*> particles;
     std::list<ParticleContactGenerator*> contact_generators;
     ParticleContactResolver contact_resolver;
 
@@ -21,6 +22,6 @@ public:
     void add_particle(Particle* particle);
     void add_contact_generator(ParticleContactGenerator* contactGenerator);
 
-    const std::list<Particle*>& Particles();
-    void Step(float dt);
+    const std::vector<Particle*>& get_particles();
+    void step(float dt);
 };

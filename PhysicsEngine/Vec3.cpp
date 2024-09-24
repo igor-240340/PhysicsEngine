@@ -21,16 +21,16 @@ Vec3::Vec3(float x, float y, float z) {
 }
 
 float Vec3::length() const {
-    return std::sqrt(x * x + y * y);
+    return std::sqrt(x * x + y * y + z * z);
 }
 
 float Vec3::length_squared() const {
-    return x * x + y * y;
+    return x * x + y * y + z * z;
 }
 
 Vec3 Vec3::normalized() const {
     // Исключаем появление NaN в компонентах вектора.
-    if (x * x + y * y > 0)
+    if (x * x + y * y + z * z > 0)
         return *this / length();
     else
         return Vec3::zero;

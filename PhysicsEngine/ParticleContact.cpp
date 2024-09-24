@@ -20,19 +20,19 @@ void ParticleContact::resolve_velocity() {
     // данная формула без изменений будет эквивалентна формуле
     // для вычисления ударного импульса при столкновении точки с неподвижным объектом с бесконечно большой массой.
     // Поэтому, если мы хотим смоделировать удар о неподвижную стену, достаточно представить стену точкой с нулевой обратной массой.
-    float inv_mass_a = particle_a->invMass;
-    float inv_mass_b = particle_b->invMass;
+    float inv_mass_a = particle_a->inv_mass;
+    float inv_mass_b = particle_b->inv_mass;
     float impulse_abs = normal_velocity * (1 + restitution) / (inv_mass_a + inv_mass_b);
     Vec3 impulse_a = hit_normal * impulse_abs;
     Vec3 impulse_b = -hit_normal * impulse_abs;
 
-    particle_a->velocity += impulse_a * particle_a->invMass;
-    particle_b->velocity += impulse_b * particle_b->invMass;
+    particle_a->velocity += impulse_a * particle_a->inv_mass;
+    particle_b->velocity += impulse_b * particle_b->inv_mass;
 }
 
 void ParticleContact::resolve_interpenetration() {
-    float inv_mass_a = particle_a->invMass;
-    float inv_mass_b = particle_b->invMass;
+    float inv_mass_a = particle_a->inv_mass;
+    float inv_mass_b = particle_b->inv_mass;
 
     // Мы делим полную величину проникновения между двумя точками по такому принципу:
     // во сколько раз первая масса больше второй, во столько раз смещение первой массы будет меньше смещения второй.

@@ -108,7 +108,7 @@ int main() {
         while (dtAccum > 0.02) {
             std::cout << "fixed update: 0.02" << std::endl;
 
-            world.Step(0.02f);
+            world.step(0.02f);
             dtAccum -= 0.02;
         }
 
@@ -118,12 +118,12 @@ int main() {
 
         glUseProgram(program);
 
-        const int particlesNum = world.Particles().size();
+        const int particlesNum = world.get_particles().size();
         float* particles = new float[particlesNum * 2];
 
         int index = 0;
         const int indexStep = 2;
-        for (const Particle* p : world.Particles()) {
+        for (const Particle* p : world.get_particles()) {
             particles[index] = p->pos.x;
             particles[index + 1] = p->pos.y;
             index += indexStep;

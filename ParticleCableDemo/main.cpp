@@ -79,7 +79,7 @@ int main() {
     ParticleLinearDragForce drag_force(0.5f);
 
     Particle particle_a(Vec3(0.0f, 4.0f, 0.0f), Vec3::zero, 1.0f);
-    particle_a.invMass = 0.0f;
+    particle_a.inv_mass = 0.0f;
 
     Particle particle_b(Vec3(0.0f, 0.0f, 0.0f), Vec3::left * 10.0f, 2.0f);
     Particle particle_c(Vec3(2.0f, 0.0f, 0.0f), Vec3::right * 5.0f, 5.0f);
@@ -124,7 +124,7 @@ int main() {
         while (dtAccum > 0.02) {
             std::cout << "fixed update: 0.02" << std::endl;
 
-            world.Step(0.02f);
+            world.step(0.02f);
             dtAccum -= 0.02;
         }
 
@@ -134,12 +134,12 @@ int main() {
 
         glUseProgram(program);
 
-        const int particlesNum = world.Particles().size();
+        const int particlesNum = world.get_particles().size();
         float* particles = new float[particlesNum * 2];
 
         int index = 0;
         const int indexStep = 2;
-        for (const Particle* p : world.Particles()) {
+        for (const Particle* p : world.get_particles()) {
             particles[index] = p->pos.x;
             particles[index + 1] = p->pos.y;
             index += indexStep;

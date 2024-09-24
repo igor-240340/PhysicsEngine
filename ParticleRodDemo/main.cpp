@@ -80,7 +80,7 @@ int main() {
     ParticleLinearDragForce drag_force(2.0f);
 
     Particle particle_a(Vec3(0.0f, 4.0f, 0.0f), Vec3::zero, 1.0f);
-    particle_a.invMass = 0.0f;
+    particle_a.inv_mass = 0.0f;
 
     Particle particle_b(Vec3(0.0f, 0.0f, 0.0f), Vec3::left * 10.0f, 2.0f);
     Particle particle_c(Vec3(2.0f, 0.0f, 0.0f), Vec3::right * 5.0f, 5.0f);
@@ -98,17 +98,17 @@ int main() {
     cable_a_b.restitution = 1.0f;
 
     ParticleRod rod_b_c;
-    rod_b_c.max_length = 2.0f;
+    rod_b_c.length = 2.0f;
     rod_b_c.particle_a = &particle_b;
     rod_b_c.particle_b = &particle_c;
 
     ParticleRod rod_b_d;
-    rod_b_d.max_length = 2.0f;
+    rod_b_d.length = 2.0f;
     rod_b_d.particle_a = &particle_b;
     rod_b_d.particle_b = &particle_d;
 
     ParticleRod rod_d_c;
-    rod_d_c.max_length = 2.828427f;
+    rod_d_c.length = 2.828427f;
     rod_d_c.particle_a = &particle_d;
     rod_d_c.particle_b = &particle_c;
 
@@ -143,7 +143,7 @@ int main() {
         while (dtAccum > 0.02) {
             std::cout << "fixed update: 0.02" << std::endl;
 
-            world.Step(0.02f);
+            world.step(0.02f);
             dtAccum -= 0.02;
         }
 
@@ -153,12 +153,12 @@ int main() {
 
         glUseProgram(program);
 
-        const int particlesNum = world.Particles().size();
+        const int particlesNum = world.get_particles().size();
         float* particles = new float[particlesNum * 2];
 
         int index = 0;
         const int indexStep = 2;
-        for (const Particle* p : world.Particles()) {
+        for (const Particle* p : world.get_particles()) {
             particles[index] = p->pos.x;
             particles[index + 1] = p->pos.y;
             index += indexStep;

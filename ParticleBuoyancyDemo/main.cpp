@@ -116,7 +116,7 @@ int main() {
         while (dtAccum > 0.02) {
             std::cout << "fixed update: 0.02" << std::endl;
 
-            world.Step(0.02f);
+            world.step(0.02f);
             dtAccum -= 0.02;
         }
 
@@ -166,12 +166,12 @@ int main() {
         // End: Отрисовка поверхности жидкости.
 
         // Begin: Отрисовка частиц квадратами.
-        const int particlesNum = world.Particles().size();
+        const int particlesNum = world.get_particles().size();
         float* points = new float[particlesNum * 4 * 2];
 
         int index = 0;
         const int indexStep = 8;
-        for (const Particle* p : world.Particles()) {
+        for (const Particle* p : world.get_particles()) {
             points[index] = p->pos.x - particleSize / 2.0f;
             points[index + 1] = p->pos.y - particleSize / 2.0f;
 

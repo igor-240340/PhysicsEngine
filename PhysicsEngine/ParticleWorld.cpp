@@ -10,29 +10,29 @@ void ParticleWorld::add_contact_generator(ParticleContactGenerator* contactGener
     contact_generators.push_back(contactGenerator);
 }
 
-const std::list<Particle*>& ParticleWorld::Particles() {
+const std::vector<Particle*>& ParticleWorld::get_particles() {
     return particles;
 }
 
-void ParticleWorld::Step(float dt) {
+void ParticleWorld::step(float dt) {
     // Применяем к массам, связанные с ними генераторы сил.
     force_registry.ApplyForces();
 
     // Интегрируем ускорение и скорость.
     for (Particle* p : particles) {
-        if (p->invMass == 0.0f)
+        if (p->inv_mass == 0.0f)
             continue;
 
         p->pos += p->velocity * dt;
 
         std::cout << "===\n";
-        std::cout << "p->netForce.y: " << p->netForce.y << std::endl;
+        std::cout << "p->netForce.y: " << p->net_force.y << std::endl;
         std::cout << "===\n";
 
-        Vec3 accel = p->netForce * p->invMass;
+        Vec3 accel = p->net_force * p->inv_mass;
         p->velocity += accel * dt;
 
-        p->netForce = Vec3::zero;
+        p->net_force = Vec3::zero;
     }
 
     // Формируем список масс, находящихся в состоянии удара.

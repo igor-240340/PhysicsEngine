@@ -4,7 +4,7 @@
 
 class ParticleRod : public ParticleLink {
 public:
-    float max_length;
+    float length;
 
     bool generate_contact(ParticleContact& contact) const final;
 };

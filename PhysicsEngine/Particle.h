@@ -7,12 +7,13 @@ class Particle
 public:
     Vec3 pos;
     Vec3 velocity;
-    Vec3 netForce;
+    Vec3 net_force;
 
     float mass;
-    float invMass;
+    float inv_mass;
 
 public:
+    Particle();
     Particle(Vec3 pos, Vec3 velocity, float mass);
 
     virtual void ApplyForce(Vec3 force);
