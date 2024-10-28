@@ -154,9 +154,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AppFramework\AppFramework.vcxproj">
-      <Project>{4bf0c666-ae91-45b3-be41-00f933fc92ef}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\PhysicsEngine\PhysicsEngine.vcxproj">
       <Project>{8fc23a69-2db0-4d91-8056-a94fff7e9923}</Project>
     </ProjectReference>

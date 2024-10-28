@@ -30,8 +30,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BridgeDemo", "BridgeDemo\Br
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoxDemo", "BoxDemo\BoxDemo.vcxproj", "{46EBEC42-CD05-4F90-8EC0-DEB3B42F1F75}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppFramework", "AppFramework\AppFramework.vcxproj", "{4BF0C666-AE91-45B3-BE41-00F933FC92EF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -136,14 +134,6 @@ Global
 		{46EBEC42-CD05-4F90-8EC0-DEB3B42F1F75}.Release|x64.Build.0 = Release|x64
 		{46EBEC42-CD05-4F90-8EC0-DEB3B42F1F75}.Release|x86.ActiveCfg = Release|Win32
 		{46EBEC42-CD05-4F90-8EC0-DEB3B42F1F75}.Release|x86.Build.0 = Release|Win32
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Debug|x64.ActiveCfg = Debug|x64
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Debug|x64.Build.0 = Debug|x64
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Debug|x86.ActiveCfg = Debug|Win32
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Debug|x86.Build.0 = Debug|Win32
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Release|x64.ActiveCfg = Release|x64
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Release|x64.Build.0 = Release|x64
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Release|x86.ActiveCfg = Release|Win32
-		{4BF0C666-AE91-45B3-BE41-00F933FC92EF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
