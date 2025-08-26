@@ -11,4 +11,5 @@ Some files with `*.IP` extension are Interactive Physics project where we reprod
 
 ## Demos
 [![demo_9]
+(https://raw.githubusercontent.com/igor-240340/PhysicsEngine/dev/docs/videos/demo_9.png)]
 (https://raw.githubusercontent.com/igor-240340/PhysicsEngine/dev/docs/videos/demo_9.mp4)]
