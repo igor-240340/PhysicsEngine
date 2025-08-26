@@ -1,0 +1,1175 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://registry.khronos.org/OpenGL-Refpages/gl4/html/glViewport.xhtml
+Subject: glViewport - OpenGL 4 Reference Pages
+Date: Sat, 6 Jan 2024 04:11:03 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="application/xhtml+xml";
+	boundary="----MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----"
+
+
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: application/xhtml+xml
+Content-ID: <frame-0670C5C5476DF3C00A710D6B45392E95@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://registry.khronos.org/OpenGL-Refpages/gl4/html/glViewport.xhtml
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"no"?><!DOCTYPE html>=
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head><meta http-equiv=3D"Content-Type" content=3D"application/xhtml+xml;=
+ charset=3DUTF-8" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:=
+css-fa66152d-02ef-4756-9fae-aff44047d603@mhtml.blink" /><link rel=3D"styles=
+heet" type=3D"text/css" href=3D"cid:css-f2f7125d-86d7-4087-a933-ab33f91f60d=
+8@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css=
+-d3633294-da41-430a-a744-8d1bc0f0557e@mhtml.blink" /><link rel=3D"styleshee=
+t" type=3D"text/css" href=3D"cid:css-64b95202-c547-4198-8384-15dc3db2e222@m=
+html.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-c0=
+cb74c2-5bcd-4e69-b273-78ca95bd7c03@mhtml.blink" /><link rel=3D"stylesheet" =
+type=3D"text/css" href=3D"cid:css-741f6a12-ab2d-49a1-b07a-a19c96544bf6@mhtm=
+l.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-c284b=
+8ab-7f22-409a-8327-a9075537d412@mhtml.blink" /><link rel=3D"stylesheet" typ=
+e=3D"text/css" href=3D"cid:css-baf174c2-b851-4d2c-a4ff-dd45a3a203a7@mhtml.b=
+link" />
+    <title>glViewport - OpenGL 4 Reference Pages</title>
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://registry.khr=
+onos.org/OpenGL-Refpages/gl4/html/opengl-man.css" />
+    <meta name=3D"generator" content=3D"DocBook XSL Stylesheets V1.79.2" />
+   =20
+   =20
+  </head>
+  <body><div style=3D"visibility: hidden; overflow: hidden; position: absol=
+ute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin:=
+ 0px; text-align: left; text-indent: 0px; text-transform: none; line-height=
+: normal; letter-spacing: normal; word-spacing: normal;"><div id=3D"MathJax=
+_Hidden"></div></div><div id=3D"MathJax_Message" style=3D"display: none;"><=
+/div>
+    <header></header>
+    <div class=3D"refentry" id=3D"glViewport">
+      <div class=3D"titlepage"></div>
+      <div class=3D"refnamediv">
+        <h2>Name</h2>
+        <p>glViewport =E2=80=94 set the viewport</p>
+      </div>
+      <div class=3D"refsynopsisdiv">
+        <h2>C Specification</h2>
+        <div class=3D"funcsynopsis">
+          <table style=3D"border: 0; cellspacing: 0; cellpadding: 0;" class=
+=3D"funcprototype-table">
+            <tr>
+              <td>
+                <code class=3D"funcdef">void <strong class=3D"fsfunc">glVie=
+wport</strong>(</code>
+              </td>
+              <td>GLint <var class=3D"pdparam">x</var>, </td>
+            </tr>
+            <tr>
+              <td>=C2=A0</td>
+              <td>GLint <var class=3D"pdparam">y</var>, </td>
+            </tr>
+            <tr>
+              <td>=C2=A0</td>
+              <td>GLsizei <var class=3D"pdparam">width</var>, </td>
+            </tr>
+            <tr>
+              <td>=C2=A0</td>
+              <td>GLsizei <var class=3D"pdparam">height</var><code>)</code>=
+;</td>
+            </tr>
+          </table>
+          <div class=3D"funcprototype-spacer">=C2=A0</div>
+        </div>
+      </div>
+      <div class=3D"refsect1" id=3D"parameters">
+        <h2>Parameters</h2>
+        <div class=3D"variablelist">
+          <dl class=3D"variablelist">
+            <dt>
+              <span class=3D"term"><em class=3D"parameter"><code>x</code></=
+em>, </span>
+              <span class=3D"term">
+                <em class=3D"parameter">
+                  <code>y</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                    Specify the lower left corner of the viewport rectangle=
+,
+                    in pixels. The initial value is (0,0).
+                </p>
+            </dd>
+            <dt>
+              <span class=3D"term"><em class=3D"parameter"><code>width</cod=
+e></em>, </span>
+              <span class=3D"term">
+                <em class=3D"parameter">
+                  <code>height</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                    Specify the width and height
+                    of the viewport.
+                    When a GL context is first attached to a window,
+                    <em class=3D"parameter"><code>width</code></em> and <em=
+ class=3D"parameter"><code>height</code></em> are set to the dimensions of =
+that
+                    window.
+                </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class=3D"refsect1" id=3D"description">
+        <h2>Description</h2>
+        <p>
+            <code class=3D"function">glViewport</code> specifies the affine=
+ transformation of
+            <span class=3D"MathJax_Preview" style=3D"color: inherit; displa=
+y: none;"></span><span class=3D"MathJax" id=3D"MathJax-Element-1-Frame" tab=
+index=3D"0" style=3D"position: relative;" data-mathml=3D"&lt;math xmlns=3D&=
+quot;http://www.w3.org/1998/Math/MathML&quot; overflow=3D&quot;scroll&quot;=
+&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;x&lt;/mi&gt;&lt;/math&gt;" r=
+ole=3D"presentation"><nobr aria-hidden=3D"true"><span class=3D"math" id=3D"=
+MathJax-Span-1" overflow=3D"scroll" style=3D"width: 0.747em; display: inlin=
+e-block;"><span style=3D"display: inline-block; position: relative; width: =
+0.598em; height: 0px; font-size: 126%;"><span style=3D"position: absolute; =
+clip: rect(1.59em, 1000.55em, 2.334em, -999.998em); top: -2.18em; left: 0em=
+;"><span class=3D"mrow" id=3D"MathJax-Span-2"><span class=3D"mi" id=3D"Math=
+Jax-Span-3" style=3D"font-family: MathJax_Math-italic;">x</span></span><spa=
+n style=3D"display: inline-block; width: 0px; height: 2.185em;"></span></sp=
+an></span><span style=3D"display: inline-block; overflow: hidden; vertical-=
+align: -0.059em; border-left: 0px solid; width: 0px; height: 0.691em;"></sp=
+an></span></nobr><span class=3D"MJX_Assistive_MathML" role=3D"presentation"=
+><math xmlns=3D"http://www.w3.org/1998/Math/MathML" overflow=3D"scroll"><mi=
+ mathvariant=3D"italic">x</mi></math></span></span>
+            and
+            <span class=3D"MathJax_Preview" style=3D"color: inherit; displa=
+y: none;"></span><span class=3D"MathJax" id=3D"MathJax-Element-2-Frame" tab=
+index=3D"0" style=3D"position: relative;" data-mathml=3D"&lt;math xmlns=3D&=
+quot;http://www.w3.org/1998/Math/MathML&quot; overflow=3D&quot;scroll&quot;=
+&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;y&lt;/mi&gt;&lt;/math&gt;" r=
+ole=3D"presentation"><nobr aria-hidden=3D"true"><span class=3D"math" id=3D"=
+MathJax-Span-4" overflow=3D"scroll" style=3D"width: 0.647em; display: inlin=
+e-block;"><span style=3D"display: inline-block; position: relative; width: =
+0.499em; height: 0px; font-size: 126%;"><span style=3D"position: absolute; =
+clip: rect(1.59em, 1000.5em, 2.532em, -999.998em); top: -2.18em; left: 0em;=
+"><span class=3D"mrow" id=3D"MathJax-Span-5"><span class=3D"mi" id=3D"MathJ=
+ax-Span-6" style=3D"font-family: MathJax_Math-italic;">y<span style=3D"disp=
+lay: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span><=
+/span></span><span style=3D"display: inline-block; width: 0px; height: 2.18=
+5em;"></span></span></span><span style=3D"display: inline-block; overflow: =
+hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; heigh=
+t: 0.941em;"></span></span></nobr><span class=3D"MJX_Assistive_MathML" role=
+=3D"presentation"><math xmlns=3D"http://www.w3.org/1998/Math/MathML" overfl=
+ow=3D"scroll"><mi mathvariant=3D"italic">y</mi></math></span></span>
+            from
+            normalized device coordinates to window coordinates.
+            Let
+            <span class=3D"MathJax_Preview" style=3D"color: inherit; displa=
+y: none;"></span><span class=3D"MathJax" id=3D"MathJax-Element-3-Frame" tab=
+index=3D"0" style=3D"position: relative;" data-mathml=3D"&lt;math xmlns=3D&=
+quot;http://www.w3.org/1998/Math/MathML&quot; overflow=3D&quot;scroll&quot;=
+&gt;&lt;mfenced open=3D&quot;(&quot; close=3D&quot;)&quot;&gt;&lt;msub&gt;&=
+lt;mi mathvariant=3D&quot;italic&quot;&gt;x&lt;/mi&gt;&lt;mi mathvariant=3D=
+&quot;italic&quot;&gt;nd&lt;/mi&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi mathvari=
+ant=3D&quot;italic&quot;&gt;y&lt;/mi&gt;&lt;mi mathvariant=3D&quot;italic&q=
+uot;&gt;nd&lt;/mi&gt;&lt;/msub&gt;&lt;/mfenced&gt;&lt;/math&gt;" role=3D"pr=
+esentation"><nobr aria-hidden=3D"true"><span class=3D"math" id=3D"MathJax-S=
+pan-7" overflow=3D"scroll" style=3D"width: 5.012em; display: inline-block;"=
+><span style=3D"display: inline-block; position: relative; width: 3.971em; =
+height: 0px; font-size: 126%;"><span style=3D"position: absolute; clip: rec=
+t(1.391em, 1003.87em, 2.681em, -999.998em); top: -2.279em; left: 0em;"><spa=
+n class=3D"mrow" id=3D"MathJax-Span-8"><span class=3D"mfenced" id=3D"MathJa=
+x-Span-9"><span class=3D"mo" id=3D"MathJax-Span-11" style=3D""><span style=
+=3D"font-family: MathJax_Main;">(</span></span><span class=3D"msub" id=3D"M=
+athJax-Span-12"><span style=3D"display: inline-block; position: relative; w=
+idth: 1.441em; height: 0px;"><span style=3D"position: absolute; clip: rect(=
+3.425em, 1000.55em, 4.169em, -999.998em); top: -4.015em; left: 0em;"><span =
+class=3D"mi" id=3D"MathJax-Span-13" style=3D"font-family: MathJax_Math-ital=
+ic;">x</span><span style=3D"display: inline-block; width: 0px; height: 4.02=
+em;"></span></span><span style=3D"position: absolute; top: -3.867em; left: =
+0.598em;"><span class=3D"mi" id=3D"MathJax-Span-14" style=3D"font-size: 70.=
+7%; font-family: MathJax_Math-italic;">n<span style=3D"font-family: MathJax=
+_Math-italic;">d</span></span><span style=3D"display: inline-block; width: =
+0px; height: 4.02em;"></span></span></span></span><span class=3D"mo" id=3D"=
+MathJax-Span-15" style=3D"font-family: MathJax_Main;">,</span><span class=
+=3D"msub" id=3D"MathJax-Span-16" style=3D"padding-left: 0.151em;"><span sty=
+le=3D"display: inline-block; position: relative; width: 1.342em; height: 0p=
+x;"><span style=3D"position: absolute; clip: rect(3.425em, 1000.5em, 4.368e=
+m, -999.998em); top: -4.015em; left: 0em;"><span class=3D"mi" id=3D"MathJax=
+-Span-17" style=3D"font-family: MathJax_Math-italic;">y<span style=3D"displ=
+ay: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></=
+span><span style=3D"display: inline-block; width: 0px; height: 4.02em;"></s=
+pan></span><span style=3D"position: absolute; top: -3.867em; left: 0.499em;=
+"><span class=3D"mi" id=3D"MathJax-Span-18" style=3D"font-size: 70.7%; font=
+-family: MathJax_Math-italic;">n<span style=3D"font-family: MathJax_Math-it=
+alic;">d</span></span><span style=3D"display: inline-block; width: 0px; hei=
+ght: 4.02em;"></span></span></span></span><span class=3D"mo" id=3D"MathJax-=
+Span-19" style=3D""><span style=3D"font-family: MathJax_Main;">)</span></sp=
+an></span></span><span style=3D"display: inline-block; width: 0px; height: =
+2.284em;"></span></span></span><span style=3D"display: inline-block; overfl=
+ow: hidden; vertical-align: -0.372em; border-left: 0px solid; width: 0px; h=
+eight: 1.378em;"></span></span></nobr><span class=3D"MJX_Assistive_MathML" =
+role=3D"presentation"><math xmlns=3D"http://www.w3.org/1998/Math/MathML" ov=
+erflow=3D"scroll"><mfenced open=3D"(" close=3D")"><msub><mi mathvariant=3D"=
+italic">x</mi><mi mathvariant=3D"italic">nd</mi></msub><msub><mi mathvarian=
+t=3D"italic">y</mi><mi mathvariant=3D"italic">nd</mi></msub></mfenced></mat=
+h></span></span>
+            be normalized device coordinates.
+            Then the window coordinates
+            <span class=3D"MathJax_Preview" style=3D"color: inherit; displa=
+y: none;"></span><span class=3D"MathJax" id=3D"MathJax-Element-4-Frame" tab=
+index=3D"0" style=3D"position: relative;" data-mathml=3D"&lt;math xmlns=3D&=
+quot;http://www.w3.org/1998/Math/MathML&quot; overflow=3D&quot;scroll&quot;=
+&gt;&lt;mfenced open=3D&quot;(&quot; close=3D&quot;)&quot;&gt;&lt;msub&gt;&=
+lt;mi mathvariant=3D&quot;italic&quot;&gt;x&lt;/mi&gt;&lt;mi mathvariant=3D=
+&quot;italic&quot;&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;msub&gt;&lt;mi mathvaria=
+nt=3D&quot;italic&quot;&gt;y&lt;/mi&gt;&lt;mi mathvariant=3D&quot;italic&qu=
+ot;&gt;w&lt;/mi&gt;&lt;/msub&gt;&lt;/mfenced&gt;&lt;/math&gt;" role=3D"pres=
+entation"><nobr aria-hidden=3D"true"><span class=3D"math" id=3D"MathJax-Spa=
+n-20" overflow=3D"scroll" style=3D"width: 4.318em; display: inline-block;">=
+<span style=3D"display: inline-block; position: relative; width: 3.425em; h=
+eight: 0px; font-size: 126%;"><span style=3D"position: absolute; clip: rect=
+(1.391em, 1003.33em, 2.681em, -999.998em); top: -2.279em; left: 0em;"><span=
+ class=3D"mrow" id=3D"MathJax-Span-21"><span class=3D"mfenced" id=3D"MathJa=
+x-Span-22"><span class=3D"mo" id=3D"MathJax-Span-23" style=3D""><span style=
+=3D"font-family: MathJax_Main;">(</span></span><span class=3D"msub" id=3D"M=
+athJax-Span-24"><span style=3D"display: inline-block; position: relative; w=
+idth: 1.143em; height: 0px;"><span style=3D"position: absolute; clip: rect(=
+3.425em, 1000.55em, 4.169em, -999.998em); top: -4.015em; left: 0em;"><span =
+class=3D"mi" id=3D"MathJax-Span-25" style=3D"font-family: MathJax_Math-ital=
+ic;">x</span><span style=3D"display: inline-block; width: 0px; height: 4.02=
+em;"></span></span><span style=3D"position: absolute; top: -3.867em; left: =
+0.598em;"><span class=3D"mi" id=3D"MathJax-Span-26" style=3D"font-size: 70.=
+7%; font-family: MathJax_Math-italic;">w</span><span style=3D"display: inli=
+ne-block; width: 0px; height: 4.02em;"></span></span></span></span><span cl=
+ass=3D"mo" id=3D"MathJax-Span-27" style=3D"font-family: MathJax_Main;">,</s=
+pan><span class=3D"msub" id=3D"MathJax-Span-28" style=3D"padding-left: 0.15=
+1em;"><span style=3D"display: inline-block; position: relative; width: 1.09=
+4em; height: 0px;"><span style=3D"position: absolute; clip: rect(3.425em, 1=
+000.5em, 4.368em, -999.998em); top: -4.015em; left: 0em;"><span class=3D"mi=
+" id=3D"MathJax-Span-29" style=3D"font-family: MathJax_Math-italic;">y<span=
+ style=3D"display: inline-block; overflow: hidden; height: 1px; width: 0.00=
+2em;"></span></span><span style=3D"display: inline-block; width: 0px; heigh=
+t: 4.02em;"></span></span><span style=3D"position: absolute; top: -3.867em;=
+ left: 0.499em;"><span class=3D"mi" id=3D"MathJax-Span-30" style=3D"font-si=
+ze: 70.7%; font-family: MathJax_Math-italic;">w</span><span style=3D"displa=
+y: inline-block; width: 0px; height: 4.02em;"></span></span></span></span><=
+span class=3D"mo" id=3D"MathJax-Span-31" style=3D""><span style=3D"font-fam=
+ily: MathJax_Main;">)</span></span></span></span><span style=3D"display: in=
+line-block; width: 0px; height: 2.284em;"></span></span></span><span style=
+=3D"display: inline-block; overflow: hidden; vertical-align: -0.372em; bord=
+er-left: 0px solid; width: 0px; height: 1.378em;"></span></span></nobr><spa=
+n class=3D"MJX_Assistive_MathML" role=3D"presentation"><math xmlns=3D"http:=
+//www.w3.org/1998/Math/MathML" overflow=3D"scroll"><mfenced open=3D"(" clos=
+e=3D")"><msub><mi mathvariant=3D"italic">x</mi><mi mathvariant=3D"italic">w=
+</mi></msub><msub><mi mathvariant=3D"italic">y</mi><mi mathvariant=3D"itali=
+c">w</mi></msub></mfenced></math></span></span>
+            are computed as follows:
+        </p>
+        <p>
+            </p>
+        <div class=3D"informalequation">
+          <span class=3D"MathJax_Preview" style=3D"color: inherit; display:=
+ none;"></span><span class=3D"MathJax" id=3D"MathJax-Element-5-Frame" tabin=
+dex=3D"0" style=3D"position: relative;" data-mathml=3D"&lt;math xmlns=3D&qu=
+ot;http://www.w3.org/1998/Math/MathML&quot; overflow=3D&quot;scroll&quot;&g=
+t;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;x&lt;/=
+mi&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;w&lt;/mi&gt;&lt;/msub&gt;&=
+lt;mo&gt;=3D&lt;/mo&gt;&lt;mrow&gt;&lt;mfenced open=3D&quot;(&quot; close=
+=3D&quot;)&quot;&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=3D&quot;ital=
+ic&quot;&gt;x&lt;/mi&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;nd&lt;/m=
+i&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;=
+&lt;/mfenced&gt;&lt;mo&gt;&amp;#x2062;&lt;/mo&gt;&lt;mfenced open=3D&quot;(=
+&quot; close=3D&quot;)&quot;&gt;&lt;mfrac&gt;&lt;mi mathvariant=3D&quot;ita=
+lic&quot;&gt;width&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mfrac&gt;&lt;/mfenc=
+ed&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;x&lt=
+;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/math&gt;" role=3D"presentation"><nob=
+r aria-hidden=3D"true"><span class=3D"math" id=3D"MathJax-Span-32" overflow=
+=3D"scroll" style=3D"width: 14.288em; display: inline-block;"><span style=
+=3D"display: inline-block; position: relative; width: 11.312em; height: 0px=
+; font-size: 126%;"><span style=3D"position: absolute; clip: rect(1.292em, =
+1011.26em, 2.879em, -999.998em); top: -2.329em; left: 0em;"><span class=3D"=
+mrow" id=3D"MathJax-Span-33"><span class=3D"mrow" id=3D"MathJax-Span-34"><s=
+pan class=3D"msub" id=3D"MathJax-Span-35"><span style=3D"display: inline-bl=
+ock; position: relative; width: 1.143em; height: 0px;"><span style=3D"posit=
+ion: absolute; clip: rect(3.425em, 1000.55em, 4.169em, -999.998em); top: -4=
+.015em; left: 0em;"><span class=3D"mi" id=3D"MathJax-Span-36" style=3D"font=
+-family: MathJax_Math-italic;">x</span><span style=3D"display: inline-block=
+; width: 0px; height: 4.02em;"></span></span><span style=3D"position: absol=
+ute; top: -3.867em; left: 0.598em;"><span class=3D"mi" id=3D"MathJax-Span-3=
+7" style=3D"font-size: 70.7%; font-family: MathJax_Math-italic;">w</span><s=
+pan style=3D"display: inline-block; width: 0px; height: 4.02em;"></span></s=
+pan></span></span><span class=3D"mo" id=3D"MathJax-Span-38" style=3D"font-f=
+amily: MathJax_Main; padding-left: 0.3em;">=3D</span><span class=3D"mrow" i=
+d=3D"MathJax-Span-39" style=3D"padding-left: 0.3em;"><span class=3D"mfenced=
+" id=3D"MathJax-Span-40"><span class=3D"mo" id=3D"MathJax-Span-56" style=3D=
+""><span style=3D"font-family: MathJax_Main;">(</span></span><span class=3D=
+"mrow" id=3D"MathJax-Span-42"><span class=3D"msub" id=3D"MathJax-Span-43"><=
+span style=3D"display: inline-block; position: relative; width: 1.441em; he=
+ight: 0px;"><span style=3D"position: absolute; clip: rect(3.425em, 1000.55e=
+m, 4.169em, -999.998em); top: -4.015em; left: 0em;"><span class=3D"mi" id=
+=3D"MathJax-Span-44" style=3D"font-family: MathJax_Math-italic;">x</span><s=
+pan style=3D"display: inline-block; width: 0px; height: 4.02em;"></span></s=
+pan><span style=3D"position: absolute; top: -3.867em; left: 0.598em;"><span=
+ class=3D"mi" id=3D"MathJax-Span-45" style=3D"font-size: 70.7%; font-family=
+: MathJax_Math-italic;">n<span style=3D"font-family: MathJax_Math-italic;">=
+d</span></span><span style=3D"display: inline-block; width: 0px; height: 4.=
+02em;"></span></span></span></span><span class=3D"mo" id=3D"MathJax-Span-46=
+" style=3D"font-family: MathJax_Main; padding-left: 0.201em;">+</span><span=
+ class=3D"mn" id=3D"MathJax-Span-47" style=3D"font-family: MathJax_Main; pa=
+dding-left: 0.201em;">1</span></span><span class=3D"mo" id=3D"MathJax-Span-=
+57" style=3D""><span style=3D"font-family: MathJax_Main;">)</span></span></=
+span><span class=3D"mo" id=3D"MathJax-Span-49"></span><span class=3D"mfence=
+d" id=3D"MathJax-Span-50" style=3D"padding-left: 0.151em;"><span class=3D"m=
+o" id=3D"MathJax-Span-58" style=3D"vertical-align: 0em;"><span style=3D"fon=
+t-family: MathJax_Size1;">(</span></span><span class=3D"mfrac" id=3D"MathJa=
+x-Span-52"><span style=3D"display: inline-block; position: relative; width:=
+ 1.887em; height: 0px; margin-right: 0.102em; margin-left: 0.102em;"><span =
+style=3D"position: absolute; clip: rect(3.375em, 1001.79em, 4.169em, -999.9=
+98em); top: -4.412em; left: 50%; margin-left: -0.89em;"><span class=3D"mi" =
+id=3D"MathJax-Span-53" style=3D"font-size: 70.7%; font-family: MathJax_Math=
+-italic;">w<span style=3D"font-family: MathJax_Math-italic;">i</span><span =
+style=3D"font-family: MathJax_Math-italic;">d</span><span style=3D"font-fam=
+ily: MathJax_Math-italic;">t</span><span style=3D"font-family: MathJax_Math=
+-italic;">h</span></span><span style=3D"display: inline-block; width: 0px; =
+height: 4.02em;"></span></span><span style=3D"position: absolute; clip: rec=
+t(3.425em, 1000.3em, 4.169em, -999.998em); top: -3.619em; left: 50%; margin=
+-left: -0.196em;"><span class=3D"mn" id=3D"MathJax-Span-54" style=3D"font-s=
+ize: 70.7%; font-family: MathJax_Main;">2</span><span style=3D"display: inl=
+ine-block; width: 0px; height: 4.02em;"></span></span><span style=3D"positi=
+on: absolute; clip: rect(0.846em, 1001.89em, 1.193em, -999.998em); top: -1.=
+238em; left: 0em;"><span style=3D"display: inline-block; overflow: hidden; =
+vertical-align: 0em; border-top: 1.3px solid; width: 1.887em; height: 0px;"=
+></span><span style=3D"display: inline-block; width: 0px; height: 1.044em;"=
+></span></span></span></span><span class=3D"mo" id=3D"MathJax-Span-59" styl=
+e=3D"vertical-align: 0em;"><span style=3D"font-family: MathJax_Size1;">)</s=
+pan></span></span><span class=3D"mo" id=3D"MathJax-Span-60" style=3D"font-f=
+amily: MathJax_Main; padding-left: 0.201em;">+</span><span class=3D"mi" id=
+=3D"MathJax-Span-61" style=3D"font-family: MathJax_Math-italic; padding-lef=
+t: 0.201em;">x</span></span></span></span><span style=3D"display: inline-bl=
+ock; width: 0px; height: 2.334em;"></span></span></span><span style=3D"disp=
+lay: inline-block; overflow: hidden; vertical-align: -0.559em; border-left:=
+ 0px solid; width: 0px; height: 1.753em;"></span></span></nobr><span class=
+=3D"MJX_Assistive_MathML" role=3D"presentation"><math xmlns=3D"http://www.w=
+3.org/1998/Math/MathML" overflow=3D"scroll"><mrow><msub><mi mathvariant=3D"=
+italic">x</mi><mi mathvariant=3D"italic">w</mi></msub><mo>=3D</mo><mrow><mf=
+enced open=3D"(" close=3D")"><mrow><msub><mi mathvariant=3D"italic">x</mi><=
+mi mathvariant=3D"italic">nd</mi></msub><mo>+</mo><mn>1</mn></mrow></mfence=
+d><mo>=E2=81=A2</mo><mfenced open=3D"(" close=3D")"><mfrac><mi mathvariant=
+=3D"italic">width</mi><mn>2</mn></mfrac></mfenced><mo>+</mo><mi mathvariant=
+=3D"italic">x</mi></mrow></mrow></math></span></span>
+        </div>
+        <p>
+        </p>
+        <p>
+            </p>
+        <div class=3D"informalequation">
+          <span class=3D"MathJax_Preview" style=3D"color: inherit; display:=
+ none;"></span><span class=3D"MathJax" id=3D"MathJax-Element-6-Frame" tabin=
+dex=3D"0" style=3D"position: relative;" data-mathml=3D"&lt;math xmlns=3D&qu=
+ot;http://www.w3.org/1998/Math/MathML&quot; overflow=3D&quot;scroll&quot;&g=
+t;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;y&lt;/=
+mi&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;w&lt;/mi&gt;&lt;/msub&gt;&=
+lt;mo&gt;=3D&lt;/mo&gt;&lt;mrow&gt;&lt;mfenced open=3D&quot;(&quot; close=
+=3D&quot;)&quot;&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=3D&quot;ital=
+ic&quot;&gt;y&lt;/mi&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;nd&lt;/m=
+i&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;=
+&lt;/mfenced&gt;&lt;mo&gt;&amp;#x2062;&lt;/mo&gt;&lt;mfenced open=3D&quot;(=
+&quot; close=3D&quot;)&quot;&gt;&lt;mfrac&gt;&lt;mi mathvariant=3D&quot;ita=
+lic&quot;&gt;height&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mfrac&gt;&lt;/mfen=
+ced&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi mathvariant=3D&quot;italic&quot;&gt;y&l=
+t;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/math&gt;" role=3D"presentation"><no=
+br aria-hidden=3D"true"><span class=3D"math" id=3D"MathJax-Span-62" overflo=
+w=3D"scroll" style=3D"width: 14.586em; display: inline-block;"><span style=
+=3D"display: inline-block; position: relative; width: 11.56em; height: 0px;=
+ font-size: 126%;"><span style=3D"position: absolute; clip: rect(1.937em, 1=
+011.56em, 4.02em, -999.998em); top: -3.222em; left: 0em;"><span class=3D"mr=
+ow" id=3D"MathJax-Span-63"><span class=3D"mrow" id=3D"MathJax-Span-64"><spa=
+n class=3D"msub" id=3D"MathJax-Span-65"><span style=3D"display: inline-bloc=
+k; position: relative; width: 1.094em; height: 0px;"><span style=3D"positio=
+n: absolute; clip: rect(3.425em, 1000.5em, 4.368em, -999.998em); top: -4.01=
+5em; left: 0em;"><span class=3D"mi" id=3D"MathJax-Span-66" style=3D"font-fa=
+mily: MathJax_Math-italic;">y<span style=3D"display: inline-block; overflow=
+: hidden; height: 1px; width: 0.002em;"></span></span><span style=3D"displa=
+y: inline-block; width: 0px; height: 4.02em;"></span></span><span style=3D"=
+position: absolute; top: -3.867em; left: 0.499em;"><span class=3D"mi" id=3D=
+"MathJax-Span-67" style=3D"font-size: 70.7%; font-family: MathJax_Math-ital=
+ic;">w</span><span style=3D"display: inline-block; width: 0px; height: 4.02=
+em;"></span></span></span></span><span class=3D"mo" id=3D"MathJax-Span-68" =
+style=3D"font-family: MathJax_Main; padding-left: 0.3em;">=3D</span><span c=
+lass=3D"mrow" id=3D"MathJax-Span-69" style=3D"padding-left: 0.3em;"><span c=
+lass=3D"mfenced" id=3D"MathJax-Span-70"><span class=3D"mo" id=3D"MathJax-Sp=
+an-86" style=3D""><span style=3D"font-family: MathJax_Main;">(</span></span=
+><span class=3D"mrow" id=3D"MathJax-Span-72"><span class=3D"msub" id=3D"Mat=
+hJax-Span-73"><span style=3D"display: inline-block; position: relative; wid=
+th: 1.342em; height: 0px;"><span style=3D"position: absolute; clip: rect(3.=
+425em, 1000.5em, 4.368em, -999.998em); top: -4.015em; left: 0em;"><span cla=
+ss=3D"mi" id=3D"MathJax-Span-74" style=3D"font-family: MathJax_Math-italic;=
+">y<span style=3D"display: inline-block; overflow: hidden; height: 1px; wid=
+th: 0.002em;"></span></span><span style=3D"display: inline-block; width: 0p=
+x; height: 4.02em;"></span></span><span style=3D"position: absolute; top: -=
+3.867em; left: 0.499em;"><span class=3D"mi" id=3D"MathJax-Span-75" style=3D=
+"font-size: 70.7%; font-family: MathJax_Math-italic;">n<span style=3D"font-=
+family: MathJax_Math-italic;">d</span></span><span style=3D"display: inline=
+-block; width: 0px; height: 4.02em;"></span></span></span></span><span clas=
+s=3D"mo" id=3D"MathJax-Span-76" style=3D"font-family: MathJax_Main; padding=
+-left: 0.201em;">+</span><span class=3D"mn" id=3D"MathJax-Span-77" style=3D=
+"font-family: MathJax_Main; padding-left: 0.201em;">1</span></span><span cl=
+ass=3D"mo" id=3D"MathJax-Span-87" style=3D""><span style=3D"font-family: Ma=
+thJax_Main;">)</span></span></span><span class=3D"mo" id=3D"MathJax-Span-79=
+"></span><span class=3D"mfenced" id=3D"MathJax-Span-80" style=3D"padding-le=
+ft: 0.151em;"><span class=3D"mo" id=3D"MathJax-Span-88" style=3D"vertical-a=
+lign: 0em;"><span style=3D"font-family: MathJax_Size2;">(</span></span><spa=
+n class=3D"mfrac" id=3D"MathJax-Span-82"><span style=3D"display: inline-blo=
+ck; position: relative; width: 2.086em; height: 0px; margin-right: 0.102em;=
+ margin-left: 0.102em;"><span style=3D"position: absolute; clip: rect(3.375=
+em, 1001.94em, 4.318em, -999.998em); top: -4.561em; left: 50%; margin-left:=
+ -0.99em;"><span class=3D"mi" id=3D"MathJax-Span-83" style=3D"font-size: 70=
+.7%; font-family: MathJax_Math-italic;">h<span style=3D"font-family: MathJa=
+x_Math-italic;">e</span><span style=3D"font-family: MathJax_Math-italic;">i=
+</span><span style=3D"font-family: MathJax_Math-italic;">g</span><span styl=
+e=3D"font-family: MathJax_Math-italic;">h</span><span style=3D"font-family:=
+ MathJax_Math-italic;">t</span></span><span style=3D"display: inline-block;=
+ width: 0px; height: 4.02em;"></span></span><span style=3D"position: absolu=
+te; clip: rect(3.425em, 1000.3em, 4.169em, -999.998em); top: -3.619em; left=
+: 50%; margin-left: -0.196em;"><span class=3D"mn" id=3D"MathJax-Span-84" st=
+yle=3D"font-size: 70.7%; font-family: MathJax_Main;">2</span><span style=3D=
+"display: inline-block; width: 0px; height: 4.02em;"></span></span><span st=
+yle=3D"position: absolute; clip: rect(0.846em, 1002.09em, 1.193em, -999.998=
+em); top: -1.238em; left: 0em;"><span style=3D"display: inline-block; overf=
+low: hidden; vertical-align: 0em; border-top: 1.3px solid; width: 2.086em; =
+height: 0px;"></span><span style=3D"display: inline-block; width: 0px; heig=
+ht: 1.044em;"></span></span></span></span><span class=3D"mo" id=3D"MathJax-=
+Span-89" style=3D"vertical-align: 0em;"><span style=3D"font-family: MathJax=
+_Size2;">)</span></span></span><span class=3D"mo" id=3D"MathJax-Span-90" st=
+yle=3D"font-family: MathJax_Main; padding-left: 0.201em;">+</span><span cla=
+ss=3D"mi" id=3D"MathJax-Span-91" style=3D"font-family: MathJax_Math-italic;=
+ padding-left: 0.201em;">y<span style=3D"display: inline-block; overflow: h=
+idden; height: 1px; width: 0.002em;"></span></span></span></span></span><sp=
+an style=3D"display: inline-block; width: 0px; height: 3.227em;"></span></s=
+pan></span><span style=3D"display: inline-block; overflow: hidden; vertical=
+-align: -0.872em; border-left: 0px solid; width: 0px; height: 2.378em;"></s=
+pan></span></nobr><span class=3D"MJX_Assistive_MathML" role=3D"presentation=
+"><math xmlns=3D"http://www.w3.org/1998/Math/MathML" overflow=3D"scroll"><m=
+row><msub><mi mathvariant=3D"italic">y</mi><mi mathvariant=3D"italic">w</mi=
+></msub><mo>=3D</mo><mrow><mfenced open=3D"(" close=3D")"><mrow><msub><mi m=
+athvariant=3D"italic">y</mi><mi mathvariant=3D"italic">nd</mi></msub><mo>+<=
+/mo><mn>1</mn></mrow></mfenced><mo>=E2=81=A2</mo><mfenced open=3D"(" close=
+=3D")"><mfrac><mi mathvariant=3D"italic">height</mi><mn>2</mn></mfrac></mfe=
+nced><mo>+</mo><mi mathvariant=3D"italic">y</mi></mrow></mrow></math></span=
+></span>
+        </div>
+        <p>
+        </p>
+        <p>
+            Viewport width and height are silently clamped
+            to a range that depends on the implementation.
+            To query this range, call <a class=3D"citerefentry" href=3D"htt=
+ps://registry.khronos.org/OpenGL-Refpages/gl4/html/glGet.xhtml"><span class=
+=3D"citerefentry"><span class=3D"refentrytitle">glGet</span></span></a> wit=
+h argument
+            <code class=3D"constant">GL_MAX_VIEWPORT_DIMS</code>.
+        </p>
+      </div>
+      <div class=3D"refsect1" id=3D"errors">
+        <h2>Errors</h2>
+        <p>
+            <code class=3D"constant">GL_INVALID_VALUE</code> is generated i=
+f either <em class=3D"parameter"><code>width</code></em> or <em class=3D"pa=
+rameter"><code>height</code></em> is negative.
+        </p>
+      </div>
+      <div class=3D"refsect1" id=3D"associatedgets">
+        <h2>Associated Gets</h2>
+        <p>
+            <a class=3D"citerefentry" href=3D"https://registry.khronos.org/=
+OpenGL-Refpages/gl4/html/glGet.xhtml"><span class=3D"citerefentry"><span cl=
+ass=3D"refentrytitle">glGet</span></span></a> with argument <code class=3D"=
+constant">GL_VIEWPORT</code>
+        </p>
+        <p>
+            <a class=3D"citerefentry" href=3D"https://registry.khronos.org/=
+OpenGL-Refpages/gl4/html/glGet.xhtml"><span class=3D"citerefentry"><span cl=
+ass=3D"refentrytitle">glGet</span></span></a> with argument <code class=3D"=
+constant">GL_MAX_VIEWPORT_DIMS</code>
+        </p>
+      </div>
+      <div class=3D"refsect1" id=3D"versions">
+        <h2>Version Support</h2>
+        <div class=3D"informaltable">
+          <table style=3D"border-collapse: collapse; border-top: 2px solid =
+; border-bottom: 2px solid ; border-left: 2px solid ; border-right: 2px sol=
+id ; ">
+            <colgroup>
+              <col style=3D"text-align: left; " />
+              <col style=3D"text-align: center; " class=3D"firstvers" />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " />
+              <col style=3D"text-align: center; " class=3D"lastvers" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th style=3D"text-align: left; border-right: 2px solid ; ">
+               =20
+            </th>
+                <th style=3D"text-align: center; border-bottom: 2px solid ;=
+ " colspan=3D"12">
+                <span class=3D"bold"><strong>OpenGL Version</strong></span>
+            </th>
+              </tr>
+              <tr>
+                <th style=3D"text-align: left; border-right: 2px solid ; bo=
+rder-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>Function / Feature Name</stron=
+g></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>2.0</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>2.1</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>3.0</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>3.1</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>3.2</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>3.3</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>4.0</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>4.1</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>4.2</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>4.3</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-right: 2px solid ; =
+border-bottom: 2px solid ; ">
+                <span class=3D"bold"><strong>4.4</strong></span>
+            </th>
+                <th style=3D"text-align: center; border-bottom: 2px solid ;=
+ ">
+                <span class=3D"bold"><strong>4.5</strong></span>
+            </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style=3D"text-align: left; border-right: 2px solid ; ">
+                  <code class=3D"function">glViewport</code>
+                </td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; border-right: 2px solid ; =
+">=E2=9C=94</td>
+                <td style=3D"text-align: center; ">=E2=9C=94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class=3D"refsect1" id=3D"seealso">
+        <h2>See Also</h2>
+        <p>
+            <a class=3D"citerefentry" href=3D"https://registry.khronos.org/=
+OpenGL-Refpages/gl4/html/glDepthRange.xhtml"><span class=3D"citerefentry"><=
+span class=3D"refentrytitle">glDepthRange</span></span></a>
+        </p>
+      </div>
+      <div class=3D"refsect1" id=3D"Copyright">
+        <h2>Copyright</h2>
+        <p>
+            Copyright <span class=3D"trademark"></span>=C2=A9 1991-2006 Sil=
+icon Graphics, Inc.
+            Copyright <span class=3D"trademark"></span>=C2=A9 2010-2014 Khr=
+onos Group.
+            This document is licensed under the SGI Free Software B License=
+.
+            For details, see
+            <a class=3D"link" href=3D"https://khronos.org/registry/OpenGL-R=
+efpages/LICENSES/LicenseRef-FreeB.txt" target=3D"_top">https://khronos.org/=
+registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</a>.
+        </p>
+      </div>
+    </div>
+    <footer></footer>
+  <div style=3D"position: absolute; width: 0px; height: 0px; overflow: hidd=
+en; padding: 0px; border: 0px; margin: 0px;"><div id=3D"MathJax_Font_Test" =
+style=3D"position: absolute; visibility: hidden; top: 0px; left: 0px; width=
+: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-a=
+lign: left; text-indent: 0px; text-transform: none; line-height: normal; le=
+tter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: n=
+ormal; font-style: normal; font-family: MathJax_Size2, sans-serif;"></div><=
+/div></body>
+</html>
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-fa66152d-02ef-4756-9fae-aff44047d603@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Hover_Frame { border-radius: 0.25em; box-shadow: rgb(136, 51, 170)=
+ 0px 0px 15px; display: inline-block; position: absolute; border: 1px solid=
+ rgb(170, 102, 221) !important; }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow { position: absolute; cursor: poi=
+nter; display: inline-block; border: 2px solid rgb(170, 170, 170); border-r=
+adius: 4px; font-family: "Courier New", Courier; font-size: 9px; color: rgb=
+(240, 240, 240); }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span { display: block; background=
+-color: rgb(170, 170, 170); border: 1px solid; border-radius: 3px; line-hei=
+ght: 0; padding: 4px; }
+
+.MathJax_Hover_Arrow:hover { color: white !important; border: 2px solid rgb=
+(204, 204, 204) !important; }
+
+.MathJax_Hover_Arrow:hover span { background-color: rgb(204, 204, 204) !imp=
+ortant; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-f2f7125d-86d7-4087-a933-ab33f91f60d8@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: cente=
+r; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 22=
+1); color: black; cursor: default; font-family: message-box; font-size: 120=
+%; font-style: normal; text-indent: 0px; text-transform: none; line-height:=
+ normal; letter-spacing: normal; word-spacing: normal; overflow-wrap: norma=
+l; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; box=
+-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+#MathJax_About.MathJax_MousePost { outline: none; }
+
+.MathJax_Menu { position: absolute; background-color: white; color: black; =
+width: auto; padding: 2px; border: 1px solid rgb(204, 204, 204); margin: 0p=
+x; cursor: default; font-style: ; font-variant: normal; font-weight: ; font=
+-stretch: ; font-size: ; font-family: ; font-optical-sizing: ; font-kerning=
+: ; font-feature-settings: ; font-variation-settings: ; text-align: left; t=
+ext-indent: 0px; text-transform: none; line-height: normal; letter-spacing:=
+ normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; =
+float: none; z-index: 201; box-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+.MathJax_MenuItem { padding: 2px 2em; background: transparent; }
+
+.MathJax_MenuArrow { position: absolute; right: 0.5em; padding-top: 0.25em;=
+ color: rgb(102, 102, 102); font-size: 0.75em; }
+
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+
+.MathJax_MenuArrow.RTL { left: 0.5em; right: auto; }
+
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuCheck.RTL { right: 0.7em; left: auto; }
+
+.MathJax_MenuRadioCheck { position: absolute; left: 1em; }
+
+.MathJax_MenuRadioCheck.RTL { right: 1em; left: auto; }
+
+.MathJax_MenuLabel { padding: 2px 2em 4px 1.33em; font-style: italic; }
+
+.MathJax_MenuRule { border-top: 1px solid rgb(204, 204, 204); margin: 4px 1=
+px 0px; }
+
+.MathJax_MenuDisabled { color: graytext; }
+
+.MathJax_MenuActive { background-color: highlight; color: highlighttext; }
+
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus { background-color: r=
+gb(232, 232, 232); }
+
+.MathJax_ContextMenu:focus { outline: none; }
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus { outline: none; }
+
+#MathJax_AboutClose { top: 0.2em; right: 0.2em; }
+
+.MathJax_Menu .MathJax_MenuClose { top: -10px; left: -10px; }
+
+.MathJax_MenuClose { position: absolute; cursor: pointer; display: inline-b=
+lock; border: 2px solid rgb(170, 170, 170); border-radius: 18px; font-famil=
+y: "Courier New", Courier; font-size: 24px; color: rgb(240, 240, 240); }
+
+.MathJax_MenuClose span { display: block; background-color: rgb(170, 170, 1=
+70); border: 1.5px solid; border-radius: 18px; line-height: 0; padding: 8px=
+ 0px 6px; }
+
+.MathJax_MenuClose:hover { color: white !important; border: 2px solid rgb(2=
+04, 204, 204) !important; }
+
+.MathJax_MenuClose:hover span { background-color: rgb(204, 204, 204) !impor=
+tant; }
+
+.MathJax_MenuClose:hover:focus { outline: none; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-d3633294-da41-430a-a744-8d1bc0f0557e@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview .MJXf-math { color: inherit !important; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-64b95202-c547-4198-8384-15dc3db2e222@mhtml.blink
+
+@charset "utf-8";
+
+.MJX_Assistive_MathML { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px)=
+; user-select: none; position: absolute !important; padding: 1px 0px 0px !i=
+mportant; border: 0px !important; height: 1px !important; width: 1px !impor=
+tant; overflow: hidden !important; display: block !important; }
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block { width: 100% !important; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-c0cb74c2-5bcd-4e69-b273-78ca95bd7c03@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_Zoom { position: absolute; background-color: rgb(240, 240, 240); o=
+verflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px so=
+lid black; margin: 0px; font-weight: normal; font-style: normal; text-align=
+: left; text-indent: 0px; text-transform: none; line-height: normal; letter=
+-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space:=
+ nowrap; float: none; box-sizing: content-box; box-shadow: rgb(170, 170, 17=
+0) 5px 5px 15px; }
+
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 30=
+0; display: inline-block; width: 100%; height: 100%; border: 0px; padding: =
+0px; margin: 0px; background-color: white; opacity: 0; }
+
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px=
+; width: 0px; }
+
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: =
+302; display: inline-block; border: 0px; padding: 0px; margin: 0px; backgro=
+und-color: white; opacity: 0; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-741f6a12-ab2d-49a1-b07a-a19c96544bf6@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview { color: rgb(136, 136, 136); }
+
+#MathJax_Message { position: fixed; left: 1em; bottom: 1.5em; background-co=
+lor: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px;=
+ padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto;=
+ white-space: nowrap; }
+
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; =
+z-index: 101; border: 0px; margin: 0px; padding: 0px; }
+
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-c284b8ab-7f22-409a-8327-a9075537d412@mhtml.blink
+
+@charset "utf-8";
+
+.MJXp-script { font-size: 0.8em; }
+
+.MJXp-right { transform-origin: right center; }
+
+.MJXp-bold { font-weight: bold; }
+
+.MJXp-italic { font-style: italic; }
+
+.MJXp-scr { font-family: MathJax_Script, "Times New Roman", Times, STIXGene=
+ral, serif; }
+
+.MJXp-frak { font-family: MathJax_Fraktur, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-sf { font-family: MathJax_SansSerif, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-cal { font-family: MathJax_Caligraphic, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-mono { font-family: MathJax_Typewriter, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-largeop { font-size: 150%; }
+
+.MJXp-largeop.MJXp-int { vertical-align: -0.2em; }
+
+.MJXp-math { display: inline-block; line-height: 1.2; text-indent: 0px; fon=
+t-family: "Times New Roman", Times, STIXGeneral, serif; white-space: nowrap=
+; border-collapse: collapse; }
+
+.MJXp-display { display: block; text-align: center; margin: 1em 0px; }
+
+.MJXp-math span { display: inline-block; }
+
+.MJXp-box { text-align: center; display: block !important; }
+
+.MJXp-box::after { content: " "; }
+
+.MJXp-rule { margin-top: 0.1em; display: block !important; }
+
+.MJXp-char { display: block !important; }
+
+.MJXp-mo { margin: 0px 0.15em; }
+
+.MJXp-mfrac { margin: 0px 0.125em; vertical-align: 0.25em; }
+
+.MJXp-denom { width: 100%; display: inline-table !important; }
+
+.MJXp-denom > * { display: table-row !important; }
+
+.MJXp-surd { vertical-align: top; }
+
+.MJXp-surd > * { display: block !important; }
+
+.MJXp-script-box > * { height: 50%; display: table !important; }
+
+.MJXp-script-box > * > * { vertical-align: top; display: table-cell !import=
+ant; }
+
+.MJXp-script-box > :last-child > * { vertical-align: bottom; }
+
+.MJXp-script-box > * > * > * { display: block !important; }
+
+.MJXp-mphantom { visibility: hidden; }
+
+.MJXp-munderover { display: inline-table !important; }
+
+.MJXp-over { text-align: center; display: inline-block !important; }
+
+.MJXp-over > * { display: block !important; }
+
+.MJXp-munderover > * { display: table-row !important; }
+
+.MJXp-mtable { vertical-align: 0.25em; margin: 0px 0.125em; }
+
+.MJXp-mtable > * { vertical-align: middle; display: inline-table !important=
+; }
+
+.MJXp-mtr { display: table-row !important; }
+
+.MJXp-mtd { text-align: center; padding: 0.5em 0px 0px 0.5em; display: tabl=
+e-cell !important; }
+
+.MJXp-mtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-mlabeledtr { display: table-row !important; }
+
+.MJXp-mlabeledtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mlabeledtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-merror { background-color: rgb(255, 255, 136); color: rgb(204, 0, 0);=
+ border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; fo=
+nt-size: 90%; }
+
+.MJXp-scale0 { transform: scaleX(0); }
+
+.MJXp-scale1 { transform: scaleX(0.1); }
+
+.MJXp-scale2 { transform: scaleX(0.2); }
+
+.MJXp-scale3 { transform: scaleX(0.3); }
+
+.MJXp-scale4 { transform: scaleX(0.4); }
+
+.MJXp-scale5 { transform: scaleX(0.5); }
+
+.MJXp-scale6 { transform: scaleX(0.6); }
+
+.MJXp-scale7 { transform: scaleX(0.7); }
+
+.MJXp-scale8 { transform: scaleX(0.8); }
+
+.MJXp-scale9 { transform: scaleX(0.9); }
+
+.MathJax_PHTML .noError { font-size: 90%; text-align: left; color: black; p=
+adding: 1px 3px; border: 1px solid; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-baf174c2-b851-4d2c-a4ff-dd45a3a203a7@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Display { text-align: center; margin: 1em 0em; position: relative;=
+ text-indent: 0px; max-width: none; max-height: none; min-width: 0px; min-h=
+eight: 0px; width: 100%; display: block !important; }
+
+.MathJax .merror { background-color: rgb(255, 255, 136); color: rgb(204, 0,=
+ 0); border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal=
+; font-size: 90%; }
+
+.MathJax .MJX-monospace { font-family: monospace; }
+
+.MathJax .MJX-sans-serif { font-family: sans-serif; }
+
+#MathJax_Tooltip { background-color: infobackground; color: infotext; borde=
+r: 1px solid black; box-shadow: rgb(170, 170, 170) 2px 2px 5px; padding: 3p=
+x 4px; z-index: 401; position: absolute; left: 0px; top: 0px; width: auto; =
+height: auto; display: none; }
+
+.MathJax { display: inline; font-style: normal; font-weight: normal; line-h=
+eight: normal; font-size: 100%; text-indent: 0px; text-align: left; text-tr=
+ansform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap:=
+ normal; white-space: nowrap; float: none; direction: ltr; max-width: none;=
+ max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0=
+px; margin: 0px; }
+
+.MathJax:focus, body :focus .MathJax { display: inline-table; }
+
+.MathJax.MathJax_FullWidth { text-align: center; display: table-cell !impor=
+tant; width: 10000em !important; }
+
+.MathJax img, .MathJax nobr, .MathJax a { border: 0px; padding: 0px; margin=
+: 0px; max-width: none; max-height: none; min-width: 0px; min-height: 0px; =
+vertical-align: 0px; line-height: normal; text-decoration: none; }
+
+img.MathJax_strut { border: 0px !important; padding: 0px !important; margin=
+: 0px !important; vertical-align: 0px !important; }
+
+.MathJax span { display: inline; position: static; border: 0px; padding: 0p=
+x; margin: 0px; vertical-align: 0px; line-height: normal; text-decoration: =
+none; }
+
+.MathJax nobr { white-space: nowrap !important; }
+
+.MathJax img { display: inline !important; float: none !important; }
+
+.MathJax * { transition: none 0s ease 0s; }
+
+.MathJax_Processing { visibility: hidden; position: fixed; width: 0px; heig=
+ht: 0px; overflow: hidden; }
+
+.MathJax_Processed { display: none !important; }
+
+.MathJax_ExBox { overflow: hidden; width: 1px; height: 60ex; min-height: 0p=
+x; max-height: none; display: block !important; }
+
+.MathJax .MathJax_EmBox { overflow: hidden; width: 1px; height: 60em; min-h=
+eight: 0px; max-height: none; display: block !important; }
+
+.MathJax_LineBox { display: table !important; }
+
+.MathJax_LineBox span { min-width: 0px; max-width: none; padding: 0px; bord=
+er: 0px; margin: 0px; display: table-cell !important; width: 10000em !impor=
+tant; }
+
+.MathJax .MathJax_HitBox { cursor: text; background: white; opacity: 0; }
+
+.MathJax .MathJax_HitBox * { filter: none; opacity: 1; background: transpar=
+ent; }
+
+#MathJax_Tooltip * { filter: none; opacity: 1; background: transparent; }
+
+@font-face { font-family: MathJax_Main; src: url("https://cdnjs.cloudflare.=
+com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.wo=
+ff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/=
+mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=3D2.7.1") f=
+ormat("opentype"); }
+
+@font-face { font-family: MathJax_Main-bold; src: url("https://cdnjs.cloudf=
+lare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=3D2.7.1") fo=
+rmat("opentype"); }
+
+@font-face { font-family: MathJax_Main-italic; src: url("https://cdnjs.clou=
+dflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Ita=
+lic.woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax=
+/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=3D2.7.=
+1") format("opentype"); }
+
+@font-face { font-family: MathJax_Math-italic; src: url("https://cdnjs.clou=
+dflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Ita=
+lic.woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax=
+/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=3D2.7.=
+1") format("opentype"); }
+
+@font-face { font-family: MathJax_Caligraphic; src: url("https://cdnjs.clou=
+dflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligrap=
+hic-Regular.woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.=
+com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regu=
+lar.otf?V=3D2.7.1") format("opentype"); }
+
+@font-face { font-family: MathJax_Size1; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+@font-face { font-family: MathJax_Size2; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+@font-face { font-family: MathJax_Size3; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+@font-face { font-family: MathJax_Size4; src: url("https://cdnjs.cloudflare=
+.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.=
+woff?V=3D2.7.1") format("woff"), url("https://cdnjs.cloudflare.com/ajax/lib=
+s/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=3D2.7.1"=
+) format("opentype"); }
+
+.MathJax .noError { font-size: 90%; text-align: left; color: black; padding=
+: 1px 3px; border: 1px solid; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://registry.khronos.org/OpenGL-Refpages/gl4/html/opengl-man.css
+
+@charset "utf-8";
+
+html, body { margin: 10px; }
+
+p { font: 16px verdana, sans-serif; margin: 0px; padding-bottom: 12px; }
+
+h1 { font: bold 25px verdana, sans-serif; margin-top: 0px; margin-bottom: 3=
+px; padding-top: 0px; padding-bottom: 0px; }
+
+h2 { font: bold 19px verdana, sans-serif; margin-top: 28px; margin-bottom: =
+3px; padding-top: 0px; padding-bottom: 0px; }
+
+h3 { margin-top: 28px; margin-bottom: 3px; padding-top: 0px; padding-bottom=
+: 0px; font: bold 19px verdana, sans-serif !important; }
+
+li { font: 16px verdana, sans-serif; margin-top: 0px; margin-bottom: 18px; =
+padding-top: 0px; padding-bottom: 0px; }
+
+.pdparam { font: italic 16px verdana, sans-serif; }
+
+.term { font: italic 16px verdana, sans-serif; }
+
+.type { font: 16px verdana, sans-serif !important; }
+
+.parameter { font-style: italic; }
+
+a:link, a:visited { color: blue; text-decoration: none; }
+
+a:hover { background-color: rgb(255, 255, 153); }
+
+div.funcsynopsis { text-align: left; background-color: rgb(230, 230, 230); =
+font: 16px verdana, sans-serif; padding-top: 10px; padding-bottom: 10px; }
+
+div.funcsynopsis table { border-collapse: separate; font: 16px verdana, san=
+s-serif; }
+
+div.funcsynopsis td { background-color: rgb(230, 230, 230); border: 0px sol=
+id rgb(0, 0, 0); padding: 1px; font: 16px verdana, sans-serif; }
+
+div.refsect1 { font-family: verdana, sans-serif; font-size: 16px; }
+
+code.constant { font: 16px "courier new", monospace !important; }
+
+span.errorname { font: 16px verdana, sans-serif !important; }
+
+code.function { font: bold 16px verdana, sans-serif !important; }
+
+b.fsfunc { font: bold 16px verdana, sans-serif !important; }
+
+code.varname { font: italic 16px verdana, sans-serif; }
+
+code.replaceable { font: italic 16px "courier new", monospace; }
+
+code.funcdef { font: 16px verdana, sans-serif !important; }
+
+.citerefentry { font: 16px verdana, sans-serif !important; }
+
+.parameter { font-style: italic; }
+
+code.fsfunc { font: 16px verdana, sans-serif !important; }
+
+dt { margin-top: 15px; }
+
+div.refsect1 table { width: 100%; margin-top: 10px; background-color: rgb(2=
+55, 255, 255); border-collapse: collapse; border-color: rgb(0, 0, 0); borde=
+r-width: 1px; font: 16px verdana, sans-serif; }
+
+div.refsect1 th { border-collapse: collapse; border-color: rgb(0, 0, 0); bo=
+rder-width: 1px; font: bold 16px verdana, sans-serif; }
+
+div.refsect1 td { background-color: rgb(255, 255, 255); padding: 5px; verti=
+cal-align: text-top; border-collapse: collapse; border-color: rgb(0, 0, 0);=
+ border-width: 1px; font: 16px verdana, sans-serif; }
+
+div.refsect1 p { font: 16px verdana, sans-serif; margin-top: 8px; margin-bo=
+ttom: 8px; padding-top: 0px; padding-bottom: 0px; }
+
+div.refsect2 { font: 16px "courier new", monospace !important; }
+
+div.refsect2 table { margin-top: 0px; background-color: rgb(230, 230, 230);=
+ width: 100%; border: 0px solid rgb(0, 0, 0); padding: 2px; font: 16px "cou=
+rier new", monospace !important; }
+
+div.refsect2 td { background-color: rgb(230, 230, 230); white-space: pre; f=
+ont: 16px "courier new", monospace !important; }
+
+div.refsect3 { font: 11px verdana, sans-serif; margin-top: 50px; margin-bot=
+tom: 20px; padding-top: 0px; padding-bottom: 0px; }
+------MultipartBoundary--jNiem8NYauxsEEaes5YFxI58XoGf0CkcgWpxuzSRDG------

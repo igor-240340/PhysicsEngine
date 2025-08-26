@@ -1,0 +1,2116 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://web.archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html
+Subject: Motion with linear drag
+Date: Sat, 10 Feb 2024 03:46:00 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----"
+
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: text/html
+Content-ID: <frame-25BE68D1B89A39B03E00C4766EDE6520@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web.archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252">
+
+
+
+
+
+
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://web-static.archi=
+ve.org/_static/css/banner-styles.css?v=3DS1zqJCYt">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://web-static.archi=
+ve.org/_static/css/iconochive.css?v=3DqtvMKcIJ">
+<!-- End Wayback Rewrite JS Include -->
+
+   <title>Motion with linear drag</title>
+</head>
+<body bgcolor=3D"#FFE4C8"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<div id=3D"wm-ipp-base" lang=3D"en" style=3D"display: block; direction: ltr=
+;">
+<template shadowmode=3D"closed"><div id=3D"wm-ipp" style=3D"position:fixed;=
+left:0;top:0;right:0;" class=3D"">
+<div id=3D"donato" style=3D"position:relative;width:100%;">
+  <div id=3D"donato-base">
+    <iframe id=3D"donato-if" src=3D"cid:frame-07DD66EB8379B888788674E9B7972=
+2E2@mhtml.blink" scrolling=3D"no" frameborder=3D"0" style=3D"width:100%; he=
+ight:100%">
+    </iframe>
+  </div>
+</div><div id=3D"wm-ipp-inside">
+  <div id=3D"wm-toolbar" style=3D"position:relative;display:flex;flex-flow:=
+row nowrap;justify-content:space-between;">
+    <div id=3D"wm-logo" style=3D"/*width:110px;*/padding-top:12px;">
+      <a href=3D"https://web.archive.org/web/" title=3D"Wayback Machine hom=
+e page"><img src=3D"https://web-static.archive.org/_static/images/toolbar/w=
+ayback-toolbar-logo-200.png" alt=3D"Wayback Machine" style=3D"width:100px" =
+border=3D"0"></a>
+    </div>
+    <div class=3D"c" style=3D"display:flex;flex-flow:column nowrap;justify-=
+content:space-between;flex:1;">
+      <form class=3D"u" style=3D"display:flex;flex-direction:row;flex-wrap:=
+nowrap;" target=3D"_top" method=3D"get" action=3D"https://web.archive.org/w=
+eb/submit" name=3D"wmtb" id=3D"wmtb"><input type=3D"text" name=3D"url" id=
+=3D"wmtbURL" value=3D"http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.htm=
+l" style=3D"flex:1;" autocomplete=3D"off"><input type=3D"submit" value=3D"G=
+o">
+      </form>
+      <div style=3D"display:flex;flex-flow:row nowrap;align-items:flex-end;=
+">
+                <div class=3D"s" id=3D"wm-nav-captures" style=3D"flex:1;"><=
+a class=3D"t" href=3D"https://web.archive.org/web/*/http://hyperphysics.phy=
+-astr.gsu.edu/hbase/lindrg.html" title=3D"See a list of every capture for t=
+his URL">181 captures</a><div class=3D"r" title=3D"Timespan for captures of=
+ this URL">10 Jan 2001 - 11 Jan 2024</div></div>
+        <div class=3D"k">
+          <a href=3D"https://web.archive.org/web/20000501000000/http://hype=
+rphysics.phy-astr.gsu.edu/hbase/lindrg.html" id=3D"wm-graph-anchor">
+            <div id=3D"wm-ipp-sparkline" title=3D"Explore captures for this=
+ URL" style=3D"position: relative">
+              <canvas id=3D"wm-sparkline-canvas" width=3D"725" height=3D"27=
+" border=3D"0"></canvas>
+            <div class=3D"yt" style=3D"display: none; width: 25px; height: =
+27px; left: 100px;"></div><div class=3D"mt" style=3D"display: none; width: =
+2px; height: 27px; left: 109px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class=3D"n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class=3D"m">
+            <td class=3D"b" nowrap=3D"nowrap"><a href=3D"https://web.archiv=
+e.org/web/20071231132258/http://hyperphysics.phy-astr.gsu.edu:80/Hbase/lind=
+rg.html#c1" title=3D"31 Dec 2007"><strong>Dec</strong></a></td>
+            <td class=3D"c" id=3D"displayMonthEl" title=3D"You are here: 11=
+:07:27 Feb 08, 2008">Feb</td>
+            <td class=3D"f" nowrap=3D"nowrap"><a href=3D"https://web.archiv=
+e.org/web/20080314211203/http://hyperphysics.phy-astr.gsu.edu:80/Hbase/lind=
+rg.html" title=3D"14 Mar 2008"><strong>Mar</strong></a></td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class=3D"d">
+            <td class=3D"b" nowrap=3D"nowrap"><a href=3D"https://web.archiv=
+e.org/web/20080124172101/http://hyperphysics.phy-astr.gsu.edu:80/Hbase/lind=
+rg.html" title=3D"17:21:01 Jan 24, 2008"><img src=3D"https://web-static.arc=
+hive.org/_static/images/toolbar/wm_tb_prv_on.png" alt=3D"Previous capture" =
+width=3D"14" height=3D"16" border=3D"0"></a></td>
+            <td class=3D"c" id=3D"displayDayEl" style=3D"width:34px;font-si=
+ze:22px;white-space:nowrap;" title=3D"You are here: 11:07:27 Feb 08, 2008">=
+08</td>
+            <td class=3D"f" nowrap=3D"nowrap"><a href=3D"https://web.archiv=
+e.org/web/20080314211203/http://hyperphysics.phy-astr.gsu.edu:80/Hbase/lind=
+rg.html" title=3D"21:12:03 Mar 14, 2008"><img src=3D"https://web-static.arc=
+hive.org/_static/images/toolbar/wm_tb_nxt_on.png" alt=3D"Next capture" widt=
+h=3D"14" height=3D"16" border=3D"0"></a></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class=3D"y">
+            <td class=3D"b" nowrap=3D"nowrap"><a href=3D"https://web.archiv=
+e.org/web/20070206014432/http://hyperphysics.phy-astr.gsu.edu:80/hbase/lind=
+rg.html" title=3D"06 Feb 2007"><strong>2007</strong></a></td>
+            <td class=3D"c" id=3D"displayYearEl" title=3D"You are here: 11:=
+07:27 Feb 08, 2008">2008</td>
+            <td class=3D"f" nowrap=3D"nowrap"><a href=3D"https://web.archiv=
+e.org/web/20090302204348/http://hyperphysics.phy-astr.gsu.edu:80/Hbase/lind=
+rg.html" title=3D"02 Mar 2009"><strong>2009</strong></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=3D"r" style=3D"display:flex;flex-flow:column nowrap;align-it=
+ems:flex-end;justify-content:space-between;">
+      <div id=3D"wm-btns" style=3D"text-align:right;height:23px;">
+                <span class=3D"xxs">
+          <div id=3D"wm-save-snapshot-success">success</div>
+          <div id=3D"wm-save-snapshot-fail">fail</div>
+          <a id=3D"wm-save-snapshot-open" href=3D"https://web.archive.org/w=
+eb/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#" =
+title=3D"Share via My Web Archive" style=3D"display: inline-block;">
+            <span class=3D"iconochive-web"></span>
+          </a>
+          <a href=3D"https://archive.org/account/login.php" title=3D"Sign I=
+n" id=3D"wm-sign-in" style=3D"display: none;">
+            <span class=3D"iconochive-person"></span>
+          </a>
+          <span id=3D"wm-save-snapshot-in-progress" class=3D"iconochive-web=
+"></span>
+        </span>
+                <a class=3D"xxs" href=3D"http://faq.web.archive.org/" title=
+=3D"Get some help using the Wayback Machine" style=3D"top:-6px;"><span clas=
+s=3D"iconochive-question" style=3D"color:rgb(87,186,244);font-size:160%;"><=
+/span></a>
+        <a id=3D"wm-tb-close" href=3D"https://web.archive.org/web/200802081=
+10727/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#close" style=
+=3D"top:-2px;" title=3D"Close the toolbar"><span class=3D"iconochive-remove=
+-circle" style=3D"color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id=3D"wm-share" class=3D"xxs">
+        <a href=3D"https://web.archive.org/web/20080208110727/http://web.ar=
+chive.org/screenshot/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html=
+" id=3D"wm-screenshot" title=3D"screenshot" style=3D"visibility: hidden;">
+          <span class=3D"wm-icon-screen-shot"></span>
+        </a>
+        <a href=3D"https://web.archive.org/web/20080208110727/http://hyperp=
+hysics.phy-astr.gsu.edu/hbase/lindrg.html#" id=3D"wm-video" title=3D"video"=
+>
+          <span class=3D"iconochive-movies"></span>
+        </a>
+        <a id=3D"wm-share-facebook" href=3D"https://web.archive.org/web/200=
+80208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#" data-u=
+rl=3D"https://web.archive.org/web/20080208110727/http://hyperphysics.phy-as=
+tr.gsu.edu:80/Hbase/lindrg.html" title=3D"Share on Facebook" style=3D"margi=
+n-right:5px;" target=3D"_blank"><span class=3D"iconochive-facebook" style=
+=3D"color:#3b5998;font-size:160%;"></span></a>
+        <a id=3D"wm-share-twitter" href=3D"https://web.archive.org/web/2008=
+0208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#" data-ur=
+l=3D"https://web.archive.org/web/20080208110727/http://hyperphysics.phy-ast=
+r.gsu.edu:80/Hbase/lindrg.html" title=3D"Share on Twitter" style=3D"margin-=
+right:5px;" target=3D"_blank"><span class=3D"iconochive-twitter" style=3D"c=
+olor:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style=3D"padding-right:2px;text-align:right;white-space:nowrap;"=
+>
+        <a id=3D"wm-expand" class=3D"wm-btn wm-closed" href=3D"https://web.=
+archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/l=
+indrg.html#expand"><span id=3D"wm-expand-icon" class=3D"iconochive-down-sol=
+id"></span> <span class=3D"xxs" style=3D"font-size:80%;">About this capture=
+</span></a>
+      </div>
+    </div>
+  </div>
+    <div id=3D"wm-capinfo" style=3D"border-top:1px solid #777;display:none;=
+ overflow: hidden">
+        <div id=3D"wm-capinfo-notice" source=3D"api"></div>
+                <div id=3D"wm-capinfo-collected-by">
+    <div style=3D"background-color:#666;color:#fff;font-weight:bold;text-al=
+ign:center">COLLECTED BY</div>
+    <div style=3D"padding:3px;position:relative" id=3D"wm-collected-by-cont=
+ent">
+            <div style=3D"display:inline-block;vertical-align:top;width:50%=
+;">
+			<span class=3D"c-logo" style=3D"background-image:url(https://archive.org=
+/services/img/alexacrawls);"></span>
+		Organization: <a style=3D"color:#33f;" href=3D"https://archive.org/detail=
+s/alexacrawls" target=3D"_new"><span class=3D"wm-title">Alexa Crawls</span>=
+</a>
+		<div style=3D"max-height:75px;overflow:hidden;position:relative;">
+	  <div style=3D"position:absolute;top:0;left:0;width:100%;height:75px;back=
+ground:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0)=
+ 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href=3D"http://www.alexa.com/">Alexa Internet</a> h=
+as been donating their crawl data to the Internet Archive.  Flowing in ever=
+y day, these data are added to the <a href=3D"http://web.archive.org/">Wayb=
+ack Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style=3D"display:inline-block;vertical-align:top;width:49%;">
+			<span class=3D"c-logo" style=3D"background-image:url(https://archive.org=
+/services/img/51_crawl)"></span>
+		<div>Collection: <a style=3D"color:#33f;" href=3D"https://archive.org/det=
+ails/51_crawl" target=3D"_new"><span class=3D"wm-title">51_crawl</span></a>=
+</div>
+		<div style=3D"max-height:75px;overflow:hidden;position:relative;">
+	  <div style=3D"position:absolute;top:0;left:0;width:100%;height:75px;back=
+ground:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0)=
+ 90%,rgba(255,255,255,255) 100%);"></div>
+	  this data is currently not publicly accessible.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id=3D"wm-capinfo-timestamps">
+    <div style=3D"background-color:#666;color:#fff;font-weight:bold;text-al=
+ign:center" title=3D"Timestamps for the elements of this page">TIMESTAMPS</=
+div>
+    <div>
+      <div id=3D"wm-capresources" style=3D"margin:0 5px 5px 5px;max-height:=
+250px;overflow-y:scroll !important"></div>
+      <div id=3D"wm-capresources-loading" style=3D"text-align:left;margin:0=
+ 20px 5px 5px;display:none"><img src=3D"https://web-static.archive.org/_sta=
+tic/images/loading.gif" alt=3D"loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel=3D"stylesheet" type=3D"text/css" href=3D"http=
+s://web-static.archive.org/_static/css/banner-styles.css?v=3DS1zqJCYt"><lin=
+k rel=3D"stylesheet" type=3D"text/css" href=3D"https://web-static.archive.o=
+rg/_static/css/iconochive.css?v=3DqtvMKcIJ"><div class=3D"wb-autocomplete-s=
+uggestions "></div></template></div><div id=3D"wm-ipp-print">The Wayback Ma=
+chine - https://web.archive.org/web/20080208110727/http://hyperphysics.phy-=
+astr.gsu.edu:80/Hbase/lindrg.html</div>
+
+<!-- END WAYBACK TOOLBAR INSERT -->
+=20
+<!-- Copyright 1998 by Carl Rod Nave, RodNave@gsu.edu-->
+<a name=3D"c1"></a>
+<table width=3D"580" height=3D"370" border=3D"1" cellspacing=3D"2" cellpadd=
+ing=3D"2">
+<tbody><tr>
+<td width=3D"514" height=3D"309">
+<h1 align=3D"center">Motion with Linear Drag</h1>
+<table border=3D"1" cellspacing=3D"2" cellpadding=3D"2"><tbody><tr><td>
+<img src=3D"https://web.archive.org/web/20080208110727im_/http://hyperphysi=
+cs.phy-astr.gsu.edu/hbase/fluids/imgflu/viscfb.gif"><br>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#c3">Motion equations=
+</a></h3>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#c2">Sinking object</=
+a></h3>
+</td><td><img src=3D"https://web.archive.org/web/20080208110727im_/http://h=
+yperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscp.gif"><br>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg2.html#c4">Motion equation=
+s</a></h3></td>
+<td> These are two types of problems which involve fluid friction at low ve=
+locities where it is approximately linearly dependent upon velocity.=20
+</td></tr></tbody></table>
+
+</td>
+<td width=3D"66" align=3D"center"><a href=3D"https://web.archive.org/web/20=
+080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index<=
+/a><br><br><a href=3D"https://web.archive.org/web/20080208110727/http://hyp=
+erphysics.phy-astr.gsu.edu/hbase/flufri.html#c1">Fluid friction</a></td></t=
+r>
+<tr>
+<td height=3D"17">&nbsp;<table><tbody><tr><td width=3D"450"><a href=3D"http=
+s://web.archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.edu=
+/hbase/hph.html"> HyperPhysics</a>*****<a href=3D"https://web.archive.org/w=
+eb/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechc=
+on">     Mechanics </a>*****<a href=3D"https://web.archive.org/web/20080208=
+110727/http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">  Flui=
+ds </a></td><td align=3D"right"><font size=3D"-1"><i>R Nave</i></font></td>=
+</tr></tbody></table></td>
+<td><a href=3D"https://web.archive.org/web/20080208110727/Javascript:histor=
+y.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name=3D"c2"></a>
+<table width=3D"580" height=3D"370" border=3D"1" cellspacing=3D"2" cellpadd=
+ing=3D"2">
+<tbody><tr>
+<td width=3D"514" height=3D"309">
+<h1 align=3D"center">Sinking Object</h1>
+<p>For the description of an object sinking from a rest position, both the =
+<a href=3D"https://web.archive.org/web/20080208110727/http://hyperphysics.p=
+hy-astr.gsu.edu/hbase/pbuoy.html#buoy">buoyant force</a> and <a href=3D"htt=
+ps://web.archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.ed=
+u/hbase/airfri.html#c3">viscous resistance</a> must be included.</p>
+<table><tbody><tr><td>
+<img src=3D"https://web.archive.org/web/20080208110727im_/http://hyperphysi=
+cs.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf2b.gif">
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#c3">Motion equations=
+</a></h3></td>
+<td>
+
+ <center><img src=3D"https://web.archive.org/web/20080208110727im_/http://h=
+yperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3b.gif"></center><p>U=
+sing the net gravitational acceleration</p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3c.gif"></center>
+<p>yields terminal velocity</p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3d.gif"></center>
+<p>and characteristic time</p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3e.gif">.</center>
+</td></tr></tbody></table>
+<p>The velocity at time t can be stated in terms of the terminal velocity a=
+nd the characteristic time.</p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3f.gif"></center>
+
+<p>The distance traveled in time t is </p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3g.gif"></center>
+<p>This motion can be modeled for a spherical object using the expression f=
+or <a href=3D"https://web.archive.org/web/20080208110727/http://hyperphysic=
+s.phy-astr.gsu.edu/hbase/airfri.html#c3">viscous resistance</a> in terms of=
+ the fluid <a href=3D"https://web.archive.org/web/20080208110727/http://hyp=
+erphysics.phy-astr.gsu.edu/hbase/pfric.html#vis">viscosity</a>. </p>
+
+
+
+
+<form method=3D"" action=3D"https://web.archive.org/web/20080208110727/http=
+://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html">
+=20
+<p>Consider a sphere of mass m =3D <input type=3D"text" name=3D"mg" value=
+=3D"" size=3D"6"> gm =3D <input type=3D"text" name=3D"m" value=3D"" size=3D=
+"6"> kg</p>
+<p>and density &#961; =3D <input type=3D"text" name=3D"dg" value=3D"" size=
+=3D"6"> gm/cm<sup>3</sup> =3D <input type=3D"text" name=3D"d" value=3D"" si=
+ze=3D"6"> kg/m<sup>3</sup></p>
+<p>corresponding to radius r =3D <input type=3D"text" name=3D"rc" value=3D"=
+" size=3D"6"> cm =3D <input type=3D"text" name=3D"r" value=3D"" size=3D"6">=
+ m</p>
+<p>If such a sphere sinks through a fluid of density <input type=3D"text" n=
+ame=3D"dfg" value=3D"" size=3D"6">gm/cm<sup>3</sup> =3D <input type=3D"text=
+" name=3D"df" value=3D"" size=3D"6"> kg/m<sup>3</sup></p>
+<p>the initial gravitational acceleration will be g' =3D <input type=3D"tex=
+t" name=3D"gp" value=3D"" size=3D"6"> m/s<sup>2</sup> =3D <input type=3D"te=
+xt" name=3D"gpf" value=3D"" size=3D"6"> g.</p>
+<p>If the fluid viscosity is &#951; =3D<input type=3D"text" name=3D"vs" val=
+ue=3D"" size=3D"6"> poise =3D<input type=3D"text" name=3D"vsw" value=3D"" s=
+ize=3D"6"> &#951;<sub>water</sub></p>
+<p>then this sinking motion will be characterized by a terminal velocity<br=
+> v<sub>t</sub> =3D <input type=3D"text" name=3D"vt" value=3D"" size=3D"6">=
+ m/s</p>
+<p>and a characteristic time &#964; =3D <input type=3D"text" name=3D"tau" v=
+alue=3D"" size=3D"6"> seconds.</p>
+<p>If this object is released from rest, then in time t =3D <input type=3D"=
+text" name=3D"t" value=3D"" size=3D"6"> sec, </p>
+<p>it will fall to depth d =3D <input type=3D"text" name=3D"hc" value=3D"" =
+size=3D"6"> cm =3D<input type=3D"text" name=3D"h" value=3D"" size=3D"6"> m<=
+/p>
+<p>and will have velocity v =3D <input type=3D"text" name=3D"vc" value=3D""=
+ size=3D"6">cm/s =3D <input type=3D"text" name=3D"v" value=3D"" size=3D"6">=
+m/s</p>
+</form>
+
+<p>Calculation notes: You may explore variations on this problem by enterin=
+g numbers and clicking outside the box to initiate the calculation. Default=
+ values will be entered for unspecified parameters, but all parameters may =
+be changed. If you enter a mass, the radius will be calculated and vice ver=
+sa. The main calculation is presumed to be that of calculating velocity and=
+ distance at a specified time, but if you enter a final velocity, a time fo=
+r that velocity will be calculated. In that case you must enter a velocity =
+less than the terminal velocity to get a physically meaningful result. It m=
+ight be helpful to calculate the time associated with a specified distance,=
+ but that calculation is transcendental and must be solved numerically. </p=
+>
+
+</td>
+<td width=3D"66" align=3D"center"><a href=3D"https://web.archive.org/web/20=
+080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index<=
+/a><br><br><a href=3D"https://web.archive.org/web/20080208110727/http://hyp=
+erphysics.phy-astr.gsu.edu/hbase/flufri.html#c1">Fluid friction</a></td></t=
+r>
+<tr>
+<td height=3D"17">&nbsp;<table><tbody><tr><td width=3D"450"><a href=3D"http=
+s://web.archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.edu=
+/hbase/hph.html"> HyperPhysics</a>*****<a href=3D"https://web.archive.org/w=
+eb/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechc=
+on">     Mechanics </a>*****<a href=3D"https://web.archive.org/web/20080208=
+110727/http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">  Flui=
+ds </a></td><td align=3D"right"><font size=3D"-1"><i>R Nave</i></font></td>=
+</tr></tbody></table></td>
+<td><a href=3D"https://web.archive.org/web/20080208110727/Javascript:histor=
+y.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a name=3D"c3"></a>
+<table width=3D"580" height=3D"370" border=3D"1" cellspacing=3D"2" cellpadd=
+ing=3D"2">
+<tbody><tr>
+<td width=3D"514" height=3D"309">
+<h1 align=3D"center">Falling, Linear Drag</h1>
+<p>For the description of an object falling under the influence of a <a hre=
+f=3D"https://web.archive.org/web/20080208110727/http://hyperphysics.phy-ast=
+r.gsu.edu/hbase/lindrg.html#c1">drag force</a> which is linearly dependent =
+upon velocity, both the <a href=3D"https://web.archive.org/web/200802081107=
+27/http://hyperphysics.phy-astr.gsu.edu/hbase/pbuoy.html#buoy">buoyant forc=
+e</a> and viscous resistance must be included.</p>
+<center><table><tbody><tr><td>
+<img src=3D"https://web.archive.org/web/20080208110727im_/http://hyperphysi=
+cs.phy-astr.gsu.edu/hbase/fluids/imgflu/viscfb.gif"></td><td>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html#c2">Sinking object</=
+a></h3>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg2.html#c1">Velocity detail=
+s</a></h3>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg2.html#c2">Distance detail=
+s</a></h3>
+<h3 align=3D"center"><a href=3D"https://web.archive.org/web/20080208110727/=
+http://hyperphysics.phy-astr.gsu.edu/hbase/lindrg2.html#c3">Graph of motion=
+</a></h3>
+ </td></tr></tbody></table></center>
+<p>A falling object will to approach a terminal velocity when the net force=
+ approaches zero. </p>
+
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4b.gif"></center>
+<p>For motion with initial velocity v<sub>0</sub>, the expression for veloc=
+ity becomes</p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4c.gif"></center>
+<p>and expressed in terms of the terminal velocity v<sub>t</sub> and the ch=
+aracteristic time &#964; =3D m/b , it takes the form</p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4d.gif">.</center>
+
+<p>The distance traveled in time t is </p>
+<center><img src=3D"https://web.archive.org/web/20080208110727im_/http://hy=
+perphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4e.gif">.</center>
+
+
+
+</td>
+<td width=3D"66" align=3D"center"><a href=3D"https://web.archive.org/web/20=
+080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">Index<=
+/a><br><br><a href=3D"https://web.archive.org/web/20080208110727/http://hyp=
+erphysics.phy-astr.gsu.edu/hbase/flufri.html#c1">Fluid friction</a></td></t=
+r>
+<tr>
+<td height=3D"17">&nbsp;<table><tbody><tr><td width=3D"450"><a href=3D"http=
+s://web.archive.org/web/20080208110727/http://hyperphysics.phy-astr.gsu.edu=
+/hbase/hph.html"> HyperPhysics</a>*****<a href=3D"https://web.archive.org/w=
+eb/20080208110727/http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html#mechc=
+on">     Mechanics </a>*****<a href=3D"https://web.archive.org/web/20080208=
+110727/http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html#flucon">  Flui=
+ds </a></td><td align=3D"right"><font size=3D"-1"><i>R Nave</i></font></td>=
+</tr></tbody></table></td>
+<td><a href=3D"https://web.archive.org/web/20080208110727/Javascript:histor=
+y.go(-1)">Go Back</a></td></tr>
+</tbody></table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+</body></html><!--
+     FILE ARCHIVED ON 11:07:27 Feb 08, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:40:29 Feb 09, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+--><!--
+playback timings (ms):
+  exclusion.robots: 1.757 (7)
+  exclusion.robots.policy: 1.649 (7)
+  cdx.remote: 0.664 (7)
+  esindex: 0.096 (7)
+  LoadShardBlock: 506.86 (24)
+  PetaboxLoader3.datanode: 342.421 (25)
+  PetaboxLoader3.resolve: 150.435 (4)
+  load_resource: 113.915
+-->
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt
+
+@charset "utf-8";
+
+@import url("record.css");
+
+#wm-ipp-base { height: 65px; padding: 0px; margin: 0px; border: none; backg=
+round: none transparent; }
+
+#wm-ipp { z-index: 2147483647; }
+
+#wm-ipp, #wm-ipp * { font-family: "Lucida Grande", Helvetica, Arial, sans-s=
+erif; font-size: 12px; line-height: 1.2; letter-spacing: 0px; width: auto; =
+height: auto; max-width: none; max-height: none; min-height: 0px; outline: =
+none; float: none; text-align: left; border: none; color: rgb(0, 0, 0); tex=
+t-indent: 0px; position: initial; background: none; min-width: 0px !importa=
+nt; }
+
+#wm-ipp div, #wm-ipp canvas { display: block; }
+
+#wm-ipp div, #wm-ipp tr, #wm-ipp td, #wm-ipp a, #wm-ipp form { padding: 0px=
+; margin: 0px; border: none; border-radius: 0px; background-color: transpar=
+ent; background-image: none; height: auto; }
+
+#wm-ipp table { border: none; border-collapse: collapse; margin: 0px; paddi=
+ng: 0px; width: auto; font-size: inherit; }
+
+#wm-ipp form input { height: auto; display: inline; margin: 0px; color: rgb=
+(0, 0, 0); background: none rgb(255, 255, 255); border: 1px solid rgb(102, =
+102, 102); padding: 1px !important; }
+
+#wm-ipp form input[type=3D"submit"] { padding: 0px 8px !important; margin: =
+1px 0px 1px 5px !important; width: auto !important; border: 1px solid rgb(0=
+, 0, 0) !important; background: rgb(255, 255, 255) !important; color: rgb(0=
+, 0, 0) !important; }
+
+#wm-ipp form input[type=3D"submit"]:hover { background: rgb(238, 238, 238) =
+!important; cursor: pointer !important; }
+
+#wm-ipp form input[type=3D"submit"]:active { transform: translateY(1px); }
+
+#wm-ipp a { display: inline; }
+
+#wm-ipp a:hover { text-decoration: underline; }
+
+#wm-ipp a.wm-btn:hover { text-decoration: none; color: rgb(255, 255, 0) !im=
+portant; }
+
+#wm-ipp a.wm-btn:hover span { color: rgb(255, 255, 0) !important; }
+
+#wm-ipp #wm-ipp-inside { margin: 0px 6px; border-right: 5px solid rgb(0, 0,=
+ 0); border-bottom: 5px solid rgb(0, 0, 0); border-left: 5px solid rgb(0, 0=
+, 0); border-image: initial; border-top: none; background-color: rgba(255, =
+255, 255, 0.9); box-shadow: rgb(51, 51, 51) 1px 1px 4px; border-radius: 0px=
+ 0px 8px 8px; }
+
+#wm-ipp #wm-logo { padding: 0px 10px; vertical-align: middle; min-width: 10=
+0px; flex: 0 0 100px; }
+
+#wm-ipp .c { padding-left: 4px; }
+
+#wm-ipp .c .u { margin-top: 4px !important; }
+
+#wm-ipp .n { vertical-align: bottom; padding: 0px 0px 0px 5px !important; }
+
+#wm-ipp .n a { text-decoration: none; color: rgb(51, 51, 255); font-weight:=
+ bold; }
+
+#wm-ipp .n .b { overflow: visible; white-space: nowrap; color: rgb(153, 153=
+, 170); vertical-align: middle; padding: 0px 6px 0px 0px !important; text-a=
+lign: right !important; }
+
+#wm-ipp .n .y .b { padding: 0px 6px 2px 0px !important; }
+
+#wm-ipp .n .c { background: rgb(0, 0, 0); color: rgb(255, 255, 0); font-wei=
+ght: bold; text-align: center; padding: 0px !important; }
+
+#wm-ipp.hi .n td.c { color: rgb(236, 0, 140); }
+
+#wm-ipp .n td.f { overflow: visible; white-space: nowrap; color: rgb(153, 1=
+53, 170); vertical-align: middle; padding: 0px 0px 0px 6px !important; text=
+-align: left !important; }
+
+#wm-ipp .n tr.m td { text-transform: uppercase; white-space: nowrap; paddin=
+g: 2px 0px; }
+
+#wm-ipp .c .s { vertical-align: bottom; padding: 0px 5px 0px 0px !important=
+; }
+
+#wm-ipp #wm-nav-captures { white-space: nowrap; }
+
+#wm-ipp .c .s a.t { color: rgb(51, 51, 255); font-weight: bold; line-height=
+: 1.8; }
+
+#wm-ipp .c .s div.r { color: rgb(102, 102, 102); font-size: 9px; white-spac=
+e: nowrap; }
+
+#wm-ipp .c .k { padding-bottom: 1px; }
+
+#wm-ipp .c .s { padding: 0px 5px 2px 0px !important; }
+
+#wm-ipp td#displayMonthEl { padding: 2px 0px !important; }
+
+#wm-ipp td#displayYearEl { padding: 0px 0px 2px !important; }
+
+div#wm-ipp-sparkline { position: relative; white-space: nowrap; background-=
+color: rgb(255, 255, 255); cursor: pointer; line-height: 0.9; }
+
+#sparklineImgId, #wm-sparkline-canvas { position: relative; z-index: 9012; =
+max-width: none; }
+
+#wm-ipp-sparkline div.yt { position: absolute; top: 0px; z-index: 9010 !imp=
+ortant; background-color: rgb(255, 255, 0) !important; }
+
+#wm-ipp-sparkline div.mt { position: absolute; top: 0px; z-index: 9013 !imp=
+ortant; background-color: rgb(236, 0, 140) !important; }
+
+#wm-ipp .r { margin-left: 4px; }
+
+#wm-ipp .r a { color: rgb(51, 51, 255); border: none; position: relative; b=
+ackground-color: transparent; text-decoration: none; background-repeat: no-=
+repeat !important; background-position: 100% 100% !important; }
+
+#wm-ipp #wm-capinfo { border-radius: 0px 0px 4px 4px; }
+
+#wm-ipp #wm-capinfo .c-logo { display: block; float: left; margin-right: 3p=
+x; width: 90px; min-height: 90px; max-height: 290px; border-radius: 45px; o=
+verflow: hidden; background-position: 50% center; background-size: auto 90p=
+x; box-shadow: rgb(208, 208, 208) 0px 0px 2px 2px inset; }
+
+#wm-ipp #wm-capinfo .c-logo span { display: inline-block; }
+
+#wm-ipp #wm-capinfo .c-logo img { height: 90px; position: relative; left: -=
+50%; }
+
+#wm-ipp #wm-capinfo .wm-title { font-size: 130%; }
+
+#wm-ipp #wm-capinfo a.wm-selector { display: inline-block; color: rgb(170, =
+170, 170); padding: 2px 8px; text-decoration: none !important; }
+
+#wm-ipp #wm-capinfo a.wm-selector.selected { background-color: rgb(102, 102=
+, 102); }
+
+#wm-ipp #wm-capinfo a.wm-selector:hover { color: rgb(255, 255, 255); }
+
+#wm-ipp #wm-capinfo.notice-only #wm-capinfo-collected-by, #wm-ipp #wm-capin=
+fo.notice-only #wm-capinfo-timestamps { display: none; }
+
+#wm-ipp #wm-capinfo #wm-capinfo-notice .wm-capinfo-content { background-col=
+or: rgb(255, 255, 0); padding: 5px; font-size: 14px; text-align: center; }
+
+#wm-ipp #wm-capinfo #wm-capinfo-notice .wm-capinfo-content * { font-size: 1=
+4px; text-align: center; }
+
+#wm-ipp #wm-expand { right: 1px; bottom: -1px; color: rgb(255, 255, 255); b=
+ackground-color: rgb(102, 102, 102) !important; padding: 0px 5px 0px 3px !i=
+mportant; border-radius: 3px 3px 0px 0px !important; }
+
+#wm-ipp #wm-expand span { color: rgb(255, 255, 255); }
+
+#wm-ipp #wm-expand #wm-expand-icon { display: inline-block; transition: tra=
+nsform 0.5s ease 0s; transform-origin: 50% 45%; }
+
+#wm-ipp #wm-expand.wm-open #wm-expand-icon { transform: rotate(180deg); }
+
+#wm-ipp #wmtb { text-align: right; }
+
+#wm-ipp #wmtb #wmtbURL { width: calc(100% - 45px); }
+
+#wm-ipp #wm-graph-anchor { border-right: 1px solid rgb(204, 204, 204); }
+
+html.wb-highlight { box-shadow: rgb(165, 14, 58) 0px 0px 0px 3px inset !imp=
+ortant; }
+
+.wb-highlight { outline: rgb(165, 14, 58) solid 3px !important; }
+
+#wm-ipp-print { display: none !important; }
+
+@media print {
+  #wm-ipp-base { display: none !important; }
+  #wm-ipp-print { white-space: nowrap; overflow: hidden; text-overflow: ell=
+ipsis; display: block !important; }
+}
+
+@media (max-width: 414px) {
+  #wm-ipp .xxs { display: none !important; }
+}
+
+@media (min-width: 1055px) {
+  #wm-ipp #wm-graph-anchor { display: block !important; }
+}
+
+@media (max-width: 1054px) {
+  #wm-ipp #wm-graph-anchor { display: none !important; }
+}
+
+@media (max-width: 1163px) {
+  #wm-logo { display: none !important; }
+}
+
+#wm-btns { white-space: nowrap; margin-top: -2px; }
+
+#wm-btns #wm-save-snapshot-open { margin-right: 7px; top: -6px; }
+
+#wm-btns #wm-sign-in { box-sizing: content-box; display: none; margin-right=
+: 7px; top: -8px; border: 2px solid rgb(0, 0, 0); border-radius: 14px; padd=
+ing-right: 2px; padding-bottom: 2px; width: 11px; height: 11px; }
+
+#wm-btns #wm-sign-in > .iconochive-person { font-size: 12.5px; }
+
+#wm-save-snapshot-open > .iconochive-web { color: rgb(0, 0, 0); font-size: =
+160%; }
+
+#wm-ipp #wm-share { display: flex; align-items: flex-end; justify-content: =
+space-between; }
+
+#wm-share > #wm-screenshot { display: inline-block; margin-right: 3px; visi=
+bility: hidden; }
+
+#wm-screenshot > .iconochive-image { color: rgb(0, 0, 0); font-size: 160%; =
+}
+
+#wm-share > #wm-video { display: inline-block; margin-right: 3px; visibilit=
+y: hidden; }
+
+#wm-video > .iconochive-movies { color: rgb(0, 0, 0); display: inline-block=
+; font-size: 150%; margin-bottom: 2px; }
+
+#wm-btns #wm-save-snapshot-in-progress { display: none; font-size: 160%; op=
+acity: 0.5; position: relative; margin-right: 7px; top: -5px; }
+
+#wm-btns #wm-save-snapshot-success { display: none; color: green; position:=
+ relative; top: -7px; }
+
+#wm-btns #wm-save-snapshot-fail { display: none; color: red; position: rela=
+tive; top: -7px; }
+
+.wm-icon-screen-shot { display: inline-block; background: url("../images/we=
+b-screenshot.svg") 0% 0% / contain no-repeat !important; width: 22px !impor=
+tant; height: 19px !important; }
+
+#donato { height: 0px; margin: 0px; padding: 0px; border-bottom: 1px solid =
+rgb(153, 153, 153) !important; }
+
+body.wm-modal { height: auto !important; overflow: hidden !important; }
+
+#donato #donato-base { width: 100%; height: 100%; margin: 0px; padding: 0px=
+; position: absolute; z-index: 2147483639; }
+
+body.wm-modal #donato #donato-base { position: fixed; inset: 0px; z-index: =
+2147483640; }
+
+.wb-autocomplete-suggestions { font-family: "Lucida Grande", Helvetica, Ari=
+al, sans-serif; font-size: 12px; text-align: left; cursor: default; border-=
+width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; =
+border-left-style: solid; border-right-color: rgb(204, 204, 204); border-bo=
+ttom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); bord=
+er-image: initial; border-top-style: initial; border-top-color: initial; ba=
+ckground: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 3px; =
+position: absolute; display: none; z-index: 2147483647; max-height: 254px; =
+overflow: hidden auto; box-sizing: border-box; }
+
+.wb-autocomplete-suggestion { position: relative; padding: 0px 0.6em; line-=
+height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsi=
+s; font-size: 1.02em; color: rgb(51, 51, 51); }
+
+.wb-autocomplete-suggestion b { font-weight: bold; }
+
+.wb-autocomplete-suggestion.selected { background: rgb(240, 240, 240); }
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web-static.archive.org/_static/css/record.css
+
+@charset "utf-8";
+
+.__wb_overlay { opacity: 0.6; background-color: rgb(0, 0, 0); position: fix=
+ed; width: 100%; height: 100%; top: 0px; left: 0px; padding: 0px !important=
+; border: 0px !important; margin: 0px !important; border-radius: 0px !impor=
+tant; z-index: 2147483643 !important; }
+
+#__wb_record_overlay_div { cursor: wait !important; }
+
+.__wb_record_content { opacity: 1; position: fixed; top: 50%; left: 50%; bo=
+rder-radius: 8px; box-shadow: rgb(0, 0, 0) 0px 0px 30px 5px; margin: 0px !i=
+mportant; padding: 0px !important; background-color: rgb(255, 255, 255) !im=
+portant; z-index: 2147483644 !important; }
+
+#__wb_record_content_loader { cursor: wait !important; padding-top: 30px !i=
+mportant; margin-left: -287px !important; margin-top: -177px !important; wi=
+dth: 574px !important; height: 355px !important; }
+
+#__wb_record_content_done { margin-left: -427px !important; margin-top: -17=
+7px !important; width: 855px !important; height: 355px !important; }
+
+.__wb_record_content > * { margin: auto !important; display: block !importa=
+nt; text-align: center !important; font-family: "Open Sans", "Helvetica Neu=
+e", Helvetica, Arial, sans-serif !important; }
+
+.__wb_record_content > wb_h1 { line-height: 2em; font-size: 36px !important=
+; color: rgb(34, 34, 34) !important; margin: 0px !important; padding: 0px !=
+important; font-weight: normal !important; width: auto !important; height: =
+auto !important; }
+
+.__wb_record_content > wb_p { line-height: 2em; font-size: 17px !important;=
+ color: rgb(34, 34, 34) !important; margin: 8px 0px !important; padding: 0p=
+x !important; }
+
+.__wb_record_content > #_wb_logo { margin-bottom: 10px !important; }
+
+.__wb_record_content > #_wb_spinner { margin-top: 30px !important; margin-b=
+ottom: 30px !important; }
+
+.__wb_record_content > #_wb_curr_url { text-decoration: underline !importan=
+t; font-weight: bold !important; }
+
+#__wb_record_content_done > #__wb_link { font-size: 20px !important; border=
+: 1px solid rgb(170, 170, 170) !important; padding: 3px !important; text-al=
+ign: center !important; width: 80% !important; height: auto !important; }
+
+#__wb_record_content_done > #__wb_link:focus { outline: 0px !important; bor=
+der-color: rgb(66, 139, 202) !important; }
+
+#__wb_record_content_done > #__wb_donate_close { float: right; display: inl=
+ine-block; font-size: 18px !important; width: auto !important; margin: 0px =
+!important; padding: 8px 8px 0px 0px !important; }
+
+#__wb_donate_close > #__wb_record_done_close { display: inline-block; curso=
+r: pointer !important; vertical-align: bottom !important; }
+
+#__wb_record_content_done > #__wb_donate_close a { color: rgb(66, 139, 202)=
+ !important; }
+
+#__wb_record_content_done > #__wb_donate_close a:link { color: rgb(66, 139,=
+ 202) !important; text-decoration: none !important; margin-right: 16px !imp=
+ortant; }
+
+#__wb_record_content_done > #__wb_donate_close a:visited { color: rgb(66, 1=
+39, 202) !important; }
+
+#__wb_record_content_done > #__wb_donate_close a:hover { color: rgb(0, 177,=
+ 247) !important; }
+
+#__wb_spinningSquaresG { position: relative; width: 240px; height: 20px; pa=
+dding: 0px !important; margin: 30px 0px 30px 160px !important; border: 0px =
+!important; border-radius: 0px !important; }
+
+.__wb_spinningSquaresG { position: absolute; top: 0px; background-color: rg=
+b(0, 0, 0); width: 22px; height: 22px; animation-name: bounce_spinningSquar=
+esG; animation-duration: 1.9s; animation-iteration-count: infinite; transfo=
+rm: scale(0.3); margin: 0px !important; padding: 0px !important; border: 0p=
+x !important; border-radius: 0px !important; }
+
+#__wb_spinningSquaresG_1 { left: 0px; animation-delay: 0.76s; }
+
+#__wb_spinningSquaresG_2 { left: 30px; animation-delay: 0.95s; }
+
+#__wb_spinningSquaresG_3 { left: 60px; animation-delay: 1.14s; }
+
+#__wb_spinningSquaresG_4 { left: 90px; animation-delay: 1.33s; }
+
+#__wb_spinningSquaresG_5 { left: 120px; animation-delay: 1.52s; }
+
+#__wb_spinningSquaresG_6 { left: 150px; animation-delay: 1.71s; }
+
+#__wb_spinningSquaresG_7 { left: 180px; animation-delay: 1.9s; }
+
+#__wb_spinningSquaresG_8 { left: 210px; animation-delay: 2.09s; }
+
+@-webkit-keyframes bounce_spinningSquaresG {=20
+  0% { transform: scale(1); background-color: rgb(0, 0, 0); }
+  100% { transform: scale(0.3) rotate(90deg); background-color: rgb(255, 25=
+5, 255); }
+}
+
+@keyframes bounce_spinningSquaresG {=20
+  0% { transform: scale(1); background-color: rgb(0, 0, 0); }
+  100% { transform: scale(0.3) rotate(90deg); background-color: rgb(255, 25=
+5, 255); }
+}
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ
+
+@charset "utf-8";
+
+@font-face { font-family: Iconochive-Regular; src: url("https://archive.org=
+/includes/fonts/Iconochive-Regular.woff?-ccsheb") format("woff"), url("http=
+s://archive.org/includes/fonts/Iconochive-Regular.ttf?-ccsheb") format("tru=
+etype"); font-weight: normal; font-style: normal; }
+
+[class^=3D"iconochive-"], [class*=3D" iconochive-"] { speak: none; font-sty=
+le: normal; font-weight: normal; font-variant: normal; text-transform: none=
+; line-height: 1; -webkit-font-smoothing: antialiased; font-family: Iconoch=
+ive-Regular !important; }
+
+.iconochive-Uplevel::before { content: "=E2=86=B5"; }
+
+.iconochive-exit::before { content: "=F0=9F=9A=A3"; }
+
+.iconochive-beta::before { content: "=CE=B2"; }
+
+.iconochive-logo::before { content: "=F0=9F=8F=9B"; }
+
+.iconochive-audio::before { content: "=F0=9F=95=A8"; }
+
+.iconochive-movies::before { content: "=F0=9F=8E=9E"; }
+
+.iconochive-software::before { content: "=F0=9F=92=BE"; }
+
+.iconochive-texts::before { content: "=F0=9F=95=AE"; }
+
+.iconochive-etree::before { content: "=F0=9F=8E=A4"; }
+
+.iconochive-image::before { content: "=F0=9F=96=BC"; }
+
+.iconochive-web::before { content: "=F0=9F=97=94"; }
+
+.iconochive-collection::before { content: "=E2=88=91"; }
+
+.iconochive-folder::before { content: "=F0=9F=93=82"; }
+
+.iconochive-data::before { content: "=F0=9F=97=83"; }
+
+.iconochive-tv::before { content: "=F0=9F=93=BA"; }
+
+.iconochive-article::before { content: "=F0=9F=97=8F"; }
+
+.iconochive-question::before { content: "=E2=8D=B0"; }
+
+.iconochive-question-dark::before { content: "?"; }
+
+.iconochive-info::before { content: "i"; }
+
+.iconochive-info-small::before { content: "=E2=93=98"; }
+
+.iconochive-comment::before { content: "=F0=9F=97=A9"; }
+
+.iconochive-comments::before { content: "=F0=9F=97=AA"; }
+
+.iconochive-person::before { content: "=F0=9F=91=A4"; }
+
+.iconochive-people::before { content: "=F0=9F=91=A5"; }
+
+.iconochive-eye::before { content: "=F0=9F=91=81"; }
+
+.iconochive-rss::before { content: "=E2=88=9E"; }
+
+.iconochive-time::before { content: "=F0=9F=95=91"; }
+
+.iconochive-quote::before { content: "=E2=9D=9D"; }
+
+.iconochive-disc::before { content: "=F0=9F=92=BF"; }
+
+.iconochive-tv-commercial::before { content: "=F0=9F=92=B0"; }
+
+.iconochive-search::before { content: "=F0=9F=94=8D"; }
+
+.iconochive-search-star::before { content: "=E2=9C=BD"; }
+
+.iconochive-tiles::before { content: "=E2=8A=9E"; }
+
+.iconochive-list::before { content: "=E2=87=B6"; }
+
+.iconochive-list-bulleted::before { content: "=E2=8C=97"; }
+
+.iconochive-latest::before { content: "=E2=88=88"; }
+
+.iconochive-left::before { content: "=CB=82"; }
+
+.iconochive-right::before { content: "=CB=83"; }
+
+.iconochive-left-solid::before { content: "=E2=97=82"; }
+
+.iconochive-right-solid::before { content: "=E2=96=B8"; }
+
+.iconochive-up-solid::before { content: "=E2=96=B4"; }
+
+.iconochive-down-solid::before { content: "=E2=96=BE"; }
+
+.iconochive-dot::before { content: "=E2=8F=A4"; }
+
+.iconochive-dots::before { content: "=E2=96=A6"; }
+
+.iconochive-columns::before { content: "=E2=96=AF"; }
+
+.iconochive-sort::before { content: "=E2=87=95"; }
+
+.iconochive-atoz::before { content: "=F0=9F=94=A4"; }
+
+.iconochive-ztoa::before { content: "=F0=9F=94=A5"; }
+
+.iconochive-upload::before { content: "=F0=9F=93=A4"; }
+
+.iconochive-download::before { content: "=F0=9F=93=A5"; }
+
+.iconochive-favorite::before { content: "=E2=98=85"; }
+
+.iconochive-heart::before { content: "=E2=99=A5"; }
+
+.iconochive-play::before { content: "=E2=96=B6"; }
+
+.iconochive-play-framed::before { content: "=F0=9F=8E=AC"; }
+
+.iconochive-fullscreen::before { content: "=E2=9B=B6"; }
+
+.iconochive-mute::before { content: "=F0=9F=94=87"; }
+
+.iconochive-unmute::before { content: "=F0=9F=94=8A"; }
+
+.iconochive-share::before { content: "=F0=9F=8E=81"; }
+
+.iconochive-edit::before { content: "=E2=9C=8E"; }
+
+.iconochive-reedit::before { content: "=E2=9C=90"; }
+
+.iconochive-gear::before { content: "=E2=9A=99"; }
+
+.iconochive-remove-circle::before { content: "=E2=9D=8E"; }
+
+.iconochive-plus-circle::before { content: "=F0=9F=97=96"; }
+
+.iconochive-minus-circle::before { content: "=F0=9F=97=95"; }
+
+.iconochive-x::before { content: "=F0=9F=97=99"; }
+
+.iconochive-fork::before { content: "=E2=8B=94"; }
+
+.iconochive-trash::before { content: "=F0=9F=97=91"; }
+
+.iconochive-warning::before { content: "=E2=9A=A0"; }
+
+.iconochive-flash::before { content: "=F0=9F=97=B2"; }
+
+.iconochive-world::before { content: "=F0=9F=97=BA"; }
+
+.iconochive-lock::before { content: "=F0=9F=94=92"; }
+
+.iconochive-unlock::before { content: "=F0=9F=94=93"; }
+
+.iconochive-twitter::before { content: "=F0=9F=90=A6"; }
+
+.iconochive-facebook::before { content: "f"; }
+
+.iconochive-googleplus::before { content: "g"; }
+
+.iconochive-reddit::before { content: "=F0=9F=91=BD"; }
+
+.iconochive-tumblr::before { content: "T"; }
+
+.iconochive-pinterest::before { content: "=F0=9D=93=9F"; }
+
+.iconochive-popcorn::before { content: "=F0=9F=92=A5"; }
+
+.iconochive-email::before { content: "=F0=9F=93=A7"; }
+
+.iconochive-embed::before { content: "=F0=9F=94=97"; }
+
+.iconochive-gamepad::before { content: "=F0=9F=95=B9"; }
+
+.iconochive-Zoom_In::before { content: "+"; }
+
+.iconochive-Zoom_Out::before { content: "-"; }
+
+.iconochive-RSS::before { content: "=F0=9F=93=A8"; }
+
+.iconochive-Light_Bulb::before { content: "=F0=9F=92=A1"; }
+
+.iconochive-Add::before { content: "=E2=8A=95"; }
+
+.iconochive-Tab_Activity::before { content: "=E2=8C=98"; }
+
+.iconochive-Forward::before { content: "=E2=8F=A9"; }
+
+.iconochive-Backward::before { content: "=E2=8F=AA"; }
+
+.iconochive-No_Audio::before { content: "=F0=9F=94=88"; }
+
+.iconochive-Pause::before { content: "=E2=8F=B8"; }
+
+.iconochive-No_Favorite::before { content: "=E2=98=86"; }
+
+.iconochive-Unike::before { content: "=E2=99=A1"; }
+
+.iconochive-Song::before { content: "=E2=99=AB"; }
+
+.iconochive-No_Flag::before { content: "=E2=9A=90"; }
+
+.iconochive-Flag::before { content: "=E2=9A=91"; }
+
+.iconochive-Done::before { content: "=E2=9C=93"; }
+
+.iconochive-Check::before { content: "=E2=9C=94"; }
+
+.iconochive-Refresh::before { content: "=E2=9F=B3"; }
+
+.iconochive-Headphones::before { content: "=F0=9F=8E=A7"; }
+
+.iconochive-Chart::before { content: "=F0=9F=93=88"; }
+
+.iconochive-Bookmark::before { content: "=F0=9F=93=91"; }
+
+.iconochive-Documents::before { content: "=F0=9F=93=9A"; }
+
+.iconochive-Newspaper::before { content: "=F0=9F=93=B0"; }
+
+.iconochive-Podcast::before { content: "=F0=9F=93=B6"; }
+
+.iconochive-Radio::before { content: "=F0=9F=93=BB"; }
+
+.iconochive-Cassette::before { content: "=F0=9F=93=BC"; }
+
+.iconochive-Shuffle::before { content: "=F0=9F=94=80"; }
+
+.iconochive-Loop::before { content: "=F0=9F=94=81"; }
+
+.iconochive-Low_Audio::before { content: "=F0=9F=94=89"; }
+
+.iconochive-First::before { content: "=F0=9F=8E=96"; }
+
+.iconochive-Invisible::before { content: "=F0=9F=95=B6"; }
+
+.iconochive-Computer::before { content: "=F0=9F=96=B3"; }
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png
+
+iVBORw0KGgoAAAANSUhEUgAAAMgAAABHCAYAAABCvgiTAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAADIwAAAyMB5lqymQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABjJSURB
+VHic7Z17eFxVufB/79qTpC3l0nJpbTM7M2m4GUihASsoh6LIUwGRSxME5XAUBB9E7TkCevACBz4F
+DqDgJwgK56goYFpEOeeI8gj0fFwLDbQpQapJZmZPWhsKpfRCm2T2er8/JknnPpNrA8zvefbzzF7r
+fddae+9597rstd4loVDoKFSvEtVDUH3S+P6POjdsiDNAXV1dld/ffzmq/wIEHNXjO+LxzsH4sOu2
+4DjfiUQi60ihpqYmbFSfBl5EZD9UG4AXgT5EFqqIG41Gdw3Kh6qrF4oxVwMnADHgb0AVsDChuiAe
+j2/ISP84o3o18BFUPYV2MWYm8OdILHYb4KfKz5o1a6+9qqq+orAU8Put/VB3d/f6wfjaYPAPxtpL
+Otav707VC4fDNfj+vwAXAG+p6moRUeBoEbmqKxZ7KFV+nus2WtXfCrRakVkChwPPiqpRqI/E4zWM
+gnAweALG3IzqwWpMYzQajRaSnzVr1l5Tq6ouF5GvA6C6ApgK/N2K3BCLxSJF83TdTwHfBt4W1YSK
+hAV+2eV5N+SSr5s7t9p3nCuB01F9OBKPXzEYV+u6N1nVumg8fk6+/Opmzz7Qr6r6JqpnAh0C13d5
+3tNZ5QqHa0gkrkTkfIF/7/K8G1Pja4PBy9QYicRid+S5ruaB66oWWK3wBvABYGfE804BMNFodLWx
+9imgUVR/mWocAB0dHb2RWOxWRNoQEV/kB6nxojrd930nM3NVnSoiV0Y870yBHwEz1NrvRjzvU8BN
+xpiqVPlod/dKVb1zQO5fI57XHPG8TwPfdRynMjP9WCz2nIj8BJghxlwXjcc/61h7OarXh1z325ny
+PT09OwZuYAciFRXG3JRWXpG9bVWVydSLRCKxd3p7rwZmKPwmGo+fE/G8JVbkdFXdK1PeJsO+2BWP
+ny3wC2CGsXZpVzx+KsnzURGJx59C9XVgX/H9zxaT7+np2RH1vJtU9XVU/zJ4X0X1AKP6+CIIFNKv
+dd2PAg8r/Driead0xeOnGpEvq8g/5NPpWL++u8bzvg7MIfmSG0KhVkTqC+XZsXHjJhW5GahVeCKX
+cUDy2UTi8cuBqIp8PjNeRT7X7/u/y5dPxPNaUH0M2G/q3nsvHrg3JyisGpRJ/iGM6QXQioq+fIkJ
+7EL1W8DpoerqxYUuEMDzvHVuLNaSK+6dXbvu6urq2pYZ7hjTDyAidjCs39r79t9///WZsgCq2j/w
+YyvAQM22TuAjBYq2C/hX4PyBh1+U6urqPgBRHaqVYrHYa5VTpz6cKVsTjz8bicf/nCudymnTbi4l
+v0K4rjsDOAD4HSIXlqon0A9sHTi1KvJHIOzV1s4ppKfwFWBXoLLy7sGwzljsCYFfFdJbAQmS93pE
+JBKJPgAz+IwLl/HnqB5SGwweOxhWFwzOA7althJy6or0Adre3j7036+aOnWoZsx6YxbCiqwC/kOM
+ua2+vj7rrZ6BvyJ5k7Lo6enZAdhccanMnTt3/wrH+UJra2vRmwQQDodnAXUCLxeSc6xdASzTZM2W
+VfuVgAkHg1evW7cuy8hXJK8557Xlkh92xqrnKrRYkXuBg8PV1R8aYVLHA6+7XV0bCkqJHIbq2o6O
+jt7U4K5Y7NcjzHfMCfT1PQD0q8jnBsN8Y86niBHnIuy6S3p7e+cOng/LQACcvr6rgVk7tm1bOlzd
+UlGRr4Vd9+4Kx1kpqgcWlYelYde9T33/cUR+tCuR+LdiOiaRuAI4pDYYvKTkgomcFnbdu8Ou+7+I
+nFSy3hgiIudhzIOxWOxPQAyRC0pWVm0Iu+5PQ677DHCAFVm8Is9LLEVnJiLbR1HgxWHXbRk8gA+P
+OK08dGzcuAl4DJHzGhsbKwBQPX3azp1ZNXy+Ug481/uA/5BEYujlP2wD6di4cZPCNQLfDgaDBavn
+kSKqt0c879JAZeUCFdlRTF5V7xFICARNIHD7hg0b3imm07lhQxzVG1Tk+rlz5+5fUsFU/yfieZdG
+PO8fBJ4pSWcMmVddXQdMcaydO891jwb+F5HPDP0piiHyFyPyc4EPi+rjsVisYE0LgOqbAjNHXGjV
+Pw607ZsjntcMPD/itApmo79C9cC33njjEzU1NUcDr7Vv2lSqYevAc70A+EJqxLANBCDqeXcgEgmI
+3FhceuR0dHRsjcRiRdvtRmS7VFR8A1Dt77+u1PSdqqpbgM2VgUDJOgNol+ddM0ydUaPGXACs9uFk
+H05W6AT23/z6658sMYn+zljsWVT/U0W+U9KLQSSmcNihhx6692jKPu44zu+At621nzWq5wncN5Jk
+Ip63PNLd3TZ4nmYgqiolpuPb5HDp51Rk/kgKUiqu686Y57qFOt0AdHZ2vo7I9xQuDldXN5SSdkdH
+Ry+qV6B6KVBXVMGYtPtT67qnl5LPGCEKZ/RbuzTqeTcNHNcBzwyrmQWYysqrAVPlON8pmqnIb4Bp
+vTt3fiEzajh5DpfB/6Jm3PN8RKPRXSryWxE5Ezixy/OeHGneNTU1n2TANkx9fX2lqs4HMKoLKLFW
+icViTwLLSA7ljSkiclbYdZvCrttkVG9Rkdml6E2bPv12oAtjflBUeIBIPP6IJIf6iuYhqseHXbc5
+7LpNIde9Cvh4qfmMlnAweAKwqru7e2dquCY7oqeHQqH9Sk2rs7PzdYUbFC6rnTv3kEKyXbHYA4jc
+KXBzrev+sLam5gsh1/1u2HUfHNmVFGcRBKoCgRMB1NoFtbW1+5ai5yTvxTSBFWR8ByuCCbnupWHX
+baoNBs8z1t7AwEBLYMeOHR8UeBp4WlWZN2fO3MxvIQACN4tI+kclx/kqvr+8srKyO1M+lT7fX1lh
+THMi+fEvP4HAK/T3N2tqviJ/7PP93O1Wx2nD95vVcdYCtLe397mue6YD9XPmzJmWqy+i1l5f1dvb
+k1Y+1S9WiBy/a9euN3Jl09ra6oddN71cEFHH+VOhy/Hhzw40T+nt3VhIrhSsMZuMMf8nM7xq6tT7
++3bu3AxMKZLEVQJDxhWorLzN7+vrMo5TrP+ikVjsy/Oqq3+ojrNQVR1H5Omd/f23FCuzqv6zI5L5
+zH8KzCikFw2Fphtrtwp8QkRIJBJzgbeL5dcZi60Iu26TL1Jy/9BY+4Aa8/JgNaUiCSDrPpcpU6ZM
+mTJlypQpU6ZMmTJlypQpU6ZMmXcl4/o1tEw2LfXHzcT0LskMNyJrlrS1rtwTZSqTn4KLZcqMPUZ6
+q1Xk7sxwFW4ChmUgoWDwXBG5GPggyZkAxWZBbEFkHap3Rjzvl8PJ6/1K4KGGxgV+5hwsK5vYp3IT
+23s/mK2hHn1TfExvOCvO9q5rbm8f+dToEbKsofEyRc/KHSt9RrQLK49P2/n2o6dmrGt4txJ23buB
+0qfqJ9kP1YXAwlrXre/yvG+MQ9EKEg4GbyFl/p4RuaEzFntiostRKgELz4tI+nQDo3fr9r47JLlA
+Kg1JcLk1fW+JSPaCGZn2EeDZwdMnFy0KbNq8/VQRTkFtEEwlaI/CywkbePD8V1b2ZKUxAgQOATk5
+X7yqgHD5O9P2/WvL/GMuaF6z6oWxyHdPEQ4GzyDbON4BeoFpZCxzzYXCFaFQ6IFoNLp6HIqYFxFZ
+oDC0lkbhPycy/+EyounupdDScMyhb2zetlrQ36P6ZZAzQBcDFwrcVmES0eXzG780XvnnQuEQUf3D
+w0cdVfLEvsmIwD+lBajeG/G8fSKeNxPVX2XE/TjieeJUVk4RkdQJhkasPX/8Szs21NbW7lvruh8f
+WEo7YYxLH6Slvn66Qf9HodDFTFHlJy0Nx7zR3LZqeVLv2NmOYVqqkEjv9hkzZ27e/OYONzOBrdv2
+2vD56IrhrnveP2GdJcA9w9SbNFiRQ9LaxCIrKDJ7taOjozfsuk8An0kJzrksoLq6eq7jOIcY1QOA
+LVakoxTvJ+NFdXX1XE0kXgIO8kVs2HU/P1F9qHExEAlM+bxqQePYLYt+H1gOII69y8Kn0yUCD27e
+vPNKK7YzU3efvd8+Efh/eZJOoHIGoj8B0l3tqJxIEQNpaWpympctG86U6VHzwNFHzwlY89WsCCvP
+Na1d9fvBU8l4bgNuiIojomiaaNrLqLa6+mA15k7gY6gOtS6MKiHXfVYc57JIJLImM9lQdfWJGLNI
+YI7ATgtRcZyHI5FIrKRyFSEQCASx9qDB4ggcDbx7DQTLSTkGkDeDrgU5MSP84JaGD4Wb214Y6zeU
+bVq76tGWhsZ2yTAQFZ2bKdxy9NEHim8uBs4BaljXdcCyhsZ3gPUCfxa455y21pfGuIxpOBo4CLXZ
+HWfDHcDvszXGjnlz5gStMc8BOVcZChyP7z8dCoWOjUajrwGEQqH9xNrlpKyLUQa+Hfj+rSHX/feo
+5109EFyUurq6fRzH0UznFtFo9PlQMHieiJyu8LdpO3feCjBv3ryD+vv7p6eIvuV53luhUCgk1h4p
+qtNF9cXO7u6OXJdUU1Oz2KheCNQp7CewEdXVqP50cFXhuBiIiuwv2ffkvxXzfUFfy4xwjB4ATFgV
+Lkja8tGW+Y0fFZ/lwKwM0WnAwZo8LlnWsOD6praXshxC/Grhwn2qdvpnolonRmYpdgsqMZXE75vX
+rCnodmayoIHAt0gxDoH1VvVPIrKY3Yvipou1/wacC4Dv34FI6qKxPqAiqY4R+Ga4pmZ9JBb7cd58
+VQMh171G4FK/r+8DPhB23acd3z8v1YlfNB5/EEhbpKWJxO1OapNR5Adh1w1i7TmAURFUxA/X1Hwj
+EovdmqJqwq77c1SHVmIOvM/nIfIRRL4Uct2vRz3v9nHrpGci0G+tFvagsQdoqT92tigPk20cmTgg
+1y47ckGag7JlDY2XVe1M/B30FwjfUdVLULkKuEM0EFt25IK7Wo47buq4XcAYofCxtHPV86Px+EU+
+fCJD9GOQ9H4oIuemhD/zTm/vTLH2UOCtlIS+XiTrGwSuJenRcJCPWsdJa0LV1tbuO3jkdTmlejnQ
+RPrgk4PqjfPmzAkOBoRd92KSnjKHNNntMwzAEfhhOBg8YcIMpBQ0R7Uz3oijXyHpiK1EBbnu2oEH
+0NJwzEXAHWS05VNwELlUdvS9Gz7KpdWqTlXVSgDP814l3TXQvgD9VVVHkOJTTGF5T0/Pjq7u7r8B
+qd81QgPO7vKRc8m2wqLq6uqZkGx6aSKxZfDYsW1blhfFAfL5agvYQGBRynnmEPmFEc/bD5GrUsJE
+YemkMpA9g+ZeVy76LMlvC5lUf/DIxvqW+vpKQb9XYiZLlh11zKIRFnCP0NHRkc9ZnwCItZUZgakD
+GmkthUw3s+mpySZEvk/Sv0FaTEUpjjRSUfVQ/bSILAHS+jGaXkMdmfK7t8bzHgC0csqUu9KLJseV
+DQRyOqYLiD2N7IeWRGU2galHkaNZpsh/kcuwbL4v/e9vxNprIrHYtyKe9xkgrX+qgcDw/p/G3BeJ
+xx/pisUeUpFMr4qpw0apfe++FQMGPX369MxPBvuUDSTPhM0tW/bbRYqTgzQFRwXJ7fExYZ0vKtkz
+EFCCOcTLGDPojMGKSNYAznAQTenjqo7aUQYgk8pAxE58H2SkSAEfYoLNug415ZnTRbHZ921PM6kM
+pEyZyUbZQMqUKcDkMpBSp0yUKTNBTC4DKVNmklE2kDJlClA2kDJlCjCpDERzDI+WKbMnGZ/1IKrb
+kJQJa4BqzmkbZcpMasbFQJrWtubcWObBIxondLlkmTKjZVI1sYTyMG+ZycWkMpAyZSYb4+447qEj
+j6318WcACFJd4urLMu9iFJ6X9JfvcB1rTBrGzUBaGo45FPTnFvthGZqnVzaOSYvI91R1r5SQET+s
+qOfdBtw2+kLtecbFQH595JEzBH0MyHLVUxBBJ8KGFLtl8LeDnJFQm7WgJxZd0Vff0Dii9Ct7p35q
+e+XWtHtb4dt8C5CKo+TcO3EsKbRu/P3MuBhIJZWXMFzjGCcEMZkvQxF5ZPD32W2rXsmnm3u1VHE+
+ve6ZbcWlSkYN+khxsTLjwbh00lWk6L7mE8H9RyycBbogJcgH+X77mtY79lihCqGauaZaEa4Zb3dD
+ZfIzXn2QHPta6yOqeqOIeTY7bgCLjuGyosoKk9hAyktA4K+icu+1A3tgTyqUSwW9NC1M5M4la1ZN
+6JbEruvWBiBMykpLfR9vkzFh2x+ImI0islV1Qv+baTWkwuEq9pmHGhsXnNPa+vfUuAePaJznOJyP
+1RAm6TdLlAUTOKyQ7S9Y9cvLGxqraGv94nhnXldXV+X39d0HNJWHUnbzftwfZLZN6FJgyINhy/xj
+LhDVu1GmIjLUZZkkf5SLl81vXNa0pvWx8cwk0de3VJI+pUZNqLp6sRgz1AeNeN5PxyLdcWJ62HU3
+A2zetCkr8v1oIGClfvDnb+uPnu+r3kN+n0qTAF0MjKuBGGjOeCHEUf2NiPgKVzKM/qoYczlw2sCp
+ApPZQATI67drUn1JL9kJc6npKdeRyzOJMOTp0DfyVSaBcQj8RVVfzBlpzbhv15DhNwqsPT0Sj1/Z
+5XnfZDL22SaI93QNYg+rvU7WdZ0EnJBXSOSYsc63paHxa0YkbXcutfb5prUv5d0sRoWHHORhC61j
+XZ6R8E5/f5Y3/fco2/08nySMMfqeNhAAhUSRIZi9cwX228DsCpO4CbhwuHmKcqqip6QHyhSK7Kbk
+G2PFvm9f1nsK9TzvrXyRk6qJNZnYVpXYvKfLUGbPMz4LptAsw1PVk1GmFRpRT64ofN8OuZeZhIxX
+EyueI6wW0drCauX1IO9B3jXPtLGxsWLzpk1pG8uOSxNLRH83Ir2cN1OOsvQvGW2ZyuwxJt2eMEWY
+kXoYxqFN88qal5aTe8uwvoEjH2/nCDsM5IcjLYvkmLyiTOzn/Pciakz6c1TdJ+Usddg8pwPwdwsB
+khaeuSlkQAtVjEYccgiYAP0A14J9cubeS97YvG0pcBHwAZBVYv1vqpgrVXRmqp5vNbm7j9A2lhWy
+ea3zS5qyaX0KuQyxzDAwxryK7/sMbqIj8k+hUOghY+0BCqmTVf+6Rwo4RgQUXhVInfGKwueM8PFc
+/1UVuTaPZ/N+Q//fBk9OWrEiAdwycKRyLnno8wMPV5jEjWRPdtz9IIaBiuRe4yCSf8JkiRjr7LKS
+XREFjH+6QDDHvStUc046pk6deiCwo7a2dl9NJLLufSQS6Qm77v3s3sqsTqz9S47rvm9cCzrOGCTn
+socqhVAenQPItROq8thZq1dvyRYvnfNfWdnj+PZEhT+x+w/VBnxpNOlm0EOAe1POcxre7O1TplDg
+C7tIbxs59iYX9B6FwzPDFfKuO5kkbE89EdWf1NTUfFITiR+RpxnuVFZervCHvCmq3hvxvMm5tGA3
+hV681uzS/v8LrB1VFspWgStGlcYAZ7e/vKa5rXWx7lW5X+/UwL5Nba3zFXlqLNIGutWYxc2tralN
+rJxt5L6qXR4Faruz29peR+WBEvPdgmPvH0Y5JxwRaU8LUF1sVP8A/GM+nY6Ojq1RzzsNaxcKXI3q
+jwVuQ+QKB46IxOMXMwbTVDo6OrY5fX0HDR4Y84tRJpn6zKfV1NSEAd7q6TksQ+6NwD+2te347WEf
+OilRmbhbkLMY/shWq2PtRWe3vzyq3YEAljUsWCpikm/fd/qZAixraHxRoaCBKHSTf4rG26hsUOxT
+2N77m9va096UKK8iHJpDr+j8p4CT+ErCOiHgowUKt1VFz2t++eXsqaKTCLX2B4icRnIb592ItKG6
+jfR+RRqR7u4XgBfGs3gdGzeO5f17AvjU4IlRfTzsus9qyn7vAKLaGgA4+7UX3gSWtMyfPxcqPiaq
+s9AibX7hTVVWNq9tHV3tk4LCaaienBG6D0VqkKa21lx9nRKRn8HI9g88a/XqLU8uWnTSm5u3fVaV
+80U4XGE2yQ0kuxEeTRj/rvNWr46OrGwTRyQef6o2GDwekYsUqjX5oly5c9euW6dWVV0s0A4g74GJ
+i0b1aityEjB9ICg8cKTS5xtzfdro1cCm93uwUyVZHVlB5gPn5ZK2Ghj1GHvT2lWPLmtovBXItZ93
+N1BdSH9gMOIXA0dRrPa+5ui0LA+Tvh/YAlu3G5MjLpBIX+Mu8jPR3Xsk2pTmkRjzKKpDTh4sPDcU
+Z+0aRG7aXRaNpibbFY+vArL3V4Tbi13Xu4nOePyVUCh0glj7Y3LXjC+rtf8c6+5+blJNVhRhLcqp
+qWHJDq9ek0PcOqa3YyzybWprvWLZkcc8hehXUQ5HZL2q/ZnjmHar+rWscvoj3yCyub29D+gqIFIo
+DoBILHZrXuVY7CHgoZxx8fiLQO4p9RPHX4GhbybW94fmvKkxz5KyEadJJN4slJBVjUhK01phw+Bv
+gVdJ9buhmtYFiEajq4GP1tbWuiQSByvMFHhLEol1nRs2xFPSmTw8eETjPMewFnav18iLsKxpTWvz
++JeqzPuZSTWb9zOvtHaiXEiufcbTWdln+y4tIlOmzKiZVDXIIMuPOupgtc4lwCnAHJJrNjaCvoqy
+7ID997lvoO1fpsy48v8B1CGnbMTWUW4AAAAASUVORK5CYII=
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://web-static.archive.org/_static/images/toolbar/wm_tb_prv_on.png
+
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAMZJREFUeNqU07EKQWEUwHEuSSaLkicgg3TZzCySvIKk2GVgJZmsBg9g
+8QK8gcHoASwGNoMS/l+db6Au3zn1W279b+fe796w779Cyimi7ymCFBbYox51CGLoYIS0XHv+C2uY
+ynofExRmJWgG3fE7TGKMHuK/VrFhRJ7DRBmXN2XCBibIa87Ek5US2sM04Ro5DHDRhGbumMu6Szxc
+QztndFHGVhPaOaCKFo6a0Iz5+jcoYYira2jnhhkKWNlO83ec0EYFu7cAAwCVABzGI3/GxAAAAABJ
+RU5ErkJggg==
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://web-static.archive.org/_static/images/toolbar/wm_tb_nxt_on.png
+
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAMhJREFUeNqU0s8KAUEcwPHBJjm5KHkCV+07cJHkKZRyUK6cKYeVPxd5
+BVcHjspB+VPKA7g4cHNQwndqp/awMb9ffdra+jazMxtx3c9UKTXCTgkmihK28JCWhG//2cARdcRt
+wuBkMMQGRUloJo8F5shJQjMV/9D6SElCPQk0cUINMdvQTBYTHFCWhGaSeheOILihiwGeNuELM7Rx
+NS//hUu0sLe9jjOqKIRFYSve0fP/nsevrTiBVfV3dHCxOSkdrjDGWnInXwEGAM40IjLd/vWIAAAA
+AElFTkSuQmCC
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web-static.archive.org/_static/images/loading.gif
+
+R0lGODlhFAAUAOMIAAAAABoaGjMzM0xMTGZmZoCAgJmZmbKysv//////////////////////////
+/////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgAIACwAAAAAFAAUAAAEUxDJSau9CADMteZTEEje
+hhzHJYqkiaLWOlZvGs8WDO6UIPAGw8TnAwWDEuKPcxQml0YnjzcYYAqFS7VqwWItWyuCQJB4s2Ax
+mWxGg9bl6YQtl0cAACH5BAEKAA8ALAAAAAAUABQAAART8MlJq70vBMy15pMgSN72AMAliqSJotY6
+Vm8azxYM7tQw8IfDxOcDBYMS4o9zFCaXRiePRyBgDIZLtWrBYi1b66NQkHizYDGZbEaD1uXphC2X
+RwAAIfkEAQoADwAsAAAAABQAFAAABFPwyUmrvU8IzLXm0zBI3vYEwSWKpImi1jpWbxrPFgzuFEHw
+AMDE5wMFgxLij3MUJpdGJ49XKGAOh0u1asFiLVvrw2CQeLNgMZlsRoPW5emELZdHAAAh+QQBCgAP
+ACwAAAAAFAAUAAAEU/DJSau9bwzMteYTQUje9gjCJYqkiaLWOlZvGs8WDO5UUfCBwMTnAwWDEuKP
+cxQml0Ynj2cwYACAS7VqwWItW+vjcJB4s2AxmWxGg9bl6YQtl0cAACH5BAEKAA8ALAAAAAAUABQA
+AART8MlJq72PEMy15lNRSN72DMMliqSJotY6Vm8azxYM7pRh8ALBxOcDBYMS4o9zFCaXRiePdzhg
+AoFLtWrBYi1b6wMAkHizYDGZbEaD1uXphC2XRwAAIfkEAQoADwAsAAAAABQAFAAABFPwyUmrva8U
+zLXmk2FI3vYQxCWKpImi1jpWbxrPFgzu1HHwg8HE5wMFgxLij3MUJpdGJ48HAGAEgku1asFiLVvr
+IxCQeLNgMZlsRoPW5emELZdHAAAh+QQBCgAPACwAAAAAFAAUAAAEU/DJSau9zxjMtebTcUje9hTF
+JYqkiaLWOlZvGs8WDO4UAPAEwsTnAwWDEuKPcxQml0YnjxcIYAaDS7VqwWItW+tDIJB4s2AxmWxG
+g9bl6YQtl0cAACH5BAEKAA8ALAAAAAAUABQAAART8MlJq73vHMy15hMASN72GMYliqSJotY6Vm8a
+zxYM7lQQ8IXCxOcDBYMS4o9zFCaXRiePJxBgCIRLtWrBYi1b62MwkHizYDGZbEaD1uXphC2XRwAA
+Ow==
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscfb.gif
+
+R0lGODlhywAAAfcAAP7mts66kz85LZ6PcW9kT76siAAAAO7Xqt7Jn39zW46BZq6efQ8OC19WRB8c
+Fi8rIk9HOOvhwyw0O3KZv5nM/0xmf19/n4Wy33ylzy8/T2mMrxMZH0JZbwkMDzlMXxwmL4+/71Zy
+jyYzP4ix22h+lV9seVxjaVtbW2x2f297iH+cuZG+6oew2VRgbUpKSllZWWdnZ3V1dYCAgIiIiIyM
+jH5+fn+SpZK/7G+LqD4+Pk1NTWxsbHx8fJSUlJ6enqSkpKenp52dnYWIi4yv0mN5jzw8PElJSVhY
+WGhoaHl5eZWVlaGhoaurq7S0tLe3t6ysrJOTk4ury3uewTk5OUNDQ1FRUWBgYHJycoGBgY+Pj6mp
+qbOzs7u7u8HBwcPDw8LCwr29vbGxsZWYm5G65JPC8j9CRUhISFVVVWZmZnZ2doaGhq6urrm5ucjI
+yMvLy8rKysbGxoyZpmmCnGlpaXh4eImJiZaWlqOjo7CwsMnJyc3NzcTExLa2tpubm42z2UVLUUBA
+QExMTK2trczMzNDQ0MfHx7q6uqampoWZrI255nd3d4WFhaCgoL+/v8XFxaioqICDhoGnzT8/P1ZW
+VmRkZHR0dI6OjsDAwLi4uJXF9XWUtD09PUdHR1NTU29vb319faqqqr6+vomv1Ts7O09PT4KCgpiY
+mKKiorW1tYiv1VRUVG5ubnp6eoSEhJeXl5+fn6WlpUVFRWVlZXBwcI2NjZycnGJpb0tUXlpaWoeH
+h4qKin9/f2tra26Em0FBQVJSUnNzc46751BQUF9fX3FxcWN2ilxcXE1TWpPD8zo6OktLS05OTkRH
+SkJCQktVXl1wg1Fdao26522GoF5qd2Vyf2x4hW57iHGBkX6buFNgbVdXV3t7e32QpGpqaoKFiYyz
+2bKyspGRkY2x1Ly8vJSXmpPA7YyZpX6BhYmv1pmZmWFhYZCQkGRqcGl8kG1tbYmy3F5ufkdLTkxW
+X2J1iFdmdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAADLAAAB
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOF8GEMCzZ4CDOwEEDTpRwE+OAwjkXMqwwL8CUKEeOOgUQFUECSgmQNCxwACmYBFW
+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
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscp.gif
+
+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
+dmVzIFBpZ3VldAA7
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf2b.gif
+
+R0lGODlhzQD9APcAAP7mts66kz85LZ6PcW9kT76siAAAAO7Xqt7Jn39zW46BZq6efQ8OC19WRB8c
+Fi8rIk9HOOvhwyw0O3KZv5nM/0xmf4+/71ZyjzlMX4Wy33ylz2mMrwkMD19/n0JZbxMZHxwmLy8/
+TyYzP4ix22h+lV9seVxjaVtbW2x2f297iH+cuZG+6oew2VRgbUpKSllZWWdnZ3V1dYCAgIiIiIyM
+jH5+fn+SpZK/7G+LqD4+Pk1NTWxsbHx8fJSUlJ6enqSkpKenp52dnYWIi4yv0mN5jzw8PElJSVhY
+WGhoaHl5eZWVlaGhoaurq7S0tLe3t6ysrJOTk4ury3uewTk5OUNDQ1FRUWBgYHJycoGBgY+Pj6mp
+qbOzs7u7u8HBwcPDw8LCwr29vbGxsZWYm5G65JPC8j9CRUhISFVVVWZmZnZ2doaGhq6urrm5ucjI
+yMvLy8rKysbGxoyZpmmCnGlpaXh4eImJiZaWlqOjo7CwsMnJyc3NzcTExLa2tpubm42z2UVLUUBA
+QExMTK2trczMzNDQ0MfHx7q6uqampoWZrI255nd3d4WFhaCgoL+/v8XFxaioqICDhoGnzT8/P1ZW
+VmRkZHR0dI6OjsDAwLi4uJXF9XWUtD09PUdHR1NTU29vb319faqqqr6+vomv1Ts7O09PT4KCgpiY
+mKKiorW1tYiv1VRUVG5ubnp6eoSEhJeXl5+fn6WlpUVFRWVlZXBwcI2NjZycnGJpb0tUXlpaWoeH
+h4qKin9/f2tra26Em0FBQVJSUnNzc46751BQUF9fX3FxcWN2ilxcXE1TWpPD8zo6OktLS05OTkRH
+SkJCQktVXl1wg1Fdao26522GoF5qd2Vyf2x4hW57iHGBkX6buFNgbVdXV3t7e32QpGpqaoKFiYyz
+2bKyspGRkY2x1Ly8vJSXmpPA7YyZpX6BhYmv1pmZmWFhYZCQkGRqcGl8kG1tbYmy3F5ufkdLTkxW
+X2J1iFdmdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAADNAP0A
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmzp8+fQIMKDRpAgNGjAQ4WBbB06UQBSTkOIDDUZ4F/BbJmPXDwKgCvCBJQ
+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
+ZXMgUGlndWV0ADs=
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3b.gif
+
+R0lGODlh/QA6APcAAP7mtq6efY6BZj85LQAAAA8OC39zW76siF9WRO7Xqk9HOB8cFi8rIt7Jn56P
+cc66k29kTwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAD9ADoA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOBUGEJCzp8+fEQf8A0q0qFEAAwocXcq0poEBTaNKHXkAwQAEBwgKQDC1q1eMCRQg
+MLDg378AAw8Y+Mq2rcMEDHgCgPuPwcAEDdzq3VsQgdKBAczyHUwYQAGodwUXXsz2wL+1Axv8Q8y4
+slQBZwkGdmC5c1ME//IOHGDXs2mjDEIPdFDgwenXQP8VYHCg6gLXsAk3cGCgt+/enHE6hhBAgQIH
+CVomCDCguXPnPx2IhYwzgVkDtQ8IYAAhp4HMM/2FUm8ggPLNAwsGiO5pfSjBBtRtKlA9syzugfFr
+OvingGhg8wLdZ9MCC9Ak2V/v4bRfAcl1RF5wBygwAFoWgSYXAAKe9093M2HGlUDBVVfAPyEaZMCI
+ZqXIX0ENHJBAAlk9QBaJCDCQ2j+43ZdAhgnZFyCHHC1H2lygddeAUBQK9JQBYrno03zBPfDhRjBm
+Z2VtPC70XQFVXZXVQBDYWNcACxw2QIhhYSehXZx9t8CXFj4w35fflYiQZI8x2RpDjqnoJ4AD/YNA
+AgLANUACEFhHHQMLJGedej6NyACZJHbUp58pArpQagU4oNaIch3AGWsCKQCkQHB96dharkHw/c+X
+ALialaKoLnBhQpgpUBtZDVV5ZXZZPkAiZAWMhWGlAOyX5GM+OVZaA432ZNaFmNFXKlfWwSoQA9QF
+BisDCCL1T4ML9FfqeglBCSZI3xmQnGMKJIeZaN8BBh4Al2Kqb6YjfQdkfip9t++rZmk7bWJokUrQ
+iQ3G6p5AkxH0T4ECNScQfA2NuF6WGQmFW52llobvuHMtMGVOqSXZMEst/ppdAiNqK95qfxlHEMzx
+lZsWswGuKJBfP6+MkLMSPfDc0QOciqqgAzEa6KkGcDsAwDa1R9XAEUM0361ChcjAhwVAltd+92F2
+4XewBkZdvQJwXJC/BzlA8UHw/Wa3nQD+BEYhrSOj5SgD6Pr0n0IP7FmRry67PTTTA5XZoKuuSdad
+A67Ve7HHLwIwX8No44fjrQqlHLe5GUGAYGAfD9U2AJjZGjhOoFEd2dwyuSqaZHK5WpqwkyFGNgB1
+jzuoYbQLxfmGDgX2D+g/U/76RAyQDnTFBUCAWwBhmqV0TQnsV5e2BGnHVQMP4HXxA+UHCL5I5QXA
+3IVlJZnaoaiCmzQAoA0v2ckF0L6dQy3DkkEK4L4FPC8iB9jYfWQkGghEaT6yA4qMDBOABiBAQv3B
+TgAYhD/3xesktWERunZkkASiym2SId1cNFK45AxgfSBpgMgEkp6mwCU5JDOOvNZyAKj9PMAuxWmL
+2j5igO4kIFol+WFBFhBBg0gnaQdEiQC600OBcMmKyTHWkcKiuKV0ziMDqBzeRIKARAFPLA4xGgRM
+J5somuSFSHHXAUpTxQZw6UUQcFJbvtgRBolKJTIygADcSJDC5WhE20vJWBwwgEFCQC4yPICwXDRH
+BiTpKy0SmkZgpEmc6AxMWXNJVhqQnPRdLC8xcs0BDJcbvQgrPoMjSqG2RchWNoWPyeIZUJajHRja
+siubI4jtfklMmBDoZtUrpjJZYh3a1aiTy4xmSBxTrAMwh37SzCZJvrOTq1xSm+D8iPHCSc6R9K+c
+6PzI/tLJzo1ws53wjKc850nPehDa8574zKc+98nPfvozIgEBACH+HWNsaXAyZ2lmIDAuNy4yIGJ5
+IFl2ZXMgUGlndWV0ADs=
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3c.gif
+
+R0lGODlhkQBIAPcAAP7mtgAAAA8OCz85LS8rIn9zW866k97Jn46BZq6efe7Xqm9kT76siJ6PcV9W
+RB8cFk9HOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAACRAEgA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGH++ydggM0BMQfeHCBgZs6O/wj8XEjg39CN/wocTVjA6FKMSZ8ebCr1YtSqBKlipXg1poEDTJ1u
+ldhVJk6EWsdGLPvy39mpYtU+ZOuSgFK0ceU2pEvyAIICCQoOQBBWL0S+IRUsIFA0qIKBBRgUNuwQ
+8UcFBBoIbDCTsEAGYPFSrny35AChAx24dZh2tELLHQ+U5fx2YWvXCGFzRPAv8MAE/xawzovboO6N
+qkMLbCq54e3iBY9rJCCg4IPatolDHyg9Y1CCCP0EKGf4fLvA7hcZzNSsoIAAAxDLi0TgWyRs0Bl5
+I4Dw78GCx/FpZx92HyHGwAD/NHcRf+NJJF9I/0BAEl8HHLBAghk9UJ1FD4I0QGkQglgQcxgpEOFF
+HX4EgWYjWUbiRZyxWFGKFDHgQAEOyLicgundmGN0ImaF4UUGMADgjAJatMB7AMj2AHwCHXDkZjtV
+OYCOBC0Jn5NQAuDikDDRGJF6nnkZZEEMFKDmmmzyOBCZ3IH4pZstiRkggAb8g2VGTeGpJ0FzGtQA
+m4SK2ICViFrZpZAdcaYTAVNq5KhAp00ZaEELJGpTQQcw4OmnoIYKaqTLJVkRBA4wAMEApBqU/Wah
+a9IpEKqqsgpkWLKuZCdEOeLX0KGa7ilQrw2ed2apuaq0q0O8ObCoR80+GyeuOS3bkAGNPVBfR9jO
+pK1xxwKg2rYuWbtQA8IpgMADvXmELgDqsksuhYOqaWSYpkaEGUEK1NTRvgP1ix16L5mb0IEFEeBA
+RwgTpPCtahmcEAH1IQCpRxQPZHGkBJebr74ILFDAAg20WmLII5cMrlwSb9VxnR+79rJGFg6wonMx
+jzYzRgV8iGBw5OVM2c4WOSDhsDOZDJnQhhFNEWddmgimaOatjBJ/CU8NV9VWn7QaQewGzTXEJuUp
+XMD/LJzd2ICG+1GMWYknNtvGonShjAZhCCCsQS1j5bRECGqb5gN78820Xn+vRYABDgxW7GR0J/6Q
+emc7eLhckjP750R9V5V5Q8lR1LlUaZvUL2oTqUb3eQIgAOpQoIZ3ecSFDgXr6rjnrvvuvPfu++/A
+By/88LwHBAAh/h1jbGlwMmdpZiAwLjcuMiBieSBZdmVzIFBpZ3VldAA7
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3d.gif
+
+R0lGODlhiABFAPcAAP7mtu7Xqn9zW866kwAAAD85La6efZ6Pcb6siN7Jn29kT19WRE9HOI6BZi8r
+Ih8cFg8OCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAACIAEUA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqhBhAwICV
+MGMCEPCvgMybKGnaxMlzpIF/AnoKBTng34GhSDv+Q5D0ZgIEAoICMFBAwcADBaQSPLBAwIKjBnc2
+hRkAAYN/DQAsUOBgqVq2bgUOeOAgAAAE/xyIFQh2bMwF/wY0eAl4gIKXCgILDPAgLoB/jv3yhPDA
+gAGBlA8wBfAAwtW8AwNAliy0aIG0AEyjTvCPwUCaWg+AJs2zwWwAth0MtN1Xtta2l2njLOCY+GYA
+ZxMQXPAgQQDmwYXf/PeAIHWCEHQTDOAganTpMv1/av1pVSBeq8G5lwfPM/FLgYmP0zRwACzemn3Z
+x+xMkP/rvH1x19g/EKCm30oIvGeeggC0pCBVdlEF2XoH+pXAA3btRmCFpAmwl0AbcujXAZ4RhJdW
+Ija1AAMvBUAiikgFkKFcMwqXQAPe1TjUAWetZ1qKFtZEUFsN0QTZkUhCBiOQGTVmomsMPYXAlFRW
+iYByTHKU3GvHeZRAVGCGKeaYZJZp5plgYikSTZs9J9KXaMYp55xjqhkSTWAxoGOWQp04U5cLGZlk
+kkvyWdGJBxjYkJRWWmmnoRbhxQCFiz0KKYJ57bkAoJeqlEBdBgHWAKed3hSAbaOWihRepKoq/ROr
+JgVggFf5uVoQrCO1BIECltpqYmQfGZAdg74ehCtIskGwZ7EFFdVAAMRq9BOwIJ36rHkLZLWsSsQt
+sK1FAUDwzwIMCTDgoNQaS1xrzyH5YadGKjdlr4Che2SNz3X1FQQHtARAYg8U0G8AZ/3ja2MPZFuA
+uA502cCmtgkwJQQFUEnQAPyaJ24CByhHEwQK3mcra3lh2W5cssL3j11F1ZpagQOxVt1AgKGYm633
+5cfYdQU9AGViOjK213lDRpYYua7eB2hi/9iJF1h0hWr0P9GJtjJBxCnaKcmAKr3c1azByJp2Azk5
+EF5kg5gupOJqfR+DEEBp23czAbWVkP+ZIS3XaL4mBuVAP5Uo0NwCAbYZasaF1hiKxOUnW9qqhnv1
+QInFxjMAWf8bXOKFG34qZorlzSzGfydAMeBKDlQw3nW7lsACAxD3HMshDpQ5swkw8IAACuz+NagC
+TVvAjNxBVoByZw3PF+ugtxr5lAaVpWMC0d6lILQLkcwsTj9Bvr1KNP39/UpnFTq+ScSZf/767Lfv
+/vvwDxUQACH+HWNsaXAyZ2lmIDAuNy4yIGJ5IFl2ZXMgUGlndWV0ADs=
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3e.gif
+
+R0lGODlhegBCAPcAAP7mtt7Jn56PcX9zW+7Xqo6BZs66k29kTwAAAE9HOC8rIj85LV9WRK6efb6s
+iB8cFg8OCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAB6AEIA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmyZcMA
+AgIIFDCAwEABBWy63MnQwIF//wAQSKDgXwKhC4oe5ck0IYF/CwAwCPB0AYGpAKA23WpQwL8CB2x6
+BWuzwb8BXNMKZPDvgIG1/xi8BfDTgdq0D74OzFtgL4S7XA38ezBQMGGBAYwC3lpAr8DGfWf+E7C4
+aYJ/OgFclilwM4C5lVv+U0BwNEEIhA9wDr3SLFqBZg+UfiCXdUsHA1bjXk23tu3fwIMLHz7SQIEB
+yJFTJs5yKNDnQBkwZ5l0wYLB1hcsn46ywHKzDf0UOoBO/nlU7hMJRJYaVCEBB/Djy4cPGn1FCEs9
+Jt/Pv7///wAGyJ9dHAm2XkcCJqjggv4RuNEA//Bm30oLHCZeeeWdN+FEWgEQE0LvzSdifRs+JBgE
+BASgYYkmPfVceCyidJ1jMaLkQGY15qjjbQMw8NqOIQnwQAIOAvmRAQpAAKORIBkAwT9FMtlRAE/+
+OBJNnAVwwAJYTXedhQk1UBSGZ72UwJN/NfYcisyNN9lnDpAoGZlALSnQAAn02ABtdAFgllG5AQAh
+lMyx1ZZ1eT1woAELNDAekQ4sAEF8mRGggHQCPRkTZW5ulxWhxOU16UBq/vjdPzBCgClBluYH/UBe
+q3m1omCYMRddQZdFWBADf/mJqkFn4mjaQD9ZaRaYwgFlpa9vDkSAqnDh6GGZA8VGUFF2QuiqcHkt
++6mVXsH4wIoC5YUjW0UCheN13gJ32bafHnimQILJRtB4KybWnkDjIftklMGZ1auzQIFWr2SvRQah
+lZetCOGqAOgrrXDX2WmWhk7qKqhiDdi7MKnFCtoZjQD0i56lD2SWpE5UdgiAmv+wWfJgBBAwAE1Q
+upXpP/Vpax8BBzxwwAC0ZeYVBKC1/EB9hj5gV2NLIwYUrtROCN/EDkj43kEGFAmwQXl9LaVGLk48
+tkbjDXx2R42Ru7ZGELr99tx012333XgE521QQAAh/h1jbGlwMmdpZiAwLjcuMiBieSBZdmVzIFBp
+Z3VldAA7
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3f.gif
+
+R0lGODlh3QBBAPcAAP7mtq6efU9HON7Jn39zW19WRI6BZr6siAAAAD85LQ8OC866ky8rIm9kT56P
+cR8cFu7XqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAADdAEEA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqvRlAwNKYAwhInUr1KcICBhxS3UpggFWLB/6J
+/ZegrNmvBhV4bWjW7Nh/B9BSDPuvgNyBC7ISPMDAYgGxce9GpLtW7gIFgQc2IGBwwYHHjws3Bix4
+sFjBDhT8M/hgAcHMbyknFF3ZId27DRj8U5CgwcABDz6HHruQdGmGp+8G+MeYoAHXAg8UgABgt2SF
+tm8rzC33r2eCDAIM7A2gQF+HyZUjZN7wuEquXP0TC3ygoCCE8gIhEBeoAHjD7NoNclcIgcBml23z
+m3VAcMA/p5/ZZdBu4tUGV3wLzYcQAZrd55MD//BHkAASFlQAetgdiGBCChYUVQCqOdiTAP8c9896
+BTEAYIYFbrjXZQ3ZJyJPCsRWWFMHQVCXQO4hp6GL8sHIkIw/LfBPAxDoVZ2SLyoQAAFMjvYjkC/O
+mBCRPtnXGkFqHeSfWA+g6GOLGw0gJgAHnPnRcwNBQGaQVi4opEmOedddAtQBMICABzXwn50HwXdR
+AH7+w6QB/8T2EQQOkPgPmwCQyCeHcyqEZUkENCDckTYJilEC/1VJZgP6lVoWfZoxeSmlcR60/WpI
+CzAgYIcveXoRoooOhKidoM7ma6sDSVqQALmyqlWla7Km62qdTskRXWIGkMBI9l2nWJ7bISsnsBqd
+V2J6D/DW7JsY6TilAJB+tJuIECSgJpzHcmtqqT0WBKqAEKg26Uy2XiSWdMHV+xG00wGcoLauIizQ
+r75OexCEj6L5wAMV1tSvRar11u67HZkbmHCmKVzQqx2p1t4DFOp0cUWg9oauQr0y/BZDlG0cMrcE
+kbyRuQUAarGzHN0LQAMV9zmvfjRHCEAC6QrUNJoi5xw1WCvHVPVEWjogsEgtF2AwQRAUOxCtBums
+EV0t+uzS1RLZpyxKoCqAbXAoH0T2yFPbV2TuigBAkPK4IVXLcUhCG2SAagy4W9DdBPU6OEaFChDA
+AQ08QG6tQG9EAAOPg5TAvrLZyXhUISZK9KKFrkZA52tn3i3rH6lNbLY4qzTAAU//fDlaCoAeXN5U
+jhmfkV9XGbxFbCNlH8eMHy+8dglYC6/zEyV/FG8LFP977dQH6jpaYW1pN/DdE2S9UQaQ23z5BZ0v
+1/rsD+Q++GLlHv/i839FFwO7x89X/lahy6/YJ7P+acdNkEngY9inQAXC7n4QjKAEJ0jBClrwghjM
+oAY3yMEOevCDIAxhBAMCACH+HWNsaXAyZ2lmIDAuNy4yIGJ5IFl2ZXMgUGlndWV0ADs=
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf3g.gif
+
+R0lGODlhIAFEAPcAAP7mtt7Jn19WRJ6PcT85LW9kTw8OC866k39zWwAAAE9HOO7Xqq6efS8rIo6B
+Zh8cFr6siAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAgAUQA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOYAQI8nUrVpYABVbNiHECgq1evBbQK
+NCCV4YGvaAmInYrg3z8DChDIlYu16QKDDBo4DDBXboEGbv+tfdr23wGtC9QWLODAogK3g5221Zt1
+QQMFBh8cHriAQV8EjRMOgByZaVvFVAc8+CcAwl2BBx4QPGAgcGDMCSGQLq30dNUDCFYXQFAWgIOw
+sB90NWDAa12EugXz7v0PNdUHBgw2gDBQwesHyP0ZRp9O3frTA6wLBsgucEBZ9NwbjieP1LdD4C7P
+pkW7maCDf8+1J8BBBbAn3270FWXfQgEIUJ1LfH0mYXHd/UMhAAowcNADuB0oXYIKPqjQAggAJiJQ
+BlDG2T+vzQbgQ/OBSNSCCB1wF2Dm8aRbeAIx0CFBo5V14UExTldAfEPRqBABJ/rUFgML9HfVQQ4e
+NkB/uSFY2mg5eSZhgEomxGSOOwEGAAIEkXUQkw385SF5YcbEwGq2BcZjnGs22VNtChQHgYqLBYak
+QkVWBMFxA3KmgAAtdrQABAi0NhsBoR2kmlsEIBDgRgcMEOlifYpWZ50aDoSnQWOeFICnBBTQ/ShE
+DDjQKASDErSAAAJgSaiWEx0AgYOGDRRdpQQFQOuxyCbrGnQM1MbjfxYexBeww22akbHANlpbogbF
+NgCtbbV2bKOnFpRqSSXeVUB6NhVqEZM8roumQYWNam+tgVpn2T/4DjSagSAt4Nago5GJYX+P6UpQ
+uQSdK5JlDby2rsEvuVvRaLI13C+kEnZMnEIMaAkBwAY9xm1IgM07EKWWlgqAwCQXxPDKenq0b3+r
+qUyTxRQJHOzKI6H3s0AO6GxQbdbOpuzStCr02I8APPAqbASFfDK9NSPksEGPMq3skAM5yK2DEd/E
+M0VMVhoAjyANzBmgBkU3dcP21q0QjZr+NuSgywfNLNDWBUVXd51GDxRytLdWN3dMZ0802UAFgN1R
+bZVKmtC6cBvkqccSKvSfgQdAnVBtiwvkNwCAF8u5hP1GXV0ADijXukyNSyT3y2wTxPHqc0lO87ye
+LpRySfMlVrqLFJuedZ7JXyR0mw74PlPtErn9MUL1Di7oQkyiGXq3trpN0nyWz3bQf4XLvDyq62ME
+rfQ1UR9RynwpZKzXyR4PgIMEGF/QAYD6l0kCMDAHEAs2mcPQP+a1tr61j27Ns0hhgCI/iKxLAK4y
+yWQIoCvanMxBmDnAAT/iFlx1ywBX+5uIFKCwMz2QZhGsyPsK8i2cVPAh/xphSAoToMT9Ved6lAuA
+6Ej4j7JxBliZuhCTiqgc7L1QIDgKCQGL+Boh5m56vLqIbhK4wxcV60//YMCyAOAW5ehPI1RUDxjF
++CpgvaWFLozgAqBlAL51BFrVacAD7Bi/LFpEYHAECQOSBgADZAxyLDMJoxBiSIQEYDUC8B3DdteX
+2WlRAQSY0k5u6BAD0u4fV2QcKCX4RBlBx48UadBMnoQTVlbkdKaMGyolcqsznoRJtlwJLkkZw1jK
+8kMUidUCFsDCmQislyo55kVg6UthzbIhZSzmTEKWPjktcJmlbKYzgTkRriAglydZ1wHGaRNxkpMi
+zNQmJ4GymjnepJ06fEg6m7nOn3Ssxjvv/Ac+X5lNbQKgnj4JQCBhIlCMzNOXh/PnTwoDTm2ui5sK
+zUlhGuCAZA10Ol07FgMeCtGI3iR7dULmWgRnL4+a9KQoTalKV8rSlrr0pTCNqUxnStOa2vSmOM2p
+TnfK05769KdADapQh0rUohr1qD4JCAAh/h1jbGlwMmdpZiAwLjcuMiBieSBZdmVzIFBpZ3VldAA7
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4b.gif
+
+R0lGODlh2wBQAPcAAP7mti8rIgAAAK6efX9zW76siE9HON7Jn+7Xqs66kz85LV9WRA8OC29kTx8c
+Fp6PcY6BZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAADbAFAA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmz58MA/wb4HEp0479/BIoqXSrxaFKmUKMiBFpAqtWrBv4duMoVKoF/XcN6
+RJCAYIGtBBOUPYigQIG1BwcoEEvXIoIBCxj8ayBwgIOjVQEkALq3YAIDDh4MCJD4rGEDdSNTLAAY
+wIMFBf4mTaBgQNa5Ax/8Y4BAoGinBgNLXu1QNAPLDwT+hZBggcAG/0ADOKD3KQDK/1SzHh5xwT8D
+BZ4eAGygNACgvnFrHTigMvHrD3vzFQjhn4MFaP2X/4Or4F8Agl+nY1+vMMFRBc4BZGUg1PRoguV1
+A/irn71/9NYJ9B5BWUEWmnkHMgDXfww+lxtB1QVHkF6xEYRbbAUwAF+DHCJwVIW3ITgQcGgNhIAB
+DRAAQYkcMuhaQZoBeB5ZAiEQgIEt5mgcjrsdtSBQfG0IQHrI5djiXyBadh9BR0GwAFwD6HVUAEka
+iZ176gmUlW0E/eUAXAgsAAEEf00Zn5Vo1ihcAl+GViaXacYJo281linnnQJRJpxAX72Gp5zu1Wfh
+P3D+maYC/SXAQABnGmolAg0o8IBbDQRAQKN0JTDAnhBU6ehBbjkm0wEFVDkABJhClAABeukH/dye
+n+p0AASEFYTaRacVBJ1S6R3l66+/wqoTsMT+2l9B4gmH27ESibegh4IO9QCi1FZrrQIL8nTttohu
+l9Bsunpr0YcEHeBArEqVV+h+LFZUHp0NCEsct/TWay+94n70lX4D0GmRugMd1mCoBBds8MEIJ1xw
+th59dW6NQmK0L8Sp9kSqwgRXjBPGBDNcEHADGeAxRRPLN3JPvRYLrLw4qVwss2YdxR0EHHX3GgGe
+eqTpRAmwnCcBQAct9NDt7jT00ULnnJaPBayLEXCXlWSAnxB15y+6tv4DQcQaAXdeXB0hUHRDSGGd
+0FEMjA1AtBFRxuhB08pUttkHjTbyA/n+qvq2QaI5QEBgyaFK3QEDCNUzAmOWlpxqCIB4eOKhAV3i
+3HTD6PEB5RXpEaIDLRAbqweEuRdQ3aGI2wIpllfWAVlxdxzqDNhmI81RokV55Q25p/FFnP/2sIe2
+UUZzWYUBYNxWHj711UDF4ybYeAI+dTvuC9EaUu8L+B00hhJGzydY3g8JPgBzLx+w1eHb1DMBIkOl
+QN4b9a7AwzGrVv749zOvPPhNCzX39DLRlJ2gEpTrgeZ4I/pN98i3P/19z4HiU6DtpHe1mWQOKpQR
+iQJm5LatPIBmeoKg+Rj4wPAt7ytbcQ8FcwIupkTqACe7yFcCIBTpFK87NHvedrJSFvfSGIiHz+MS
+DxXFAAM8wAEMoM1xcIIltfVkgzF8WolIhZa2uEVxbjnAxaoSKi2G6jdZ3CIA2lIaGIJRVDXpDv2W
+okXqcSQr8HMjg45Sn36tSI7/iRBZymQ3PLJnWZzhol7W6MfhaCZip/FZIbsiHgew6FWLHE53phch
+J0aSK/NpFG4IeUm63KpLAOxkV4DTKNfsTpRRwQ2PxvgXtqGyK6QryIVeWZdkEUQ0SqOlVIAjKAI4
+QJG6xKABLNUAzwXzmMhMpjKXycxmOvOZ0IymNKepy4AAACH+HWNsaXAyZ2lmIDAuNy4yIGJ5IFl2
+ZXMgUGlndWV0ADs=
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4c.gif
+
+R0lGODlhRwFMAPcAAP7mtq6efQAAAG9kT39zWz85LY6BZl9WRL6siO7Xqs66k97Jnx8cFg8OCy8r
+Ik9HOJ6PcQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAABHAUwA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOnUKNKnUq1qtWrWLNq3cq1q9evYMNW
+DPBvgNizaDcS+Fcgrdu3Eg38OwC3rt2ECP4RuMu3b4J/CPoKZqpgoILChhccVIAAsUEGigdLJhrg
+QAMHABI8+PcvQOYCnD0PhMCAAIIDDAIEJth2smuheQckOKCALIHZtfUOHKA7M+fWr4MP5R3gNgDi
+sgHIFa3gX4MEAzlTTRBZoWPhUh38g4BYuwHEoP2hA1hLV2DzBg0XIFjPfr34nAnkGmAI/CHj9uyx
+4/zLYL7v/gL9hZlAa+0lEG/lLbTWbwU0WMB1OC3wD4QGKZDgQwM4WAADnP2DFnUMUVgTBGyNVqJA
+tg20QAPlNefAewqtxQCMPpGG0ACRGSCaRXJ5GFZ8//inUH03HdDZQEbuyNt1CjBwQIYQPLSWWUId
+cOFABjAw0IAX/eVjWBKKSJCFOzGg5UAMoIcmeu9B8MBEBQ7VAASkNeCfZQ7spVmABhRgFgENmBUA
+A1wmJJ1YNh6Eo0A66tRcgo+q+M+bybm4GkRxBtWcAfORGFkDotFJUGcDKEBAAQEYkBdDh4Zl/eVB
+WW6503JYbjdQXk8itiJn/dEYY281JYBfe/HZGV1geYn3QHV5fQeAAwdEaUChCLUK1px13nmZnm9m
+1uefgQIwKLUoZfieuSpe5hgBBkCg3T8MiGlQpgolsKNJCmiob75nAiAhdARwWd8ADAT2V3l+svrl
+V5t2+s+noUYZXQClnprqqj4VIDEACGhHLkL0HpQAoES69NfGpwqUJ4oGqlweWYr9damhC08l7LDu
+GWCsQIBx/I+yzAZZGLTSfnyTuwVJWHNCIReUqnYlt0SWeAlA5htipUqK2AHdBqDmQtZOla++DvIr
+KcACE0SwwXMJlHBPARf0V9QHNT3viTH+ZYgkYl4nEGV9iQIA4HEPKLBxtUtvdfJAKT9rYHEEQYvi
+w77NrNOK11kmb0F2c443TAdgtgAB6+pGJpLlSRjZAwxQqVDYXE0doNV/Ye1YmAJxjeLXPVl4AAED
+PJCcQ50TtBbdLKlXXYCbi9w8z4krtADFO2p2eJcIENDyca4vFN+p1yekd+58P/c3QYEPHrzh9iG/
+U/GMf87R9xrnBPtC2U8qKe8X5cY7h8+DQAEUs6SGhM5fpIvfXk6Xu9RRDgCs6x5DMCYU+BFIfhoR
+IAEnhJP7sapfygFhRkBTneYs7yCWiYyRnicQ5cmNhQRJAAxvFT2eWHA8GMRICnPHwZv9eHAhoCEI
+5JKmvSIasYjhi9+lEuA+5RwJAM1pokwoGJQbHq8jtIJiDmXyQ4Xw5lIP8NXYyKYhCQoRWKaxzj8G
+hIAGhLEnVKTIgjpExzra8Y54pGPLrLhFMpJtMWsUSBvf2MEa/mo1ELiXRvJiIFMtZDMECEABHmA5
+ncTxJ3yk2xE3qb2DQFKSlNxJFxNCogWaMSMSastsfBVDzpiGlTTJSx475JNMbsRLr+zJKBHCyFWC
+pERZG9PM8iJFmdyMPXIZVi2BBbItToSYQNnlQRi5rISMjpNGTGJ0ChDJGBZARw5ATF6ohQBY1uSS
+y9xe3ZwpkXEWpJz2MyRenFPJMf35sYyva4A6gycQAQ6kAbbKzABOeRN0wo2Z6yzmQwAqsQQMVCfS
+NEhetLmRthVkZ81BDInWuCFFWlKeObFgk5zj0Yps1AEdFSVIEVLSjni0OZcKkoq0V8+PEgV+ODNn
+RK5Z05pEdIo945k6h2JQGyL0LT+NSV5iOlShCCsl6hlAUzF1VLckNSZPlJlrhMUhIcmxqmm5KkyE
+hyIRSoaEF7lhWMT6kgXESzMt7UsDzCoRtYKFrS/53gkl0xyCUnWqaMGrfmCylrhKCayBXelgbRKe
++Eyyp79SaFfIotjFzmRu+RqAkYJK1TUeca9YgYARLSNYy66ELJoVz1q6BZHseHEStFcRLSdN+xMj
+OSBokqWtbmvCoe2R5Uq7De7l4FUQI1FUuMiViVy2l4AGPCe50L3JZpZX2OhalyaBNExZrstdmEDT
+PPrsrnhbooDLJMBvDoDseNcrkuKkkb3wja9850vf+tr3vvjNr373y9/++ve/AA6wgM8SEAAh/h1j
+bGlwMmdpZiAwLjcuMiBieSBZdmVzIFBpZ3VldAA7
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4d.gif
+
+R0lGODlhNQFGAPcAAP7mtn9zW866ky8rIm9kTwAAAD85Lb6siO7Xqq6efR8cFo6BZk9HOJ6Pcd7J
+nw8OC19WRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAA1AUYA
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOnUKNKnUq1qtWrWLNqLRlgq8+uXnkK
+GBB259iyOwmA/fqvrVu3BpqqfXjgrd1/aDEiSGBQgQCgAdoOWHCgcOG/RPf2RdwQgeHCCQi4zXuR
+QYOCDhQYfHzAQc3A/xAwtYxZc0HOnhdKxkt54oEB/xowBrCAAMEGD+wu+PwvrtLXsWfXvp377e6F
+Cdq2lugggAIFAQ4QHMBXYAMFBmAb2D47ZmDfSP2bP48+vTqA69l7c2dYl/XyiA9sE0TwYCAC+QTA
+2/zONH5B+vbhpx97yr0HUV3mWQfBQJcJpMBxN/H32z8JnregdQM9eGCBBgLQ3l1txRWYaASRVpAA
+/3RHk4Q8fQiiiKEVZCJBKKqoUHsdCuQYZ4/9NcCAAMRYkHM6sciQAGuptCOPhwHwo0FCEkTkhu7l
+qBAC/yQJQAIMHGTAhanxBuRBDkDQW05Yasmll2A6hKOVyKWIAIkAQAAhQf8sWFiEZ14ZAGx93pSc
+AHMOZOdBeXooXUNvwpmQZAgk+UCYePZGFp9j0iiadjlBKimlA4V4KaMcOnoQA3nS+RpCBvzj/ddD
+DWgpkpEKtZppTKhCoOqoBbX6qpulmvpfdw6Aat+iD7V6Eq0J2YomscbqiCywVQqLkrImMctqoFo1
+6lptdyLAwIUgHQDufONGhEADC4xrI0vYNiRArOQKRAAD0Q7Jba37iuRArAYQQGdL3kYkAHC8ohjb
+QUsyiRpCB8OWcFsNNpTAq8mZFlO8CzlwgJlRApBbvQhp62W/IP0pmmQkr1SwRMlVa6asHoJoM80D
+xVzQzA5B8ABiOsvEMUNY/jNtAyjre2uvSXOEwAADkCjZ0ia9rG5b0wZpY3MBdO31119n/R/WBaXY
+kJkQmkn1tdUyBJuWBtxZctNMr33R02b+O5glTFbD98+dAth9UW6A2420xkj/zFKsYCuQJdg4C4Rq
+lwQpMPDcgjuLUMMOG5ZvnYkKZGbUfAc7UatJGvD5RqgTpDpDDuTW4AKuvltSqzbfpZCRAVS8O92u
+N+1i7m3hHLNnCKh9OUt9QzQ5g5Fz9Lx10Rv6z6QNGKCA7ysdzBlsTCpEe30CCUA5QyYbpDmZkLff
+tdh6q74AdvAzb7pEEpqvENfug13/QPk730JyowAIBMB2LxkagViDAAMsD3MOWZ9HFDYAAixgdS67
+X0T408AHDmR4xKseBx0oL4rtRIELeRME/meQ9NUtJLT7BwYJpkGIIA0vDEAgADjXuc79LOSGAMih
+QSJjQYK0h4Uba1vHsLYAuS3EhcET3ERAk5Pm0aUtEODeSNqTRYNcRzTpKp8JaeREl6BwIVhs2ROB
+NxAJdiSGoGoAEqtWwyuG7iRcNAh9juMAo2XoeoiJFAlnckaFCMaDOIPiQDgFkj7+g3QAcAAD5FM6
+JUakLmrc4h1v40eB3PEAxfnRA6q3kkIm5JEeXECmFImAGD6gQhyJoaUUAEsaWhIiDqAkSnKJEDO5
+TmORhIABGLAAD74kVhLRVS8fYAAtAgCKB2jfHClyAAZ8yZkusWJROGZKq3SyhWxsjTaJws1bWiU5
+CVGkOOtYFFS5jnxhyU86w0mZcacOJTBhUoAAtzKYeUoRLfYUSh/Ns7CwYMl26qwnO4tyL+vwaiu4
+UcxBEpqXgA6FABDAqDGtsoAH/I+iAF2otZAC0rJYdKRECcxD4QRElEYFNDpsDarM6dKjgOYBDAAb
+Nq3Cv64RAFA0rWlRsredohZVl1oJnFGXKtSmOvWpUI2qVKdK1apa9apYzapWt8rVrnr1q2ANq1jH
+StaymvWsaE2rWtfK1pgEBAAh/h1jbGlwMmdpZiAwLjcuMiBieSBZdmVzIFBpZ3VldAA7
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://web.archive.org/web/20080208110727im_/http://hyperphysics.phy-astr.gsu.edu/hbase/fluids/imgflu/viscf4e.gif
+
+R0lGODlhhwE9APcAAP7mtu7Xqs66k56PcV9WRE9HOK6efQAAAN7Jn76siH9zW46BZj85LW9kTy8r
+Ig8OCx8cFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAACHAT0A
+Bwj9AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcq0qdOnUKMyDCBAKkqqVrNqbTiAwFaSXb+K
+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
+
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta----
+Content-Type: text/html
+Content-ID: <frame-07DD66EB8379B888788674E9B79722E2@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://archive.org/includes/donate.php?as_page=1&platform=wb&referer=https%3A//web.archive.org/web/20080208110727/http%3A//hyperphysics.phy-astr.gsu.edu/hbase/lindrg.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--AQxLeF7sWlhAvLfPgHBwH0y9QtNsLiFj2FLrUPvBta------
